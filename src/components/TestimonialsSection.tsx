@@ -1,9 +1,29 @@
+import { useEffect } from "react";
 import testimonialCarlos from "@/assets/testimonial-carlos.png";
 import testimonialAndre from "@/assets/testimonial-andre.png";
 import testimonialFelipe from "@/assets/testimonial-felipe.png";
 import marceNeiroHero from "@/assets/marceneiro-hero.webp";
 
 const TestimonialsSection = () => {
+  // Load Wistia scripts
+  useEffect(() => {
+    const playerScript = document.createElement("script");
+    playerScript.src = "https://fast.wistia.com/player.js";
+    playerScript.async = true;
+    document.head.appendChild(playerScript);
+
+    const embedScript = document.createElement("script");
+    embedScript.src = "https://fast.wistia.com/embed/oskx27z7e0.js";
+    embedScript.async = true;
+    embedScript.type = "module";
+    document.head.appendChild(embedScript);
+
+    return () => {
+      document.head.removeChild(playerScript);
+      document.head.removeChild(embedScript);
+    };
+  }, []);
+
   const testimonials = [
     {
       name: "Carlos Santos",
@@ -17,7 +37,9 @@ const TestimonialsSection = () => {
       image: testimonialAndre,
       text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
       rating: 5,
-      highlight: "bem rápido de produzir já tendo as medidas"
+      highlight: "bem rápido de produzir já tendo as medidas",
+      hasVideo: true,
+      wistiaId: "oskx27z7e0"
     },
     {
       name: "Felipe Leal",
@@ -77,6 +99,26 @@ const TestimonialsSection = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="space-y-3">
+                  {/* Wistia Video for André Galdino */}
+                  {testimonial.hasVideo && testimonial.wistiaId && (
+                    <div 
+                      className="rounded-lg overflow-hidden mb-2"
+                      dangerouslySetInnerHTML={{
+                        __html: `
+                          <style>
+                            wistia-player[media-id='${testimonial.wistiaId}']:not(:defined) {
+                              background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${testimonial.wistiaId}/swatch');
+                              display: block;
+                              filter: blur(5px);
+                              padding-top: 55.21%;
+                            }
+                          </style>
+                          <wistia-player media-id="${testimonial.wistiaId}" aspect="1.8113207547169812"></wistia-player>
+                        `
+                      }}
+                    />
+                  )}
+
                   {/* Rating stars */}
                   <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
