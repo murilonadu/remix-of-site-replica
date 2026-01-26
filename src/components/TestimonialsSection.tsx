@@ -1,29 +1,13 @@
-import { useEffect } from "react";
+import { lazy, Suspense } from "react";
 import testimonialCarlos from "@/assets/testimonial-carlos.png";
 import testimonialAndre from "@/assets/testimonial-andre.png";
 import testimonialFelipe from "@/assets/testimonial-felipe.png";
 import marceNeiroHero from "@/assets/marceneiro-hero.webp";
 
+// Lazy load the Wistia video component
+const LazyWistiaVideo = lazy(() => import("@/components/LazyWistiaVideo"));
+
 const TestimonialsSection = () => {
-  // Load Wistia scripts
-  useEffect(() => {
-    const playerScript = document.createElement("script");
-    playerScript.src = "https://fast.wistia.com/player.js";
-    playerScript.async = true;
-    document.head.appendChild(playerScript);
-
-    const embedScript = document.createElement("script");
-    embedScript.src = "https://fast.wistia.com/embed/oskx27z7e0.js";
-    embedScript.async = true;
-    embedScript.type = "module";
-    document.head.appendChild(embedScript);
-
-    return () => {
-      document.head.removeChild(playerScript);
-      document.head.removeChild(embedScript);
-    };
-  }, []);
-
   const testimonials = [
     {
       name: "Carlos Santos",
@@ -99,24 +83,11 @@ const TestimonialsSection = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="space-y-3">
-                  {/* Wistia Video for André Galdino */}
+                  {/* Wistia Video for André Galdino - Lazy Loaded */}
                   {testimonial.hasVideo && testimonial.wistiaId && (
-                    <div 
-                      className="rounded-lg overflow-hidden mb-2"
-                      dangerouslySetInnerHTML={{
-                        __html: `
-                          <style>
-                            wistia-player[media-id='${testimonial.wistiaId}']:not(:defined) {
-                              background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${testimonial.wistiaId}/swatch');
-                              display: block;
-                              filter: blur(5px);
-                              padding-top: 55.21%;
-                            }
-                          </style>
-                          <wistia-player media-id="${testimonial.wistiaId}" aspect="1.8113207547169812"></wistia-player>
-                        `
-                      }}
-                    />
+                    <Suspense fallback={<div className="bg-muted animate-pulse rounded-lg" style={{ paddingTop: "55.21%" }} />}>
+                      <LazyWistiaVideo mediaId={testimonial.wistiaId} />
+                    </Suspense>
                   )}
 
                   {/* Rating stars */}
