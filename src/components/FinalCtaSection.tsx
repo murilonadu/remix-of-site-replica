@@ -123,7 +123,7 @@ const FinalCtaSection = () => {
                         </Button>
                       </div>
                       <div className="flex items-center justify-center gap-2 mt-3">
-                        <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" />
+                        <img src={hotmartSecure} alt="Compra Segura" width={100} height={28} className="h-7 w-auto" loading="lazy" decoding="async" />
                       </div>
                     </div>
                   </div>
@@ -164,8 +164,11 @@ const FinalCtaSection = () => {
                         <img 
                           src={packMockupPremium} 
                           alt="Pack Marceneiro Rico Premium" 
+                          width={350}
+                          height={280}
                           className="max-w-[280px] md:max-w-[350px] mb-4"
                           loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>
