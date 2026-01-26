@@ -67,6 +67,22 @@ const ContentSection = () => {
             </div>
           </div>
 
+        </div>
+      </div>
+      
+      {/* Imagem de exemplos de projetos - full width */}
+      <div className="my-8">
+        <img 
+          src={projetosExemplos} 
+          alt="Exemplos de projetos de marcenaria" 
+          className="w-full"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 gap-1.5">
             {features.map((feature, index) => (
               <div
@@ -86,17 +102,6 @@ const ContentSection = () => {
             ))}
           </div>
         </div>
-      </div>
-      
-      {/* Imagem de exemplos de projetos - full width */}
-      <div className="mt-8">
-        <img 
-          src={projetosExemplos} 
-          alt="Exemplos de projetos de marcenaria" 
-          className="w-full"
-          loading="lazy"
-          decoding="async"
-        />
       </div>
     </section>
   );
