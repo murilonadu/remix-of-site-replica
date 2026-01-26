@@ -291,7 +291,7 @@ const FinalCtaSection = () => {
                     <div className="mt-auto pt-4">
                       <div className="relative group/btn">
                         <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover/btn:opacity-80 transition-opacity duration-300 animate-pulse"></div>
-                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 animate-bounce" onClick={() => redirectWithParams("https://pagamento.omanual.site/checkout/v2/1TMlLGIlBL86oXifTspo")}>
+                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 animate-bounce" onClick={() => redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo")}>
                           QUERO O PREMIUM
                         </Button>
                       </div>
