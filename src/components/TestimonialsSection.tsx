@@ -2,45 +2,60 @@ import testimonialCarlos from "@/assets/testimonial-carlos.png";
 import testimonialAndre from "@/assets/testimonial-andre.png";
 import testimonialFelipe from "@/assets/testimonial-felipe.png";
 import marceNeiroHero from "@/assets/marceneiro-hero.webp";
+
 const TestimonialsSection = () => {
-  const testimonials = [{
-    name: "Carlos Santos",
-    image: testimonialCarlos,
-    text: "Os projetos são precisos e profissionais. Zero erro de medida. Só quem é do ramo entende o valor disso",
-    rating: 5,
-    highlight: "Zero erro de medida"
-  }, {
-    name: "André Galdino",
-    image: testimonialAndre,
-    text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
-    rating: 5,
-    highlight: "bem rápido de produzir já tendo as medidas"
-  }, {
-    name: "Felipe Leal",
-    image: testimonialFelipe,
-    text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
-    rating: 5,
-    highlight: "escolher o projeto, produzir e faturar"
-  }];
-  return <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20">
+  const testimonials = [
+    {
+      name: "Carlos Santos",
+      image: testimonialCarlos,
+      text: "Os projetos são precisos e profissionais. Zero erro de medida. Só quem é do ramo entende o valor disso",
+      rating: 5,
+      highlight: "Zero erro de medida"
+    },
+    {
+      name: "André Galdino",
+      image: testimonialAndre,
+      text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
+      rating: 5,
+      highlight: "bem rápido de produzir já tendo as medidas"
+    },
+    {
+      name: "Felipe Leal",
+      image: testimonialFelipe,
+      text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
+      rating: 5,
+      highlight: "escolher o projeto, produzir e faturar"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Imagem do marceneiro + Botão ACESSAR AGORA no topo */}
           <div className="text-center mb-8">
-            
+            <img 
+              src={marceNeiroHero} 
+              alt="Marceneiro com Pack Marceneiro Rico" 
+              className="mx-auto max-w-[150px] md:max-w-[180px] mb-4"
+              loading="lazy"
+            />
             <div className="relative group inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce" onClick={() => {
-              const offersSection = document.getElementById('ofertas');
-              if (offersSection) {
-                const offset = 80;
-                const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}>
+              <button
+                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce"
+                onClick={() => {
+                  const offersSection = document.getElementById('ofertas');
+                  if (offersSection) {
+                    const offset = 80;
+                    const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                    });
+                  }
+                }}
+              >
                 <span className="flex items-center gap-3">
                   <span>ACESSAR AGORA!</span>
                 </span>
@@ -55,13 +70,18 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => <div key={index} className="bg-card rounded-xl p-4 border border-border/50 shadow-soft hover:shadow-gentle transition-all duration-300 hover:scale-[1.02] animate-slide-up" style={{
-            animationDelay: `${index * 0.2}s`
-          }}>
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-card rounded-xl p-4 border border-border/50 shadow-soft hover:shadow-gentle transition-all duration-300 hover:scale-[1.02] animate-slide-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <div className="space-y-3">
                   {/* Rating stars */}
                   <div className="flex gap-1">
-                    {[...Array(testimonial.rating)].map((_, i) => <span key={i} className="text-yellow-400 text-base">⭐</span>)}
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <span key={i} className="text-yellow-400 text-base">⭐</span>
+                    ))}
                   </div>
 
                   {/* Testimonial text */}
@@ -83,7 +103,8 @@ const TestimonialsSection = () => {
                     </div>
                   </div>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
 
           <div className="mt-12 text-center space-y-8">
@@ -96,17 +117,20 @@ const TestimonialsSection = () => {
 
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <button className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce" onClick={() => {
-              const offersSection = document.getElementById('ofertas');
-              if (offersSection) {
-                const offset = 80;
-                const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}>
+              <button
+                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce"
+                onClick={() => {
+                  const offersSection = document.getElementById('ofertas');
+                  if (offersSection) {
+                    const offset = 80;
+                    const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                    });
+                  }
+                }}
+              >
                 <span className="flex items-center gap-3">
                   <span>ACESSAR AGORA!</span>
                 </span>
@@ -115,6 +139,8 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default TestimonialsSection;
