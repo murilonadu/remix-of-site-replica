@@ -1,4 +1,4 @@
-import projetosExemplos from "@/assets/projetos-exemplos.png";
+import projetosExemplos from "@/assets/projetos-exemplos.avif";
 
 const ContentSection = () => {
   const features = [

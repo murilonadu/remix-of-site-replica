@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import marceineiroPopup from "@/assets/marceneiro-popup.png";
+import marceineiroPopup from "@/assets/marceneiro-popup.avif";
 const redirectWithParams = (baseUrl: string) => {
   const currentParams = window.location.search;
   const separator = baseUrl.includes('?') ? '&' : '?';
