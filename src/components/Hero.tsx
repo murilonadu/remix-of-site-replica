@@ -1,5 +1,5 @@
 import { Book } from "lucide-react";
-import marceneiroTablet from "@/assets/marceneiro-tablet.png";
+import marceneiroTablet from "@/assets/marceneiro-tablet.avif";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {

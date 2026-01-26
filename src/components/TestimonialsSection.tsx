@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import testimonialCarlos from "@/assets/testimonial-carlos.png";
 import testimonialAndre from "@/assets/testimonial-andre.png";
 import testimonialFelipe from "@/assets/testimonial-felipe.png";
-import marceNeiroHero from "@/assets/marceneiro-hero.webp";
+import marceNeiroHero from "@/assets/marceneiro-hero.avif";
 
 // Lazy load the Wistia video component
 const LazyWistiaVideo = lazy(() => import("@/components/LazyWistiaVideo"));

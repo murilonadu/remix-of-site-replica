@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
-import productMockup from "@/assets/MOCKUP_1-3.png";
+import productMockup from "@/assets/mockup-1.avif";
 const HeroSection = () => {
   const [peopleCount, setPeopleCount] = useState(0);
   const targetCount = 1247;
