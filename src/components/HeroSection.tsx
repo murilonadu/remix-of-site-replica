@@ -101,7 +101,16 @@ const HeroSection = () => {
 
           {/* Product Mockup */}
           <div className="mt-8 md:mt-12 flex justify-center animate-fade-in animation-delay-1000">
-            <img src={productMockup} alt="Pack Marceneiro Rico" className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" loading="eager" fetchPriority="high" />
+            <img 
+              src={productMockup} 
+              alt="Pack Marceneiro Rico" 
+              width={500}
+              height={400}
+              className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
+              loading="eager" 
+              fetchPriority="high"
+              decoding="async"
+            />
           </div>
 
           {/* Enhanced CTA Button */}
