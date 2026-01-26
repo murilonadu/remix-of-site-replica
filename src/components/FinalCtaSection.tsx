@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import hotmartSecure from "@/assets/compra-segura.avif";
+import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import matrixHands from "@/assets/matrix-hands.png";
-import packMockupPremium from "@/assets/pack-mockup-premium.avif";
+import packMockupPremium from "@/assets/pack-mockup-premium.png";
 import UpsellModal from "@/components/UpsellModal";
 const redirectWithParams = (baseUrl: string) => {
   const currentParams = window.location.search;

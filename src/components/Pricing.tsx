@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check, Gift, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import compraSegura from "@/assets/compra-segura.avif";
+import compraSegura from "@/assets/compra-segura.png";
 import UpsellModal from "@/components/UpsellModal";
 
 const Pricing = () => {
