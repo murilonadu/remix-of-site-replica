@@ -51,7 +51,7 @@ const ExitIntentPopup = () => {
   }, [hasShown]);
   const handleAccept = () => {
     // Back redirect - R$ 14,90
-    redirectWithParams("https://pagamento.omanual.site/checkout/v2/6fDFPOhbYLW4DSKo8skP");
+    redirectWithParams("https://pagamento-seguro.omanual.site/checkout/v5/6fDFPOhbYLW4DSKo8skP");
   };
   const handleDecline = () => {
     setIsOpen(false);

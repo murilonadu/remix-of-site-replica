@@ -35,7 +35,7 @@ const TimedOfferPopup = () => {
 
   const handleAccept = () => {
     // Premium pelo preço do básico - R$ 17
-    redirectWithParams("https://pagamento.omanual.site/checkout/v2/1ldT1NuAXSix71HG43We");
+    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1ldT1NuAXSix71HG43We");
   };
 
   const handleDecline = () => {

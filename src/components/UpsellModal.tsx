@@ -23,22 +23,22 @@ const UpsellModal = ({
 }: UpsellModalProps) => {
   const handleAcceptClick = () => {
     if (selectedPlan === 'premium') {
-      redirectWithParams("https://pagamento.omanual.site/checkout/v2/1TMlLGIlBL86oXifTspo");
+      redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo");
     } else {
-      redirectWithParams("https://pagamento.omanual.site/checkout/v2/wd9P6h8Tff6K2A1F2FFt");
+      redirectWithParams("https://www.ggcheckout.com/checkout/v5/wd9P6h8Tff6K2A1F2FFt");
     }
   };
   const handleDeclineClick = () => {
     if (selectedPlan === 'premium') {
-      redirectWithParams("https://pagamento.omanual.site/checkout/v2/1TMlLGIlBL86oXifTspo");
+      redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo");
     } else {
-      redirectWithParams("https://pagamento.omanual.site/checkout/v2/tKt9vSrCBlVBoTUOW44e");
+      redirectWithParams("https://www.ggcheckout.com/checkout/v5/tKt9vSrCBlVBoTUOW44e");
     }
   };
 
   // Se for pacote premium, redireciona direto sem modal
   if (selectedPlan === 'premium' && isOpen) {
-    redirectWithParams("https://pagamento.omanual.site/checkout/v2/1TMlLGIlBL86oXifTspo");
+    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo");
     return null;
   }
   return <Dialog open={isOpen} onOpenChange={onClose}>
