@@ -1,3 +1,5 @@
+import projetosExemplos from "@/assets/projetos-exemplos.png";
+
 const ContentSection = () => {
   const features = [
     { icon: "✅", text: "Lista Completa de Materiais" },
@@ -82,6 +84,17 @@ const ContentSection = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Imagem de exemplos de projetos */}
+          <div className="mt-8">
+            <img 
+              src={projetosExemplos} 
+              alt="Exemplos de projetos de marcenaria" 
+              className="w-full rounded-xl shadow-lg"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>
