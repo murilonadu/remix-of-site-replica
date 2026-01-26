@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import matrixHands from "@/assets/matrix-hands.png";
 import packMockupPremium from "@/assets/pack-mockup-premium.png";
 import UpsellModal from "@/components/UpsellModal";
+
+// Fixed dimensions to prevent CLS
+const HOTMART_BADGE_HEIGHT = 28;
+const PACK_MOCKUP_WIDTH = 350;
+const PACK_MOCKUP_HEIGHT = 280;
 const redirectWithParams = (baseUrl: string) => {
   const currentParams = window.location.search;
   const separator = baseUrl.includes('?') ? '&' : '?';
@@ -123,7 +128,7 @@ const FinalCtaSection = () => {
                         </Button>
                       </div>
                       <div className="flex items-center justify-center gap-2 mt-3">
-                        <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" />
+                        <img src={hotmartSecure} alt="Compra Segura" height={HOTMART_BADGE_HEIGHT} className="h-7 w-auto" loading="lazy" decoding="async" />
                       </div>
                     </div>
                   </div>
@@ -164,8 +169,11 @@ const FinalCtaSection = () => {
                         <img 
                           src={packMockupPremium} 
                           alt="Pack Marceneiro Rico Premium" 
+                          width={PACK_MOCKUP_WIDTH}
+                          height={PACK_MOCKUP_HEIGHT}
                           className="max-w-[280px] md:max-w-[350px] mb-4"
                           loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>

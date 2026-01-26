@@ -1,16 +1,19 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, memo } from "react";
 
 interface LazyWistiaVideoProps {
   mediaId: string;
   aspect?: string;
 }
 
-const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
+// Fixed video dimensions to prevent CLS
+const VIDEO_ASPECT_RATIO = 55.21; // percentage for padding-top
+
+const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Intersection Observer for lazy loading
+  // Intersection Observer for lazy loading - with larger margin for preloading
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -19,7 +22,7 @@ const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaV
           observer.disconnect();
         }
       },
-      { rootMargin: "200px", threshold: 0.1 }
+      { rootMargin: "300px", threshold: 0.1 }
     );
 
     if (containerRef.current) {
@@ -28,6 +31,20 @@ const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaV
 
     return () => observer.disconnect();
   }, []);
+
+  // Add preconnect for Wistia when approaching viewport
+  useEffect(() => {
+    if (!isVisible) return;
+    
+    // Add preconnect hints
+    const existingPreconnect = document.querySelector('link[href="https://fast.wistia.com"]');
+    if (!existingPreconnect) {
+      const preconnect = document.createElement("link");
+      preconnect.rel = "preconnect";
+      preconnect.href = "https://fast.wistia.com";
+      document.head.appendChild(preconnect);
+    }
+  }, [isVisible]);
 
   // Load Wistia scripts only when visible
   useEffect(() => {
@@ -55,7 +72,11 @@ const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaV
   }, [isVisible, mediaId, scriptsLoaded]);
 
   return (
-    <div ref={containerRef} className="rounded-lg overflow-hidden mb-2">
+    <div 
+      ref={containerRef} 
+      className="rounded-lg overflow-hidden mb-2"
+      style={{ aspectRatio: "16/9", minHeight: "180px" }}
+    >
       {isVisible ? (
         <div
           dangerouslySetInnerHTML={{
@@ -65,7 +86,7 @@ const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaV
                   background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${mediaId}/swatch');
                   display: block;
                   filter: blur(5px);
-                  padding-top: 55.21%;
+                  padding-top: ${VIDEO_ASPECT_RATIO}%;
                 }
               </style>
               <wistia-player media-id="${mediaId}" aspect="${aspect}"></wistia-player>
@@ -74,12 +95,14 @@ const LazyWistiaVideo = ({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaV
         />
       ) : (
         <div 
-          className="bg-muted animate-pulse" 
-          style={{ paddingTop: "55.21%" }}
+          className="bg-muted animate-pulse w-full h-full" 
+          style={{ paddingTop: `${VIDEO_ASPECT_RATIO}%` }}
         />
       )}
     </div>
   );
-};
+});
+
+LazyWistiaVideo.displayName = "LazyWistiaVideo";
 
 export default LazyWistiaVideo;

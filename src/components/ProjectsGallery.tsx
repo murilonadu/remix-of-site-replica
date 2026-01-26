@@ -1,9 +1,14 @@
+import { memo } from "react";
 import project1 from "@/assets/project-1.png";
 import project2 from "@/assets/project-2.png";
 import project3 from "@/assets/project-3.png";
 import project4 from "@/assets/project-4.png";
 import project5 from "@/assets/project-5.png";
 import project6 from "@/assets/project-6.png";
+
+// Fixed dimensions to prevent CLS
+const PROJECT_IMAGE_WIDTH = 400;
+const PROJECT_IMAGE_HEIGHT = 256;
 
 const projects = [
   { image: project1, alt: "Detalhamento de Guarda Roupa" },
@@ -14,7 +19,7 @@ const projects = [
   { image: project6, alt: "Projeto de Cozinha" },
 ];
 
-const ProjectsGallery = () => {
+const ProjectsGallery = memo(() => {
   return (
     <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -31,6 +36,8 @@ const ProjectsGallery = () => {
               <img
                 src={project.image}
                 alt={project.alt}
+                width={PROJECT_IMAGE_WIDTH}
+                height={PROJECT_IMAGE_HEIGHT}
                 loading="lazy"
                 decoding="async"
                 className="w-full h-48 md:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
@@ -44,6 +51,8 @@ const ProjectsGallery = () => {
       </div>
     </section>
   );
-};
+});
+
+ProjectsGallery.displayName = "ProjectsGallery";
 
 export default ProjectsGallery;

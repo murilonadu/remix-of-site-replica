@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Clock } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import productMockup from "@/assets/MOCKUP_1-3.png";
+
+// LCP image dimensions for CLS prevention
+const HERO_IMAGE_WIDTH = 500;
+const HERO_IMAGE_HEIGHT = 400;
 const HeroSection = () => {
   const [peopleCount, setPeopleCount] = useState(0);
   const targetCount = 1247;
@@ -99,9 +103,18 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Product Mockup */}
+          {/* Product Mockup - LCP Element */}
           <div className="mt-8 md:mt-12 flex justify-center animate-fade-in animation-delay-1000">
-            <img src={productMockup} alt="Pack Marceneiro Rico" className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" loading="eager" fetchPriority="high" />
+            <img 
+              src={productMockup} 
+              alt="Pack Marceneiro Rico" 
+              width={HERO_IMAGE_WIDTH}
+              height={HERO_IMAGE_HEIGHT}
+              className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
+              loading="eager" 
+              fetchPriority="high"
+              decoding="sync"
+            />
           </div>
 
           {/* Enhanced CTA Button */}

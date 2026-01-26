@@ -1,6 +1,11 @@
+import { memo } from "react";
 import projetosExemplos from "@/assets/projetos-exemplos.png";
 
-const ContentSection = () => {
+// Fixed dimensions to prevent CLS
+const PROJETOS_IMAGE_WIDTH = 1200;
+const PROJETOS_IMAGE_HEIGHT = 600;
+
+const ContentSection = memo(() => {
   const features = [
     { icon: "✅", text: "Lista Completa de Materiais" },
     { icon: "✅", text: "Detalhamento das Ferramentas" },
@@ -71,11 +76,13 @@ const ContentSection = () => {
       </div>
       
       {/* Imagem de exemplos de projetos - full width */}
-      <div className="my-8">
+      <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
         <img 
           src={projetosExemplos} 
           alt="Exemplos de projetos de marcenaria" 
-          className="w-full"
+          width={PROJETOS_IMAGE_WIDTH}
+          height={PROJETOS_IMAGE_HEIGHT}
+          className="w-full h-full object-cover"
           loading="lazy"
           decoding="async"
         />
@@ -105,6 +112,8 @@ const ContentSection = () => {
       </div>
     </section>
   );
-};
+});
+
+ContentSection.displayName = "ContentSection";
 
 export default ContentSection;
