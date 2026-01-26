@@ -46,15 +46,7 @@ const BonusSection = () => {
                   {projects.map((project, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
                         <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
-                          <img 
-                            src={project.image} 
-                            alt={project.alt} 
-                            width={400}
-                            height={256}
-                            className="w-full h-64 object-cover" 
-                            loading="lazy"
-                            decoding="async"
-                          />
+                          <img src={project.image} alt={project.alt} className="w-full h-64 object-cover" loading="lazy" />
                         </div>
                       </div>
                     </CarouselItem>)}

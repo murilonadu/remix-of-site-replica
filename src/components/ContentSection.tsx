@@ -75,8 +75,6 @@ const ContentSection = () => {
         <img 
           src={projetosExemplos} 
           alt="Exemplos de projetos de marcenaria" 
-          width={1920}
-          height={1080}
           className="w-full"
           loading="lazy"
           decoding="async"

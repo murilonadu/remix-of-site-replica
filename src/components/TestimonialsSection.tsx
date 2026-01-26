@@ -43,11 +43,8 @@ const TestimonialsSection = () => {
             <img 
               src={marceNeiroHero} 
               alt="Marceneiro com Pack Marceneiro Rico" 
-              width={180}
-              height={180}
               className="mx-auto max-w-[150px] md:max-w-[180px] mb-4"
               loading="lazy"
-              decoding="async"
             />
             <div className="relative group inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -111,15 +108,7 @@ const TestimonialsSection = () => {
                   <div className="border-t border-border/30 pt-3">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-calm-green/50">
-                        <img 
-                          src={testimonial.image} 
-                          alt={testimonial.name} 
-                          width={40}
-                          height={40}
-                          className="w-full h-full object-cover" 
-                          loading="lazy"
-                          decoding="async"
-                        />
+                        <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" loading="lazy" />
                       </div>
                       <div>
                         <p className="font-semibold text-sm text-foreground">{testimonial.name}</p>
