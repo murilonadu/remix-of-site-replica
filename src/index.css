@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 20% 98%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 48 98% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 35 15% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 200 30% 85%;
+    --accent-foreground: 220 15% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 28 85% 55%;
+
+    --radius: 1rem;
+
+    /* Mental wellness themed colors - Enhanced vibrancy */
+    --calm-green: 28 80% 50%;
+    --calm-green-vibrant: 30 90% 55%;
+    --calm-green-glow: 34 100% 60%;
+    --soft-blue: 200 45% 65%;
+    --warm-beige: 35 35% 75%;
+    --gentle-lavender: 270 35% 70%;
+    --sage-green: 24 70% 50%;
+    --peaceful-mint: 30 90% 90%;
+    --serene-mint: 32 95% 88%;
+    --serene-sage: 24 80% 60%;
+
+    --expandix-yellow: 48 98% 50%;
+    --expandix-green: 18 85% 45%;
+    --expandix-dark: 220 15% 10%;
+
+    /* Enhanced gradients for dynamic effects */
+    --gradient-calm: linear-gradient(135deg, hsl(var(--calm-green-vibrant)), hsl(var(--peaceful-mint)));
+    --gradient-dynamic-green: linear-gradient(45deg, hsl(var(--calm-green-glow)) 0%, hsl(var(--serene-mint)) 50%, hsl(var(--calm-green-vibrant)) 100%);
+    --gradient-title-glow: linear-gradient(135deg, hsl(var(--calm-green-glow)), hsl(var(--serene-sage)), hsl(var(--peaceful-mint)));
+    --gradient-serenity: linear-gradient(180deg, hsl(var(--soft-blue)), hsl(var(--gentle-lavender)));
+    --gradient-warmth: linear-gradient(45deg, hsl(var(--warm-beige)), hsl(var(--sage-green)));
+
+    /* Dynamic title gradients */
+    --gradient-title-primary: linear-gradient(45deg, hsl(28 95% 55%), hsl(18 80% 50%), hsl(34 100% 50%));
+    --gradient-title-accent: linear-gradient(135deg, hsl(32 90% 60%), hsl(18 80% 50%));
+
+    /* Shadows for depth and tranquility */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--calm-green) / 0.1);
+    --shadow-gentle: 0 8px 30px -8px hsl(var(--soft-blue) / 0.15);
+    --shadow-warm: 0 6px 25px -6px hsl(var(--warm-beige) / 0.2);
+
+    /* Transitions */
+    --transition-calm: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 35 20% 95%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 35 20% 95%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 35 20% 95%;
+
+    --primary: 48 98% 55%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 10% 15%;
+    --secondary-foreground: 35 20% 90%;
+
+    --muted: 220 10% 12%;
+    --muted-foreground: 220 8% 60%;
+
+    --accent: 200 25% 25%;
+    --accent-foreground: 35 20% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 28 85% 60%;
+
+    /* Dark mode mental wellness colors - Enhanced */
+    --calm-green: 28 90% 60%;
+    --calm-green-vibrant: 30 95% 62%;
+    --calm-green-glow: 34 100% 65%;
+    --soft-blue: 200 35% 50%;
+    --warm-beige: 35 25% 35%;
+    --gentle-lavender: 270 25% 45%;
+    --sage-green: 24 80% 55%;
+    --peaceful-mint: 30 60% 50%;
+    --serene-mint: 32 65% 55%;
+    --serene-sage: 24 65% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Transitions and animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-elastic: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+/* Animation utility classes */
+@layer utilities {
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-1500 {
+    animation-delay: 1.5s;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-2500 {
+    animation-delay: 2.5s;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
