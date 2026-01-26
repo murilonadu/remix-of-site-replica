@@ -85,18 +85,18 @@ const ContentSection = () => {
               </div>
             ))}
           </div>
-
-          {/* Imagem de exemplos de projetos */}
-          <div className="mt-8">
-            <img 
-              src={projetosExemplos} 
-              alt="Exemplos de projetos de marcenaria" 
-              className="w-full rounded-xl shadow-lg"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
         </div>
+      </div>
+      
+      {/* Imagem de exemplos de projetos - full width */}
+      <div className="mt-8">
+        <img 
+          src={projetosExemplos} 
+          alt="Exemplos de projetos de marcenaria" 
+          className="w-full"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </section>
   );
