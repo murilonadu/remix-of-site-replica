@@ -227,9 +227,8 @@ const FinalCtaSection = () => {
                       {/* Exclusive Bonuses Section */}
                       <div className="space-y-2">
                         {/* Bonus 1 */}
-                        <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md group/bonus">
-                          <div className="absolute inset-0 -translate-x-full group-hover/bonus:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                          <div className="p-2.5 backdrop-blur-sm relative z-10">
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
                               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
                                 <span className="text-base">🎁</span>
@@ -244,9 +243,8 @@ const FinalCtaSection = () => {
                         </div>
 
                         {/* Bonus 2 */}
-                        <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md group/bonus">
-                          <div className="absolute inset-0 -translate-x-full group-hover/bonus:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                          <div className="p-2.5 backdrop-blur-sm relative z-10">
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
                               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
                                 <span className="text-base">🎁</span>
@@ -261,9 +259,8 @@ const FinalCtaSection = () => {
                         </div>
 
                         {/* Bonus 3 - EXTRA */}
-                        <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md group/bonus">
-                          <div className="absolute inset-0 -translate-x-full group-hover/bonus:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                          <div className="p-2.5 backdrop-blur-sm relative z-10">
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
                               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
                                 <span className="text-base">⭐</span>
@@ -278,9 +275,8 @@ const FinalCtaSection = () => {
                         </div>
 
                         {/* Bonus 4 - EXTRA */}
-                        <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md group/bonus">
-                          <div className="absolute inset-0 -translate-x-full group-hover/bonus:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                          <div className="p-2.5 backdrop-blur-sm relative z-10">
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
                               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
                                 <span className="text-base">⭐</span>
