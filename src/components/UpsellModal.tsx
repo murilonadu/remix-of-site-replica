@@ -1,6 +1,8 @@
+import { memo } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import marcenieiroUpsell from "@/assets/marceneiro-upsell.png";
+
 interface UpsellModalProps {
   isOpen: boolean;
   onClose: () => void;

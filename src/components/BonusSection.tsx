@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import project1 from "@/assets/project-1.png";
@@ -6,7 +7,12 @@ import project3 from "@/assets/project-3.png";
 import project4 from "@/assets/project-4.png";
 import project5 from "@/assets/project-5.png";
 import project6 from "@/assets/project-6.png";
-const BonusSection = () => {
+
+// Fixed dimensions to prevent CLS
+const PROJECT_IMAGE_WIDTH = 400;
+const PROJECT_IMAGE_HEIGHT = 256;
+
+const BonusSection = memo(() => {
   const projects = [{
     image: project1,
     alt: "Detalhamento de Guarda Roupa"
@@ -46,7 +52,15 @@ const BonusSection = () => {
                   {projects.map((project, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
                         <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
-                          <img src={project.image} alt={project.alt} className="w-full h-64 object-cover" loading="lazy" />
+                          <img 
+                            src={project.image} 
+                            alt={project.alt} 
+                            width={PROJECT_IMAGE_WIDTH}
+                            height={PROJECT_IMAGE_HEIGHT}
+                            className="w-full h-64 object-cover" 
+                            loading="lazy"
+                            decoding="async"
+                          />
                         </div>
                       </div>
                     </CarouselItem>)}
@@ -59,5 +73,8 @@ const BonusSection = () => {
         </div>
       </div>
     </section>;
-};
+});
+
+BonusSection.displayName = "BonusSection";
+
 export default BonusSection;

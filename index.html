@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <script>
-  window.pixelId = "689e47fd4cbca188db86ba30";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
-    <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+1.000 Projetos Modernos de Marcenaria</title>
     <meta name="description" content="Enquanto você perde horas criando do zero, seu concorrente já entregou o projeto, fechou a venda e tá enchendo o bolso." />
     <meta name="author" content="Projetos Marcenaria" />
+    
+    <!-- Preconnect to critical origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="/src/assets/MOCKUP_1-3.png" fetchpriority="high">
+    
+    <!-- Fonts with display=swap for FOIT prevention -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="marcenaria-lucrativa" />
     <meta property="og:description" content="Lovable Generated Project" />
@@ -38,5 +30,27 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Defer third-party tracking scripts - load after page is interactive -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          // UTMify pixel - deferred
+          window.pixelId = "689e47fd4cbca188db86ba30";
+          var pixel = document.createElement("script");
+          pixel.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+          pixel.async = true;
+          document.body.appendChild(pixel);
+          
+          // UTMify UTMs script - deferred
+          var utms = document.createElement("script");
+          utms.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+          utms.setAttribute("data-utmify-prevent-xcod-sck", "");
+          utms.setAttribute("data-utmify-prevent-subids", "");
+          utms.async = true;
+          document.body.appendChild(utms);
+        }, 2000); // Delay 2s after load for better LCP
+      });
+    </script>
   </body>
 </html>
