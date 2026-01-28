@@ -1,7 +1,7 @@
 import { lazy, Suspense, memo } from "react";
-import testimonialCarlos from "@/assets/testimonial-carlos.png";
-import testimonialAndre from "@/assets/testimonial-andre.png";
-import testimonialFelipe from "@/assets/testimonial-felipe.png";
+import testimonialCarlos from "@/assets/testimonial-carlos.webp";
+import testimonialAndre from "@/assets/testimonial-andre.webp";
+import testimonialFelipe from "@/assets/testimonial-felipe.webp";
 import marceNeiroHero from "@/assets/marceneiro-hero.webp";
 
 // Fixed dimensions to prevent CLS
