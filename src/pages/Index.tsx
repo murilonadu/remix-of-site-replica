@@ -1,7 +1,6 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import TopBanner from "@/components/TopBanner";
-import PurchaseNotifications from "@/components/PurchaseNotifications";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 // Lazy load components below the fold
@@ -13,8 +12,11 @@ const GuaranteeSection = lazy(() => import("@/components/GuaranteeSection"));
 const FinalCtaSection = lazy(() => import("@/components/FinalCtaSection"));
 const FaqSection = lazy(() => import("@/components/FaqSection"));
 const Footer = lazy(() => import("@/components/Footer"));
+
+// Lazy load extras (popups and notifications) - deferred loading
 const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
 const TimedOfferPopup = lazy(() => import("@/components/TimedOfferPopup"));
+const PurchaseNotifications = lazy(() => import("@/components/PurchaseNotifications"));
 
 // Simple loading fallback
 const SectionLoader = () => (
@@ -24,14 +26,32 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
+  // Deferred loading state - only render extras after critical content is painted
+  const [isReadyForExtras, setIsReadyForExtras] = useState(false);
+
+  useEffect(() => {
+    // Wait 2.5 seconds after mount before loading popups and notifications
+    // This ensures the browser prioritizes rendering HeroSection and TopBanner first
+    const timer = setTimeout(() => {
+      setIsReadyForExtras(true);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen font-inter">
-      <Suspense fallback={null}>
-        <ExitIntentPopup />
-        <TimedOfferPopup />
-      </Suspense>
+      {/* Deferred extras - only load after 2.5s to prioritize critical rendering */}
+      {isReadyForExtras && (
+        <Suspense fallback={null}>
+          <ExitIntentPopup />
+          <TimedOfferPopup />
+          <PurchaseNotifications />
+        </Suspense>
+      )}
+      
+      {/* Critical above-the-fold content - loads immediately */}
       <TopBanner />
-      <PurchaseNotifications />
       <div className="pt-12">
         <HeroSection />
         
