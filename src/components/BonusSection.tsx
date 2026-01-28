@@ -1,12 +1,11 @@
 import { memo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import project1 from "@/assets/project-1.png";
-import project2 from "@/assets/project-2.png";
-import project3 from "@/assets/project-3.png";
-import project4 from "@/assets/project-4.png";
-import project5 from "@/assets/project-5.png";
-import project6 from "@/assets/project-6.png";
+import project1 from "@/assets/projeto-guarda-roupa.webp";
+import project2 from "@/assets/projeto-sala-estar.webp";
+import project3 from "@/assets/projeto-bancadas.webp";
+import project4 from "@/assets/projeto-cuba-esculpida.webp";
+import project5 from "@/assets/projeto-cozinha.webp";
 
 // Fixed dimensions to prevent CLS
 const PROJECT_IMAGE_WIDTH = 400;
@@ -21,16 +20,13 @@ const BonusSection = memo(() => {
     alt: "Projeto Sala de Estar"
   }, {
     image: project3,
-    alt: "Detalhamento de Armário"
+    alt: "Projetos de Bancadas e Móveis"
   }, {
     image: project4,
-    alt: "Projetos de Móveis"
+    alt: "Cuba Esculpida - Detalhamento"
   }, {
     image: project5,
-    alt: "Cuba Esculpida"
-  }, {
-    image: project6,
-    alt: "Projeto de Cozinha"
+    alt: "Projeto de Cozinha Completo"
   }];
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
