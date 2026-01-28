@@ -2,7 +2,7 @@ import { useState, memo } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import matrixHands from "@/assets/matrix-hands.png";
-import packMockupPremium from "@/assets/pack-mockup-premium.png";
+import packMockupPremium from "@/assets/MOCKUP_1.webp";
 import UpsellModal from "@/components/UpsellModal";
 
 // Fixed dimensions to prevent CLS

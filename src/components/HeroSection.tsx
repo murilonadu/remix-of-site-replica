@@ -1,17 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Award, Clock } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import productMockup from "@/assets/MOCKUP_1-3.png";
+import productMockup from "@/assets/MOCKUP_1.webp";
 
 // LCP image dimensions for CLS prevention
 const HERO_IMAGE_WIDTH = 500;
 const HERO_IMAGE_HEIGHT = 400;
 const HeroSection = () => {
-  const [peopleCount, setPeopleCount] = useState(0);
+  const [peopleCount, setPeopleCount] = useState(1247);
   const targetCount = 1247;
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check for mobile on mount
   useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Animate counter only on desktop with slower interval (150ms)
+  useEffect(() => {
+    if (isMobile) {
+      setPeopleCount(targetCount);
+      return;
+    }
     const duration = 2000;
-    const increment = targetCount / (duration / 50);
+    const increment = targetCount / (duration / 150);
     let current = 0;
     const timer = setInterval(() => {
       current += increment;
@@ -21,17 +36,17 @@ const HeroSection = () => {
       } else {
         setPeopleCount(Math.floor(current));
       }
-    }, 50);
+    }, 150);
     return () => clearInterval(timer);
-  }, []);
+  }, [isMobile]);
   return <section className="relative min-h-screen bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark overflow-hidden">
       {/* Static background - no animations for better performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/20 via-expandix-green/10 to-transparent"></div>
 
-      {/* Trust indicators - static, no animations */}
-      <div className="absolute top-20 left-8 bg-expandix-green/20 backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
-        <div className="flex items-center gap-3 text-expandix-green">
-          <Shield className="w-5 h-5 text-expandix-green" />
+      {/* Trust indicators - solid bg on mobile, backdrop-blur only on lg+ */}
+      <div className="absolute top-20 left-8 bg-expandix-green/95 lg:bg-expandix-green/20 lg:backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
+        <div className="flex items-center gap-3 text-white lg:text-expandix-green">
+          <Shield className="w-5 h-5" />
           <div>
             <div className="text-sm font-semibold">100% Seguro</div>
             <div className="text-xs opacity-80">SSL Criptografado</div>
@@ -39,9 +54,9 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute top-40 right-8 bg-expandix-yellow/20 backdrop-blur-md rounded-2xl p-4 border border-expandix-yellow/30 hidden lg:block">
-        <div className="flex items-center gap-3 text-expandix-yellow">
-          <Award className="w-5 h-5 text-expandix-yellow" />
+      <div className="absolute top-40 right-8 bg-expandix-yellow/95 lg:bg-expandix-yellow/20 lg:backdrop-blur-md rounded-2xl p-4 border border-expandix-yellow/30 hidden lg:block">
+        <div className="flex items-center gap-3 text-expandix-dark lg:text-expandix-yellow">
+          <Award className="w-5 h-5" />
           <div>
             <div className="text-sm font-semibold">Garantido</div>
             <div className="text-xs opacity-80">7 dias</div>
@@ -49,9 +64,9 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-40 left-12 bg-expandix-green/20 backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
-        <div className="flex items-center gap-3 text-expandix-green">
-          <Clock className="w-5 h-5 text-expandix-green" />
+      <div className="absolute bottom-40 left-12 bg-expandix-green/95 lg:bg-expandix-green/20 lg:backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
+        <div className="flex items-center gap-3 text-white lg:text-expandix-green">
+          <Clock className="w-5 h-5" />
           <div>
             <div className="text-sm font-semibold">Acesso Imediato</div>
             <div className="text-xs opacity-80">Download instantâneo</div>
