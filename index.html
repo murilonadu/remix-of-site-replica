@@ -35,22 +35,20 @@
     <!-- Defer third-party tracking scripts - load after page is interactive -->
     <script>
       window.addEventListener('load', function() {
-        setTimeout(function() {
-          // UTMify pixel - deferred
-          window.pixelId = "689e47fd4cbca188db86ba30";
-          var pixel = document.createElement("script");
-          pixel.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-          pixel.async = true;
-          document.body.appendChild(pixel);
-          
-          // UTMify UTMs script - deferred
-          var utms = document.createElement("script");
-          utms.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-          utms.setAttribute("data-utmify-prevent-xcod-sck", "");
-          utms.setAttribute("data-utmify-prevent-subids", "");
-          utms.async = true;
-          document.body.appendChild(utms);
-        }, 2000); // Delay 2s after load for better LCP
+        // UTMify pixel - loads immediately after page load
+        window.pixelId = "689e47fd4cbca188db86ba30";
+        var pixel = document.createElement("script");
+        pixel.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+        pixel.async = true;
+        document.body.appendChild(pixel);
+        
+        // UTMify UTMs script
+        var utms = document.createElement("script");
+        utms.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+        utms.setAttribute("data-utmify-prevent-xcod-sck", "");
+        utms.setAttribute("data-utmify-prevent-subids", "");
+        utms.async = true;
+        document.body.appendChild(utms);
       });
     </script>
   </body>

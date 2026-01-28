@@ -1,5 +1,5 @@
 import { memo } from "react";
-import projetosExemplos from "@/assets/projetos-exemplos.png";
+import projetosGrid from "@/assets/projetos-grid.webp";
 
 // Fixed dimensions to prevent CLS
 const PROJETOS_IMAGE_WIDTH = 1200;
@@ -78,7 +78,7 @@ const ContentSection = memo(() => {
       {/* Imagem de exemplos de projetos - full width */}
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
         <img 
-          src={projetosExemplos} 
+          src={projetosGrid} 
           alt="Exemplos de projetos de marcenaria" 
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
