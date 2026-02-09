@@ -96,7 +96,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left text-primary">Planilha Automática de Gastos</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -166,15 +166,7 @@ const FinalCtaSection = () => {
                         <span className="text-yellow-400 font-bold text-xs lg:text-sm">PACOTE PREMIUM  </span>
                       </div>
                       <div className="flex justify-center">
-                        <img 
-                          src={packMockupPremium} 
-                          alt="Pack Marceneiro Rico Premium" 
-                          width={PACK_MOCKUP_WIDTH}
-                          height={PACK_MOCKUP_HEIGHT}
-                          className="max-w-[280px] md:max-w-[350px] mb-4"
-                          loading="lazy"
-                          decoding="async"
-                        />
+                        <img src={packMockupPremium} alt="Pack Marceneiro Rico Premium" width={PACK_MOCKUP_WIDTH} height={PACK_MOCKUP_HEIGHT} className="max-w-[280px] md:max-w-[350px] mb-4" loading="lazy" decoding="async" />
                       </div>
                     </div>
 
@@ -204,7 +196,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left">Planilha Automática de Gastos</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
