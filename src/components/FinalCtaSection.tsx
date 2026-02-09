@@ -96,7 +96,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Planilha Automática de Gastos</span>
+                          <span className="font-medium text-left text-primary">Planilha Automática de Gastos  [lucre mais]</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -196,7 +196,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Planilha Automática de Gastos</span>
+                          <span className="font-medium text-left">Planilha Automática de Gastos [lucre mais]</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
