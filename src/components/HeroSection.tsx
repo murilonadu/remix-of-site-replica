@@ -105,7 +105,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Foi feito para otimizar o seu tempo e aumentar seu lucro sem desperdiçar madeira por calculo errado!</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Chega de improvisar na frente do cliente. Tenha algo sólido nas mãos e sinta a segurança de quem sabe exatamente o que está fazendo.</h2>
             </div>
           </div>
 
