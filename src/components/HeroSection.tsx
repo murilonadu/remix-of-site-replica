@@ -96,7 +96,7 @@ const HeroSection = () => {
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
-              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero. Use 1.000 projetos prontos e faça o cliente aprovar sem discutir preço     </span>{" "}
+              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero. Use 1.000 Projetos Prontos e Faça o Cliente Aprovar Sem Discutir Preço   </span>{" "}
               <span className="text-expandix-yellow drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">​ </span>
             </h1>
             <div className="w-40 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green mx-auto mt-4 rounded-full animate-slide-in-right"></div>
@@ -105,7 +105,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Chega de improvisar na frente do cliente. Tenha algo sólido nas mãos e sinta a segurança de quem sabe exatamente o que está fazendo.</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">               Foi criado para economizar horas de criação, evitar erro de medida e parar de jogar dinheiro fora com desperdício de material.</h2>
             </div>
           </div>
 
