@@ -105,7 +105,9 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Tudo organizado para você apenas escolher o projeto, produzir e faturar. Sem bater cabeça ate de madruga finalizando algo que o cliente pode recusar. Se ele não quiser um, você mostra outro. Simples assim!</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Escolha o projeto, produza e fature.
+Sem virar a madrugada ajustando algo que pode ser recusado.
+Se o cliente não fechar um modelo, você apresenta outro na hora.</h2>
             </div>
           </div>
 
@@ -118,17 +120,15 @@ const HeroSection = () => {
           <div className="mt-8 md:mt-12">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px]" onClick={() => {
-              const targetSection = document.getElementById('para-quem');
-              if (targetSection) {
-                const offset = 80;
-                const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}>
+              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px]" onClick={() => {const targetSection = document.getElementById('para-quem');if (targetSection) {
+                  const offset = 80;
+                  const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  });
+                }
+              }}>
                 <span className="flex items-center gap-3">
                   <span className="hidden md:inline">📖 ACESSAR PROJETOS</span>
                   <span className="md:hidden">OBTER ACESSO VITALÍCIO</span>
