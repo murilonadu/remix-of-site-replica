@@ -96,7 +96,7 @@ const HeroSection = () => {
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
-              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero com 1.000 Projetos Prontos e Faça o Cliente Aprovar Sem Discutir Preço   </span>{" "}
+              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero com 1.000 Projetos Prontos e Faça o Cliente Aprovar Sem Pedir Desconto   </span>{" "}
               <span className="text-expandix-yellow drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">​ </span>
             </h1>
             <div className="w-40 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green mx-auto mt-4 rounded-full animate-slide-in-right"></div>
