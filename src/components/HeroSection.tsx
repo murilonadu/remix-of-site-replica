@@ -96,7 +96,7 @@ const HeroSection = () => {
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
-              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero com 1.000 Projetos Prontos e Faça o Cliente Aprovar Sem Pedir Desconto   </span>{" "}
+              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">Chega de criar do zero com 1.000 Projetos Prontos e Faça o Cliente Aprovar Sem Pedir Desconto       </span>{" "}
               <span className="text-expandix-yellow drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">​ </span>
             </h1>
             <div className="w-40 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green mx-auto mt-4 rounded-full animate-slide-in-right"></div>
@@ -105,8 +105,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Tudo organizado para você apenas escolher o projeto, produzir e faturar. Sem bater cabeça ate de madruga finalizando algo que o cliente pode recusar. 
- Se ele não quiser um, você mostra outro. Simples assim!</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Tudo organizado para você apenas escolher o projeto, produzir e faturar. Sem bater cabeça ate de madruga finalizando algo que o cliente pode recusar. Se ele não quiser um, você mostra outro. Simples assim!</h2>
             </div>
           </div>
 
@@ -119,16 +118,17 @@ const HeroSection = () => {
           <div className="mt-8 md:mt-12">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px]" onClick={() => {const targetSection = document.getElementById('para-quem');
-                if (targetSection) {
-                  const offset = 80;
-                  const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                  window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                  });
-                }
-              }}>
+              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px]" onClick={() => {
+              const targetSection = document.getElementById('para-quem');
+              if (targetSection) {
+                const offset = 80;
+                const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}>
                 <span className="flex items-center gap-3">
                   <span className="hidden md:inline">📖 ACESSAR PROJETOS</span>
                   <span className="md:hidden">OBTER ACESSO VITALÍCIO</span>
