@@ -17,12 +17,12 @@ const GuaranteeSection = () => {
                 });
               }
             }}
-            className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent"
-          >
+            className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent">
+
             🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
           </button>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">
-            Acesse os projetos por onde quiser
+            HOJE VOCÊ ainda LEVA TUDO ISSO DE PRESENTE
           </h2>
         </div>
 
@@ -47,8 +47,8 @@ const GuaranteeSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default GuaranteeSection;
