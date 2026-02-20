@@ -31,8 +31,9 @@ const ContentSection = memo(() => {
             </h2>
 
             <div className="mt-6 space-y-4 text-left bg-gradient-to-br from-calm-green/5 to-calm-green-vibrant/5 rounded-xl p-4 md:p-6 border border-calm-green/20">
-              <p className="text-foreground/90 text-sm md:text-base font-medium leading-relaxed">Você não vai criar.
-Você vai escolher, ajustar (se quiser) e produzir.<br />
+              <p className="text-foreground/90 text-sm md:text-base font-medium leading-relaxed">Você não vai criar. Você vai escolher, ajustar (se quiser) e produzir.
+
+                <br />
                 É um sistema completo de produção e lucro, que combina:
               </p>
 
@@ -77,14 +78,13 @@ Você vai escolher, ajustar (se quiser) e produzir.<br />
       
       {/* Imagem de exemplos de projetos - full width */}
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
-        <img
-          src={projetosGrid}
-          alt="Exemplos de projetos de marcenaria"
-          width={PROJETOS_IMAGE_WIDTH}
-          height={PROJETOS_IMAGE_HEIGHT}
-          className="w-full h-full object-cover"
-          loading="lazy"
-          decoding="async" />
+        <img src={projetosGrid}
+        alt="Exemplos de projetos de marcenaria"
+        width={PROJETOS_IMAGE_WIDTH}
+        height={PROJETOS_IMAGE_HEIGHT}
+        className="w-full h-full object-cover"
+        loading="lazy"
+        decoding="async" />
 
       </div>
 
