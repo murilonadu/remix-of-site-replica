@@ -3,6 +3,7 @@ import testimonialCarlos from "@/assets/testimonial-carlos.webp";
 import testimonialAndre from "@/assets/testimonial-andre.webp";
 import testimonialFelipe from "@/assets/testimonial-felipe.webp";
 import marceNeiroHero from "@/assets/marceneiro-hero.webp";
+import provaSocialWhatsapp from "@/assets/prova-social-whatsapp.png";
 
 // Fixed dimensions to prevent CLS
 const TESTIMONIAL_IMAGE_SIZE = 40;
@@ -137,6 +138,16 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="mt-12 text-center space-y-8">
+            <div className="max-w-xs mx-auto mb-4">
+              <img
+                src={provaSocialWhatsapp}
+                alt="Conversa WhatsApp - Cliente satisfeito com móvel montado"
+                className="w-full h-auto rounded-2xl shadow-lg border border-border/30"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
             <div className="inline-flex items-center gap-4 bg-calm-green/10 rounded-full px-8 py-4 border border-calm-green/20">
               <span className="text-2xl">🌟</span>
               <div className="text-left">
