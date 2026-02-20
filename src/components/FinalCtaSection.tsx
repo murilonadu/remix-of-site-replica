@@ -95,8 +95,9 @@ const FinalCtaSection = () => {
                           <span className="font-medium text-primary">1.000 Projetos Passo a Passo</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Planilha Automática de Gastos  [lucre mais]</span>
+                          <span className="text-gray-400">
+                        </span>
+                          
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -147,13 +148,12 @@ const FinalCtaSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/40 to-orange-500/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
 
                 {/* Main pricing card with more prominent border */}
-                <div className="relative bg-gradient-to-br from-expandix-dark/90 to-expandix-dark/95 rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-2xl border-2 border-yellow-500/70 backdrop-blur-md overflow-hidden h-full ring-2 ring-yellow-500/30 ring-offset-2 ring-offset-expandix-dark" style={{
-                backgroundImage: `
+                <div className="relative bg-gradient-to-br from-expandix-dark/90 to-expandix-dark/95 rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-2xl border-2 border-yellow-500/70 backdrop-blur-md overflow-hidden h-full ring-2 ring-yellow-500/30 ring-offset-2 ring-offset-expandix-dark" style={{ backgroundImage: `
                       radial-gradient(circle at 20% 50%, rgba(255, 193, 7, 0.12) 0%, transparent 50%),
                       radial-gradient(circle at 80% 20%, rgba(255, 152, 0, 0.12) 0%, transparent 50%),
                       linear-gradient(135deg, rgba(255, 193, 7, 0.06) 0%, rgba(255, 152, 0, 0.06) 100%)
                     `
-              }}>
+                }}>
                   {/* Animated background particles */}
                   <div className="absolute top-4 right-4 w-2 h-2 bg-yellow-500 rounded-full animate-ping opacity-60"></div>
                   <div className="absolute bottom-6 left-6 w-1 h-1 bg-orange-500 rounded-full animate-pulse opacity-40 animation-delay-1000"></div>
