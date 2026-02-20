@@ -138,7 +138,7 @@ const UpsellModal = ({
             {/* Buttons */}
             <div className="space-y-2">
               <Button onClick={handleAcceptClick} size="default" className="w-full bg-gradient-to-r from-green-500 to-green-400 hover:from-green-600 hover:to-green-500 text-white font-bold text-base py-4 rounded-xl shadow-md animate-bounce">
-                SIM, QUERO O PREMIUM
+                SIM, PEGAR O PREMIUM
               </Button>
 
               <Button onClick={handleDeclineClick} size="sm" variant="ghost" className="w-full text-gray-500 hover:text-gray-700 py-3 rounded-xl text-xs">
