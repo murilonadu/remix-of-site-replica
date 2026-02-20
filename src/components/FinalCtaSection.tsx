@@ -25,9 +25,9 @@ const FinalCtaSection = () => {
   return <section className="py-20 bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark relative overflow-hidden">
       {/* Background animated elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-32 h-32 bg-expandix-green/10 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/6 w-40 h-40 bg-expandix-yellow/10 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-expandix-green/15 rounded-full blur-xl animate-pulse animation-delay-1000"></div>
+        <div className="absolute top-1/4 left-1/6 w-32 h-32 bg-expandix-green/10 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-40 h-40 bg-expandix-yellow/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-expandix-green/15 rounded-full blur-xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -61,8 +61,8 @@ const FinalCtaSection = () => {
                     `
               }}>
                   {/* Animated background particles */}
-                  <div className="absolute top-4 right-4 w-2 h-2 bg-gray-400 rounded-full animate-ping opacity-40"></div>
-                  <div className="absolute bottom-6 left-6 w-1 h-1 bg-gray-500 rounded-full animate-pulse opacity-30 animation-delay-1000"></div>
+                   <div className="absolute top-4 right-4 w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+                   <div className="absolute bottom-6 left-6 w-1 h-1 bg-gray-500 rounded-full opacity-30"></div>
 
                   <div className="space-y-4 lg:space-y-6 relative z-10 flex flex-col h-full">
                     <div className="text-center">
@@ -123,8 +123,8 @@ const FinalCtaSection = () => {
 
                     <div className="mt-auto pt-4">
                       <div className="relative group/btn">
-                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover/btn:opacity-80 transition-opacity duration-300 animate-pulse"></div>
-                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 animate-bounce" onClick={() => handleBuyNowClick('basic')}>
+                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover/btn:opacity-80 transition-opacity duration-300"></div>
+                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105" onClick={() => handleBuyNowClick('basic')}>
                           PEGAR O BÁSICO
                         </Button>
                       </div>
@@ -145,7 +145,7 @@ const FinalCtaSection = () => {
                 </div>
 
                 {/* Glowing background effect - More prominent */}
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/40 to-orange-500/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/40 to-orange-500/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Main pricing card with more prominent border */}
                 <div className="relative bg-gradient-to-br from-expandix-dark/90 to-expandix-dark/95 rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-2xl border-2 border-yellow-500/70 backdrop-blur-md overflow-hidden h-full ring-2 ring-yellow-500/30 ring-offset-2 ring-offset-expandix-dark" style={{ backgroundImage: `
@@ -155,9 +155,9 @@ const FinalCtaSection = () => {
                     `
               }}>
                   {/* Animated background particles */}
-                  <div className="absolute top-4 right-4 w-2 h-2 bg-yellow-500 rounded-full animate-ping opacity-60"></div>
-                  <div className="absolute bottom-6 left-6 w-1 h-1 bg-orange-500 rounded-full animate-pulse opacity-40 animation-delay-1000"></div>
-                  <div className="absolute top-1/2 right-6 w-1.5 h-1.5 bg-yellow-400 rounded-full animate-ping opacity-50 animation-delay-500"></div>
+                   <div className="absolute top-4 right-4 w-2 h-2 bg-yellow-500 rounded-full opacity-60"></div>
+                   <div className="absolute bottom-6 left-6 w-1 h-1 bg-orange-500 rounded-full opacity-40"></div>
+                   <div className="absolute top-1/2 right-6 w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-50"></div>
 
                   <div className="space-y-4 lg:space-y-6 relative z-10 flex flex-col h-full">
                     <div className="text-center pt-2">
@@ -173,7 +173,7 @@ const FinalCtaSection = () => {
                     <div className="space-y-3 lg:space-y-4 text-center">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
                         <span className="line-through text-base lg:text-lg font-medium text-red-500">R$ 197,00</span>
-                        <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 lg:px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
+                        <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 lg:px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                           -81% DESCONTO
                         </div>
                       </div>
@@ -286,13 +286,13 @@ const FinalCtaSection = () => {
 
                     <div className="mt-auto pt-4">
                       <div className="relative group/btn">
-                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover/btn:opacity-80 transition-opacity duration-300 animate-pulse"></div>
-                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 animate-bounce" onClick={() => redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo")}>
+                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover/btn:opacity-80 transition-opacity duration-300"></div>
+                        <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105" onClick={() => redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo")}>
                           QUERO O PREMIUM
                         </Button>
                       </div>
                       <div className="flex items-center justify-center gap-2 mt-3">
-                        <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" />
+                        <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" decoding="async" />
                       </div>
                       
                     </div>
@@ -304,7 +304,7 @@ const FinalCtaSection = () => {
               <div className="flex flex-col items-center py-8 animate-fade-in w-full">
                 {/* Arrow up for R$17 */}
                 <div className="flex items-center justify-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border border-orange-500/40 mb-4">
-                  <span className="text-2xl text-orange-400 animate-bounce">↑</span>
+                  <span className="text-2xl text-orange-400">↑</span>
                 </div>
                 <div className="flex items-center justify-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border border-orange-500/40 mb-4">
                   {/* Orange Pill */}
@@ -312,7 +312,7 @@ const FinalCtaSection = () => {
                   <p className="text-sm md:text-base font-bold text-orange-400">R$17: Facilidade pra quem quer parar de sofrer.</p>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white font-poppins mb-6">
-                  Escolha seu <span className="bg-gradient-to-r from-expandix-yellow via-expandix-green to-expandix-yellow bg-clip-text text-transparent animate-pulse">Acesso</span>
+                  Escolha seu <span className="bg-gradient-to-r from-expandix-yellow via-expandix-green to-expandix-yellow bg-clip-text text-transparent">Acesso</span>
                 </h3>
                 
                 <div className="flex items-center justify-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-[#4a8c4a]/20 to-[#3d7a3d]/20 border border-[#4a8c4a]/40">
@@ -324,9 +324,9 @@ const FinalCtaSection = () => {
             </div>
 
             {/* Enhanced Urgency elements */}
-            <div className="bg-gradient-to-r from-expandix-green/20 to-expandix-yellow/20 rounded-3xl p-6 border border-expandix-green/30 backdrop-blur-md shadow-lg shadow-expandix-green/10 animate-pulse">
+            <div className="bg-gradient-to-r from-expandix-green/20 to-expandix-yellow/20 rounded-3xl p-6 border border-expandix-green/30 backdrop-blur-md shadow-lg shadow-expandix-green/10">
               <div className="flex items-center justify-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-expandix-yellow to-expandix-green rounded-full flex items-center justify-center text-expandix-dark shadow-lg animate-bounce">
+                <div className="w-16 h-16 bg-gradient-to-r from-expandix-yellow to-expandix-green rounded-full flex items-center justify-center text-expandix-dark shadow-lg">
                   <span className="text-2xl">⏰</span>
                 </div>
                 <div className="text-left">
@@ -339,7 +339,7 @@ Quando a biblioteca atingir a próxima atualização, o valor será reajustado.<
             {/* Enhanced Final emotional appeal */}
             <div className="space-y-6 animate-fade-in animation-delay-1500">
               <div className="flex justify-center">
-                <div className="w-32 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green rounded-full animate-pulse"></div>
+                <div className="w-32 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green rounded-full"></div>
               </div>
             </div>
           </div>

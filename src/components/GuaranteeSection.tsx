@@ -51,7 +51,10 @@ const GuaranteeSection = () => {
                     src={bonus.src}
                     alt={bonus.alt}
                     className="w-full h-auto rounded-lg"
+                    width={400}
+                    height={300}
                     loading="lazy"
+                    decoding="async"
                   />
                 </CarouselItem>
               ))}
