@@ -63,14 +63,14 @@ const Index = () => {
         </Suspense>
 
         <Suspense fallback={<SectionLoader />}>
-          <ScrollAnimationWrapper>
-            <BonusSection />
-          </ScrollAnimationWrapper>
-        </Suspense>
-        
-        <Suspense fallback={<SectionLoader />}>
           <ScrollAnimationWrapper delay={0.1}>
             <ContentSection />
+          </ScrollAnimationWrapper>
+        </Suspense>
+
+        <Suspense fallback={<SectionLoader />}>
+          <ScrollAnimationWrapper>
+            <BonusSection />
           </ScrollAnimationWrapper>
         </Suspense>
         
