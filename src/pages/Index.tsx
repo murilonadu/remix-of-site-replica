@@ -4,6 +4,7 @@ import TopBanner from "@/components/TopBanner";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 // Lazy load components below the fold
+const CostSection = lazy(() => import("@/components/CostSection"));
 const BonusSection = lazy(() => import("@/components/BonusSection"));
 const ContentSection = lazy(() => import("@/components/ContentSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
@@ -55,6 +56,12 @@ const Index = () => {
       <div className="pt-12">
         <HeroSection />
         
+        <Suspense fallback={<SectionLoader />}>
+          <ScrollAnimationWrapper>
+            <CostSection />
+          </ScrollAnimationWrapper>
+        </Suspense>
+
         <Suspense fallback={<SectionLoader />}>
           <ScrollAnimationWrapper>
             <BonusSection />
