@@ -17,9 +17,9 @@ const TestimonialsSection = () => {
     {
       name: "Carlos Santos",
       image: testimonialCarlos,
-      text: "Os projetos são precisos e profissionais. Zero erro de medida. Só quem é do ramo entende o valor disso",
+      text: "Economizei 4 horas no primeiro projeto e fechei R$1.300.",
       rating: 5,
-      highlight: "Zero erro de medida"
+      highlight: "fechei R$1.300"
     },
     {
       name: "André Galdino",
