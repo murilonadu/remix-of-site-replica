@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
             <div className="relative group inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
               <button
-                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce"
+                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50"
                 onClick={() => {
                   const offersSection = document.getElementById('ofertas');
                   if (offersSection) {
@@ -158,23 +158,23 @@ const TestimonialsSection = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
               <button
-                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 animate-bounce"
+                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50"
                 onClick={() => {
-                  const offersSection = document.getElementById('ofertas');
-                  if (offersSection) {
-                    const offset = 80;
-                    const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({
-                      top: targetPosition,
-                      behavior: 'smooth'
-                    });
-                  }
-                }}>
+                   const offersSection = document.getElementById('ofertas');
+                   if (offersSection) {
+                     const offset = 80;
+                     const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
+                     window.scrollTo({
+                       top: targetPosition,
+                       behavior: 'smooth'
+                     });
+                   }
+                 }}>
 
                 <span className="flex items-center gap-3">
-                  <span>ACESSAR AGORA!</span>
-                </span>
-              </button>
+                   <span>ACESSAR AGORA!</span>
+                 </span>
+               </button>
             </div>
           </div>
         </div>
