@@ -74,7 +74,7 @@ const TimedOfferPopup = () => {
                 size="default" 
                 className="w-full bg-gradient-to-r from-primary to-calm-green-glow hover:from-calm-green-vibrant hover:to-primary text-primary-foreground font-bold text-sm py-3 rounded-lg shadow-md animate-pulse"
               >
-                QUERO O PREMIUM
+                PEGAR{"\n"}O PREMIUM
               </Button>
 
               <Button 
