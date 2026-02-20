@@ -14,30 +14,30 @@ const LazyWistiaVideo = lazy(() => import("@/components/LazyWistiaVideo"));
 
 const TestimonialsSection = () => {
   const testimonials = [
-    {
-      name: "Carlos Santos",
-      image: testimonialCarlos,
-      text: "Economizei 4 horas no primeiro projeto e fechei R$1.300.",
-      rating: 5,
-      highlight: "fechei R$1.300"
-    },
-    {
-      name: "André Galdino",
-      image: testimonialAndre,
-      text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
-      rating: 5,
-      highlight: "bem rápido de produzir já tendo as medidas",
-      hasVideo: true,
-      wistiaId: "oskx27z7e0"
-    },
-    {
-      name: "Felipe Leal",
-      image: testimonialFelipe,
-      text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
-      rating: 5,
-      highlight: "escolher o projeto, produzir e faturar"
-    }
-  ];
+  {
+    name: "Carlos Santos",
+    image: testimonialCarlos,
+    text: "Economizei 4 horas no primeiro projeto e fechei R$1.300.",
+    rating: 5,
+    highlight: "fechei R$1.300"
+  },
+  {
+    name: "André Galdino",
+    image: testimonialAndre,
+    text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
+    rating: 5,
+    highlight: "bem rápido de produzir já tendo as medidas",
+    hasVideo: true,
+    wistiaId: "oskx27z7e0"
+  },
+  {
+    name: "Felipe Leal",
+    image: testimonialFelipe,
+    text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
+    rating: 5,
+    highlight: "escolher o projeto, produzir e faturar"
+  }];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20">
@@ -45,15 +45,15 @@ const TestimonialsSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Imagem do marceneiro + Botão ACESSAR AGORA no topo */}
           <div className="text-center mb-8">
-            <img 
-              src={marceNeiroHero} 
-              alt="Marceneiro com Pack Marceneiro Rico" 
-              width={HERO_IMAGE_WIDTH}
-              height={HERO_IMAGE_HEIGHT}
-              className="mx-auto max-w-[150px] md:max-w-[180px] mb-4"
-              loading="lazy"
-              decoding="async"
-            />
+            
+
+
+
+
+
+
+
+
             <div className="relative group inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
               <button
@@ -68,8 +68,8 @@ const TestimonialsSection = () => {
                       behavior: 'smooth'
                     });
                   }
-                }}
-              >
+                }}>
+
                 <span className="flex items-center gap-3">
                   <span>ACESSAR AGORA!</span>
                 </span>
@@ -84,25 +84,25 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-4 border border-border/50 shadow-soft hover:shadow-gentle transition-all duration-300 hover:scale-[1.02] animate-slide-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {testimonials.map((testimonial, index) =>
+            <div
+              key={index}
+              className="bg-card rounded-xl p-4 border border-border/50 shadow-soft hover:shadow-gentle transition-all duration-300 hover:scale-[1.02] animate-slide-up"
+              style={{ animationDelay: `${index * 0.2}s` }}>
+
                 <div className="space-y-3">
                   {/* Wistia Video for André Galdino - Lazy Loaded */}
-                  {testimonial.hasVideo && testimonial.wistiaId && (
-                    <Suspense fallback={<div className="bg-muted animate-pulse rounded-lg" style={{ paddingTop: "55.21%" }} />}>
+                  {testimonial.hasVideo && testimonial.wistiaId &&
+                <Suspense fallback={<div className="bg-muted animate-pulse rounded-lg" style={{ paddingTop: "55.21%" }} />}>
                       <LazyWistiaVideo mediaId={testimonial.wistiaId} />
                     </Suspense>
-                  )}
+                }
 
                   {/* Rating stars */}
                   <div className="flex gap-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="text-yellow-400 text-base">⭐</span>
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) =>
+                  <span key={i} className="text-yellow-400 text-base">⭐</span>
+                  )}
                   </div>
 
                   {/* Testimonial text */}
@@ -116,15 +116,15 @@ const TestimonialsSection = () => {
                   <div className="border-t border-border/30 pt-3">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-calm-green/50">
-                        <img 
-                          src={testimonial.image} 
-                          alt={testimonial.name} 
-                          width={TESTIMONIAL_IMAGE_SIZE}
-                          height={TESTIMONIAL_IMAGE_SIZE}
-                          className="w-full h-full object-cover" 
-                          loading="lazy"
-                          decoding="async"
-                        />
+                        <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={TESTIMONIAL_IMAGE_SIZE}
+                        height={TESTIMONIAL_IMAGE_SIZE}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async" />
+
                       </div>
                       <div>
                         <p className="font-semibold text-sm text-foreground">{testimonial.name}</p>
@@ -133,7 +133,7 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="mt-12 text-center space-y-8">
@@ -158,8 +158,8 @@ const TestimonialsSection = () => {
                       behavior: 'smooth'
                     });
                   }
-                }}
-              >
+                }}>
+
                 <span className="flex items-center gap-3">
                   <span>ACESSAR AGORA!</span>
                 </span>
@@ -168,8 +168,8 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default TestimonialsSection;
