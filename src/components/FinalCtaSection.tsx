@@ -153,7 +153,7 @@ const FinalCtaSection = () => {
                       radial-gradient(circle at 80% 20%, rgba(255, 152, 0, 0.12) 0%, transparent 50%),
                       linear-gradient(135deg, rgba(255, 193, 7, 0.06) 0%, rgba(255, 152, 0, 0.06) 100%)
                     `
-                }}>
+              }}>
                   {/* Animated background particles */}
                   <div className="absolute top-4 right-4 w-2 h-2 bg-yellow-500 rounded-full animate-ping opacity-60"></div>
                   <div className="absolute bottom-6 left-6 w-1 h-1 bg-orange-500 rounded-full animate-pulse opacity-40 animation-delay-1000"></div>
@@ -330,8 +330,8 @@ const FinalCtaSection = () => {
                   <span className="text-2xl">⏰</span>
                 </div>
                 <div className="text-left">
-                  <p className="text-sm text-slate-50">O pacote ainda está sendo atualizado.
-Quando finalizar a próxima atualização, o preço sobe.</p>
+                  <p className="text-sm text-slate-50">O sistema está em expansão.
+Quando a biblioteca atingir a próxima atualização, o valor será reajustado.</p>
                 </div>
               </div>
             </div>
