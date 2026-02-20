@@ -32,7 +32,7 @@ const BonusSection = memo(() => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-poppins bg-gradient-title-glow bg-clip-text text-transparent animate-fade-in hover:scale-105 transition-all duration-500 cursor-default">Um pouco dos nossos projetos na prática 👇🏻</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-poppins bg-gradient-title-glow bg-clip-text text-transparent animate-fade-in hover:scale-105 transition-all duration-500 cursor-default">Veja como funciona na prática 👇🏻</h2>
           </div>
 
           {/* Carrossel de Projetos */}
@@ -48,15 +48,15 @@ const BonusSection = memo(() => {
                   {projects.map((project, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
                         <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
-                          <img 
-                            src={project.image} 
-                            alt={project.alt} 
-                            width={PROJECT_IMAGE_WIDTH}
-                            height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-64 object-cover" 
-                            loading="lazy"
-                            decoding="async"
-                          />
+                          <img
+                        src={project.image}
+                        alt={project.alt}
+                        width={PROJECT_IMAGE_WIDTH}
+                        height={PROJECT_IMAGE_HEIGHT}
+                        className="w-full h-64 object-cover"
+                        loading="lazy"
+                        decoding="async" />
+
                         </div>
                       </div>
                     </CarouselItem>)}
