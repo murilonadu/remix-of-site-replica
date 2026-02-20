@@ -9,35 +9,7 @@ const costItems = [
 
 
 const CostSection = () => {
-  return;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  return null;
 };
 
 export default CostSection;
