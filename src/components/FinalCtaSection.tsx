@@ -81,7 +81,7 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl lg:rounded-2xl blur-sm opacity-20"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-gray-500/40">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary">R$ 17,00</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary">R$ 10,00</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-400">ou 3x de R$ 6,37 no cartão</p>
                         </div>
                       </div>
@@ -166,15 +166,15 @@ const FinalCtaSection = () => {
                         <span className="text-yellow-400 font-bold text-xs lg:text-sm">PACOTE PREMIUM  </span>
                       </div>
                       <div className="flex justify-center">
-                        <img 
-                          src={packMockupPremium} 
-                          alt="Pack Marceneiro Rico Premium" 
-                          width={PACK_MOCKUP_WIDTH}
-                          height={PACK_MOCKUP_HEIGHT}
-                          className="max-w-[280px] md:max-w-[350px] mb-4"
-                          loading="lazy"
-                          decoding="async"
-                        />
+                        <img
+                        src={packMockupPremium}
+                        alt="Pack Marceneiro Rico Premium"
+                        width={PACK_MOCKUP_WIDTH}
+                        height={PACK_MOCKUP_HEIGHT}
+                        className="max-w-[280px] md:max-w-[350px] mb-4"
+                        loading="lazy"
+                        decoding="async" />
+
                       </div>
                     </div>
 
