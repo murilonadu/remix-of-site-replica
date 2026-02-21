@@ -108,7 +108,7 @@ const ExitIntentPopup = () => {
 
             {/* Buttons */}
             <div className="space-y-2">
-              <Button onClick={handleAccept} size="default" className="w-full bg-gradient-to-r from-primary via-calm-green-glow to-primary hover:from-calm-green-vibrant hover:via-primary hover:to-calm-green-vibrant text-primary-foreground font-bold text-sm py-4 rounded-lg shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <Button onClick={handleAccept} size="default" className="w-full bg-gradient-to-r from-primary via-calm-green-glow to-primary hover:from-calm-green-vibrant hover:via-primary hover:to-calm-green-vibrant text-primary-foreground font-bold text-sm py-4 rounded-lg shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl animate-pulse">
                 QUERO RESGATAR AGORA
               </Button>
 

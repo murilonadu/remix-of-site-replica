@@ -142,7 +142,7 @@ const UpsellModal = ({
               </Button>
 
               <Button onClick={handleDeclineClick} size="sm" variant="ghost" className="w-full text-gray-500 hover:text-gray-700 py-3 rounded-xl text-xs">
-                Não, quero apenas o pacote básico
+                Não, continuar com pacote básico
               </Button>
             </div>
           </div>

@@ -54,7 +54,7 @@ const PurchaseNotifications = () => {
             <CheckCircle className="w-5 h-5 flex-shrink-0" />
               <div className="text-sm">
                 <div className="font-semibold">{notification.name}</div>
-                <div className="text-xs opacity-75">{Math.random() > 0.5 ? "elogiou o produto" : "elogiou os projetos"}</div>
+                <div className="text-xs opacity-75">acabou de comprar</div>
               </div>
           </div>
         </div>

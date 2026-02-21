@@ -1,5 +1,3 @@
-import packMockup from "@/assets/pack-mockup-premium.png";
-
 const AboutSection = () => {
   const scrollToOffer = () => {
     const targetSection = document.getElementById('ofertas');
@@ -15,9 +13,6 @@ const AboutSection = () => {
   return <section id="para-quem" className="py-6 md:py-10 bg-gradient-to-b from-background to-muted/20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="flex justify-center mb-4">
-            <img src={packMockup} alt="Pack Marceneiro Rico" className="w-full max-w-2xl h-auto rounded-xl" width={600} height={480} loading="lazy" decoding="async" />
-          </div>
           <div className="space-y-3 animate-fade-in">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins bg-gradient-title-primary bg-clip-text text-transparent">
                Pack do Marceneiro Rico é para você se:

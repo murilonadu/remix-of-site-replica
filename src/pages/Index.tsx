@@ -4,7 +4,6 @@ import TopBanner from "@/components/TopBanner";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 // Lazy load components below the fold
-const CostSection = lazy(() => import("@/components/CostSection"));
 const BonusSection = lazy(() => import("@/components/BonusSection"));
 const ContentSection = lazy(() => import("@/components/ContentSection"));
 const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
@@ -58,19 +57,13 @@ const Index = () => {
         
         <Suspense fallback={<SectionLoader />}>
           <ScrollAnimationWrapper>
-            <CostSection />
+            <BonusSection />
           </ScrollAnimationWrapper>
         </Suspense>
-
+        
         <Suspense fallback={<SectionLoader />}>
           <ScrollAnimationWrapper delay={0.1}>
             <ContentSection />
-          </ScrollAnimationWrapper>
-        </Suspense>
-
-        <Suspense fallback={<SectionLoader />}>
-          <ScrollAnimationWrapper>
-            <BonusSection />
           </ScrollAnimationWrapper>
         </Suspense>
         
