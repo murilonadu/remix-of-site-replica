@@ -76,7 +76,7 @@ const UpsellModal = ({
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="text-xs text-amber-400">por apenas</span>
-                        <span className="text-2xl font-black text-amber-400">R$ 22,90</span>
+                        <span className="text-2xl font-black text-amber-400">R$ 19,90</span>
                       </div>
                     </div>
                   </div>
