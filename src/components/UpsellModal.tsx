@@ -122,7 +122,7 @@ const UpsellModal = ({
                 {/* Total */}
                 <div className="mt-2 pt-1.5 border-t border-orange-300/50 text-center">
                   <p className="text-xs text-gray-500">
-                    Economia de <span className="text-green-600 font-bold">R$ 238</span>
+                    Economia de <span className="text-green-600 font-bold">R$ 120</span>
                   </p>
                 </div>
               </div>
