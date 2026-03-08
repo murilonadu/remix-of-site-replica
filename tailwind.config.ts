@@ -52,7 +52,6 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         },
-        // Mental wellness themed colors - Enhanced
         calm: {
           green: 'hsl(var(--calm-green))',
           'green-vibrant': 'hsl(var(--calm-green-vibrant))',
@@ -67,7 +66,6 @@ export default {
           mint: 'hsl(var(--serene-mint))',
           sage: 'hsl(var(--serene-sage))'
         },
-        // Expandix brand colors
         expandix: {
           yellow: 'hsl(var(--expandix-yellow))',
           green: 'hsl(var(--expandix-green))',
@@ -121,6 +119,18 @@ export default {
         'marquee': {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' }
+        },
+        'glow-pulse': {
+          '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+          '50%': { opacity: '0.8', transform: 'scale(1.05)' }
+        },
+        'border-glow': {
+          '0%, 100%': { borderColor: 'hsl(var(--expandix-green) / 0.3)' },
+          '50%': { borderColor: 'hsl(var(--expandix-yellow) / 0.6)' }
+        },
+        'shine': {
+          '0%': { transform: 'translateX(-100%) skewX(-15deg)' },
+          '100%': { transform: 'translateX(200%) skewX(-15deg)' }
         }
       },
       animation: {
@@ -135,6 +145,9 @@ export default {
         "ping": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
         "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "marquee": "marquee 25s linear infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "border-glow": "border-glow 3s ease-in-out infinite",
+        "shine": "shine 3s ease-in-out infinite",
       },
       backgroundImage: {
         'gradient-calm': 'var(--gradient-calm)',
@@ -148,7 +161,10 @@ export default {
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'gentle': 'var(--shadow-gentle)',
-        'warm': 'var(--shadow-warm)'
+        'warm': 'var(--shadow-warm)',
+        'premium': 'var(--shadow-premium)',
+        'glow-green': 'var(--shadow-glow-green)',
+        'glow-yellow': 'var(--shadow-glow-yellow)',
       },
       transitionTimingFunction: {
         'calm': 'var(--transition-calm)'
