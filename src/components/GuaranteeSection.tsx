@@ -2,11 +2,8 @@ import { Zap } from "lucide-react";
 
 const GuaranteeSection = () => {
   return (
-    <section className="py-12 md:py-16 bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark relative overflow-hidden noise-overlay">
-      {/* Ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-expandix-yellow/8 rounded-full blur-3xl animate-glow-pulse" />
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-12 md:py-16 bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark relative overflow-hidden">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <button
             onClick={() => {
@@ -14,28 +11,28 @@ const GuaranteeSection = () => {
               if (offersSection) {
                 const offset = 80;
                 const targetPosition = offersSection.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
               }
             }}
-            className="inline-block mb-6 px-8 py-3 font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 cursor-pointer text-expandix-dark bg-gradient-to-r from-expandix-yellow to-expandix-green shadow-glow-yellow hover:shadow-glow-green animate-bounce relative overflow-hidden"
+            className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent"
           >
-            <div className="absolute inset-0 overflow-hidden rounded-full">
-              <div className="absolute inset-0 w-1/3 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shine" />
-            </div>
-            <span className="relative z-10">🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁</span>
+            🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
           </button>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-shimmer">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">
             Acesse os projetos por onde quiser
           </h2>
         </div>
 
         <div className="flex justify-center">
-          <div className="group relative rounded-2xl p-5 md:p-6 glass-premium glow-border-yellow transition-all duration-500 hover:scale-105 animate-fade-in max-w-xs">
-            <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/10 to-expandix-yellow/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="group relative bg-gradient-to-br from-expandix-dark/60 to-expandix-dark/40 rounded-2xl p-5 md:p-6 border border-expandix-yellow shadow-2xl shadow-expandix-yellow/20 transition-all duration-500 hover:scale-105 animate-fade-in backdrop-blur-md max-w-xs">
+            <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/10 to-expandix-yellow/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             <div className="relative z-10 text-center space-y-3">
-              <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-r from-expandix-yellow to-expandix-green shadow-glow-yellow animate-glow-pulse">
-                <Zap className="w-7 h-7 text-expandix-dark" />
+              <div className="mx-auto w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center bg-gradient-to-r from-expandix-yellow to-expandix-green scale-110 animate-pulse">
+                <Zap className="w-6 h-6 md:w-7 md:h-7 text-expandix-dark" />
               </div>
 
               <div>

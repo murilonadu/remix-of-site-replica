@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
 @layer base {
   :root {
     --background: 35 20% 98%;
@@ -34,7 +38,7 @@
 
     --radius: 1rem;
 
-    /* Brand colors */
+    /* Mental wellness themed colors - Enhanced vibrancy */
     --calm-green: 28 80% 50%;
     --calm-green-vibrant: 30 90% 55%;
     --calm-green-glow: 34 100% 60%;
@@ -50,23 +54,23 @@
     --expandix-green: 18 85% 45%;
     --expandix-dark: 220 15% 10%;
 
-    /* Premium gradients */
+    /* Enhanced gradients for dynamic effects */
     --gradient-calm: linear-gradient(135deg, hsl(var(--calm-green-vibrant)), hsl(var(--peaceful-mint)));
     --gradient-dynamic-green: linear-gradient(45deg, hsl(var(--calm-green-glow)) 0%, hsl(var(--serene-mint)) 50%, hsl(var(--calm-green-vibrant)) 100%);
     --gradient-title-glow: linear-gradient(135deg, hsl(var(--calm-green-glow)), hsl(var(--serene-sage)), hsl(var(--peaceful-mint)));
     --gradient-serenity: linear-gradient(180deg, hsl(var(--soft-blue)), hsl(var(--gentle-lavender)));
     --gradient-warmth: linear-gradient(45deg, hsl(var(--warm-beige)), hsl(var(--sage-green)));
+
+    /* Dynamic title gradients */
     --gradient-title-primary: linear-gradient(45deg, hsl(28 95% 55%), hsl(18 80% 50%), hsl(34 100% 50%));
     --gradient-title-accent: linear-gradient(135deg, hsl(32 90% 60%), hsl(18 80% 50%));
 
-    /* Premium shadows */
+    /* Shadows for depth and tranquility */
     --shadow-soft: 0 4px 20px -4px hsl(var(--calm-green) / 0.1);
     --shadow-gentle: 0 8px 30px -8px hsl(var(--soft-blue) / 0.15);
     --shadow-warm: 0 6px 25px -6px hsl(var(--warm-beige) / 0.2);
-    --shadow-premium: 0 20px 60px -15px hsl(var(--expandix-green) / 0.2), 0 0 40px -10px hsl(var(--expandix-yellow) / 0.1);
-    --shadow-glow-green: 0 0 30px hsl(var(--expandix-green) / 0.3), 0 0 60px hsl(var(--expandix-green) / 0.1);
-    --shadow-glow-yellow: 0 0 30px hsl(var(--expandix-yellow) / 0.3), 0 0 60px hsl(var(--expandix-yellow) / 0.1);
 
+    /* Transitions */
     --transition-calm: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
@@ -82,23 +86,33 @@
   .dark {
     --background: 220 15% 8%;
     --foreground: 35 20% 95%;
+
     --card: 220 15% 10%;
     --card-foreground: 35 20% 95%;
+
     --popover: 220 15% 10%;
     --popover-foreground: 35 20% 95%;
+
     --primary: 48 98% 55%;
     --primary-foreground: 220 15% 8%;
+
     --secondary: 220 10% 15%;
     --secondary-foreground: 35 20% 90%;
+
     --muted: 220 10% 12%;
     --muted-foreground: 220 8% 60%;
+
     --accent: 200 25% 25%;
     --accent-foreground: 35 20% 90%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+
     --border: 220 10% 18%;
     --input: 220 10% 18%;
     --ring: 28 85% 60%;
+
+    /* Dark mode mental wellness colors - Enhanced */
     --calm-green: 28 90% 60%;
     --calm-green-vibrant: 30 95% 62%;
     --calm-green-glow: 34 100% 65%;
@@ -117,13 +131,15 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Transitions and animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-elastic: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
-/* Premium utility classes */
+/* Animation utility classes */
 @layer utilities {
   .animation-delay-500 {
     animation-delay: 0.5s;
@@ -157,79 +173,6 @@
       transform: translateX(0);
       opacity: 1;
     }
-  }
-
-  /* Premium glass effect */
-  .glass-premium {
-    background: linear-gradient(
-      135deg,
-      hsl(0 0% 100% / 0.08) 0%,
-      hsl(0 0% 100% / 0.02) 100%
-    );
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid hsl(0 0% 100% / 0.1);
-  }
-
-  .glass-card {
-    background: linear-gradient(
-      135deg,
-      hsl(0 0% 100% / 0.06) 0%,
-      hsl(0 0% 100% / 0.01) 100%
-    );
-    backdrop-filter: blur(16px) saturate(150%);
-    -webkit-backdrop-filter: blur(16px) saturate(150%);
-    border: 1px solid hsl(0 0% 100% / 0.08);
-  }
-
-  /* Glow border effect */
-  .glow-border-green {
-    box-shadow: 
-      0 0 0 1px hsl(var(--expandix-green) / 0.3),
-      0 0 20px -5px hsl(var(--expandix-green) / 0.2),
-      inset 0 0 20px -10px hsl(var(--expandix-green) / 0.1);
-  }
-
-  .glow-border-yellow {
-    box-shadow: 
-      0 0 0 1px hsl(var(--expandix-yellow) / 0.3),
-      0 0 20px -5px hsl(var(--expandix-yellow) / 0.2),
-      inset 0 0 20px -10px hsl(var(--expandix-yellow) / 0.1);
-  }
-
-  /* Shimmer text effect */
-  .text-shimmer {
-    background-size: 200% auto;
-    animation: shimmer 3s linear infinite;
-  }
-
-  @keyframes shimmer {
-    0% { background-position: 0% center; }
-    100% { background-position: 200% center; }
-  }
-
-  /* Premium divider */
-  .divider-glow {
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      hsl(var(--expandix-green) / 0.5) 30%,
-      hsl(var(--expandix-yellow) / 0.6) 50%,
-      hsl(var(--expandix-green) / 0.5) 70%,
-      transparent 100%
-    );
-  }
-
-  /* Noise texture overlay */
-  .noise-overlay::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.03;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
   }
 }
 
