@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Award, Clock } from "lucide-react";
+import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
+import { motion } from "framer-motion";
 import productMockup from "@/assets/MOCKUP_1.webp";
-import socialProofBadge from "@/assets/social-proof-badge.png";
+import avatarAndre from "@/assets/testimonial-andre.webp";
+import avatarCarlos from "@/assets/testimonial-carlos.webp";
+import avatarFelipe from "@/assets/testimonial-felipe.webp";
 
 // LCP image dimensions for CLS prevention
 const HERO_IMAGE_WIDTH = 500;
@@ -94,10 +97,27 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Social proof badge */}
-          <div className="flex justify-center mb-6">
-            <img src={socialProofBadge} alt="+845 Alunos" className="h-8 md:h-10" loading="eager" />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex items-center justify-center gap-0 mt-8"
+          >
+            <div className="flex -space-x-3">
+              {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Aluno"
+                  className="w-10 h-10 rounded-full border-2 border-background object-cover"
+                />
+              ))}
+            </div>
+            <div className="flex items-center gap-1.5 ml-3 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
+              <Users className="w-3.5 h-3.5 text-primary" />
+              <span className="text-xs font-semibold text-primary">+645 Alunos</span>
+            </div>
+          </motion.div>
 
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
