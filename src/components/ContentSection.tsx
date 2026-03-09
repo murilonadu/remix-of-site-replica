@@ -50,7 +50,7 @@ const ContentSection = memo(() => {
                   <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
                   <div>
                     <span className="font-bold text-calm-green">Corte Perfeito™</span>
-                    <p className="text-foreground/80 text-sm">Medidas exatas e planos de corte otimizados — zero erro, zero desperdício.</p>
+                    
                   </div>
                 </div>
 
