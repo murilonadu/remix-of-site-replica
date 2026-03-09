@@ -66,7 +66,7 @@ const ContentSection = memo(() => {
                   <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
                   <div>
                     <span className="font-bold text-calm-green">Plug & Lucre™</span>
-                    <p className="text-foreground/80 text-sm">Arquivos prontos pra usar: baixe, corte e venda — ajuste se quiser.</p>
+                    
                   </div>
                 </div>
 
