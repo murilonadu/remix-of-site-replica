@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import LazyWistiaVideo from "@/components/LazyWistiaVideo";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
 import { motion } from "framer-motion";
