@@ -20,6 +20,7 @@ const carrosselImages = [
   { src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" },
 ];
 
+const ContentSection = memo(() => {
   return (
     <section className="py-8 md:py-12 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -70,7 +71,6 @@ const carrosselImages = [
               </div>
             </div>
           </div>
-
         </div>
       </div>
       
@@ -89,24 +89,27 @@ const carrosselImages = [
 
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-2 gap-1.5">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-calm-green/10 border-calm-green/20 rounded-lg p-2 border transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:bg-calm-green/15 hover:border-calm-green/30 animate-slide-up group cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-calm-green to-calm-green-vibrant rounded flex items-center justify-center text-white font-bold text-[10px] shadow-md">
-                    {feature.icon}
-                  </div>
-                  <p className="text-foreground font-medium leading-tight text-xs group-hover:text-calm-green transition-colors duration-300">
-                    {feature.text}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel
+            opts={{ loop: true }}
+            plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {carrosselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-auto object-contain rounded-xl"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </div>
     </section>
