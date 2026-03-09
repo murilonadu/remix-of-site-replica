@@ -34,7 +34,7 @@ const GuaranteeSection = () => {
           </button>
 
           {/* Bonus section */}
-          <div className="max-w-2xl mx-auto mb-10">
+          <div className="max-w-lg mx-auto mb-10">
             
 
             
