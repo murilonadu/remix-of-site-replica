@@ -97,6 +97,8 @@ const Pricing = () => {
             src={compraSegura}
             alt="Compra Segura"
             className="mx-auto h-12 opacity-80"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

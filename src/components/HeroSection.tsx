@@ -99,6 +99,9 @@ const HeroSection = () => {
                   src={src}
                   alt="Aluno"
                   className="w-10 h-10 rounded-full border-2 border-background object-cover"
+                  width={40}
+                  height={40}
+                  decoding="async"
                 />
               ))}
             </div>
