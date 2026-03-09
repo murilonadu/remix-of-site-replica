@@ -51,8 +51,7 @@ const Index = () => {
       )}
       
       {/* Critical above-the-fold content - loads immediately */}
-      <TopBanner />
-      <div className="pt-12">
+      <div className="">
         <HeroSection />
         
         <Suspense fallback={<SectionLoader />}>
