@@ -1,6 +1,6 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
 import projetosGrid from "@/assets/projetos-grid.webp";
-import oQueVoceTera from "@/assets/o-que-voce-tera.webp";
+import oQueVoceTera from "@/assets/o-que-voce-tera.png";
 import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
 import carrosselModulos2 from "@/assets/carrossel-modulos-2.png";
 import {

@@ -1,8 +1,8 @@
 import { Zap } from "lucide-react";
-import bonus1 from "@/assets/bonus-1.webp";
-import bonus2 from "@/assets/bonus-2.webp";
-import bonus3 from "@/assets/bonus-3.webp";
-import bonus4 from "@/assets/bonus-4.webp";
+import bonus1 from "@/assets/bonus-1.png";
+import bonus2 from "@/assets/bonus-2.png";
+import bonus3 from "@/assets/bonus-3.png";
+import bonus4 from "@/assets/bonus-4.png";
 
 const bonusImages = [
 { image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
@@ -34,7 +34,7 @@ const GuaranteeSection = () => {
           </button>
 
           {/* Bonus section */}
-          <div className="max-w-lg mx-auto mb-10">
+          <div className="max-w-2xl mx-auto mb-10">
             
 
             
