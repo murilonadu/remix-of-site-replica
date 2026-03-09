@@ -99,7 +99,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
       ) : (
         <div 
           className="bg-muted animate-pulse w-full h-full" 
-          style={{ paddingTop: `${VIDEO_ASPECT_RATIO}%` }}
+          style={{ paddingTop: `${paddingTop}%` }}
         />
       )}
     </div>
