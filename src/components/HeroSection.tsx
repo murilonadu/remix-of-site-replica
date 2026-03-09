@@ -94,23 +94,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Social proof avatars */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="flex -space-x-3">
-              {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt="Aluno"
-                  className="w-10 h-10 rounded-full border-2 border-expandix-yellow object-cover"
-                  loading="eager"
-                />
-              ))}
-            </div>
-            <div className="flex items-center gap-1.5 text-expandix-yellow font-semibold text-sm border border-expandix-yellow/40 rounded-full px-3 py-1">
-              <span>👥</span>
-              <span>+845 Alunos</span>
-            </div>
+          {/* Social proof badge */}
+          <div className="flex justify-center mb-6">
+            <img src={socialProofBadge} alt="+845 Alunos" className="h-8 md:h-10" loading="eager" />
           </div>
 
           {/* Brand Name with animation */}
