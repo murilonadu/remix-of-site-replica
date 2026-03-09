@@ -64,6 +64,8 @@ const Testimonials = () => {
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <span className="font-semibold text-foreground">{testimonial.name}</span>
               </div>
