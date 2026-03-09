@@ -1,8 +1,8 @@
 import { Zap } from "lucide-react";
-import bonus1 from "@/assets/bonus-1.png";
-import bonus2 from "@/assets/bonus-2.png";
-import bonus3 from "@/assets/bonus-3.png";
-import bonus4 from "@/assets/bonus-4.png";
+import bonus1 from "@/assets/bonus-1.webp";
+import bonus2 from "@/assets/bonus-2.webp";
+import bonus3 from "@/assets/bonus-3.webp";
+import bonus4 from "@/assets/bonus-4.webp";
 
 const bonusImages = [
 { image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
