@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Award, Clock } from "lucide-react";
+import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
+import { motion } from "framer-motion";
 import productMockup from "@/assets/MOCKUP_1.webp";
-import socialProofBadge from "@/assets/social-proof-badge.png";
+import avatarAndre from "@/assets/testimonial-andre.webp";
+import avatarCarlos from "@/assets/testimonial-carlos.webp";
+import avatarFelipe from "@/assets/testimonial-felipe.webp";
 
 // LCP image dimensions for CLS prevention
 const HERO_IMAGE_WIDTH = 500;
