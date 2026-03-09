@@ -9,6 +9,9 @@ interface LazyWistiaVideoProps {
 const DEFAULT_ASPECT_PADDING = 55.21;
 
 const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
+  const aspectNum = parseFloat(aspect);
+  const paddingTop = aspectNum > 0 ? (1 / aspectNum) * 100 : DEFAULT_ASPECT_PADDING;
+  const cssAspectRatio = aspectNum > 0 ? `${aspectNum}` : "16/9";
   const [isVisible, setIsVisible] = useState(false);
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
