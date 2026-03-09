@@ -30,7 +30,7 @@ const GuaranteeSection = () => {
             }}
             className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent">
             
-            🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
+            🎁 RESGATAR TODOS ESSES BÔNUS ABAIXO! 🎁
           </button>
 
           {/* Bonus section */}
