@@ -5,8 +5,8 @@ interface LazyWistiaVideoProps {
   aspect?: string;
 }
 
-// Fixed video dimensions to prevent CLS
-const VIDEO_ASPECT_RATIO = 55.21; // percentage for padding-top
+// Default aspect ratio percentage for padding-top fallback
+const DEFAULT_ASPECT_PADDING = 55.21;
 
 const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
   const [isVisible, setIsVisible] = useState(false);
