@@ -1,4 +1,17 @@
 import { Zap } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import bonus1 from "@/assets/bonus-1.png";
+import bonus2 from "@/assets/bonus-2.png";
+import bonus3 from "@/assets/bonus-3.png";
+import bonus4 from "@/assets/bonus-4.png";
+
+const bonusImages = [
+  { image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
+  { image: bonus2, alt: "Contrato de Serviço AntiFraude" },
+  { image: bonus3, alt: "50 Dicas de Performance" },
+  { image: bonus4, alt: "Suporte VIP via WhatsApp" },
+];
 
 const GuaranteeSection = () => {
   return (
@@ -21,6 +34,39 @@ const GuaranteeSection = () => {
           >
             🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
           </button>
+
+          {/* Bonus section */}
+          <div className="max-w-2xl mx-auto mb-10">
+            <h3 className="text-xl md:text-2xl font-bold mb-6 text-white">
+              Levando o <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">PREMIUM</span> HOJE você leva todos esses BÔNUS
+            </h3>
+            <Carousel
+              plugins={[Autoplay({ delay: 3000 })]}
+              opts={{ align: "center", loop: true }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {bonusImages.map((bonus, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2">
+                    <div className="p-1">
+                      <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                        <img
+                          src={bonus.image}
+                          alt={bonus.alt}
+                          className="w-full h-auto object-cover rounded-xl"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
+          </div>
+
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">
             Acesse os projetos por onde quiser
           </h2>
