@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useRef, useEffect, useState, useMemo } from "react";
 import projetosGrid from "@/assets/projetos-grid.webp";
 import oQueVoceTera from "@/assets/o-que-voce-tera.png";
 import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
@@ -22,6 +22,26 @@ const carrosselImages = [
 
 
 const ContentSection = memo(() => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const autoplayPlugin = useMemo(() => Autoplay({ delay: 3000, stopOnInteraction: false }), []);
+
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          autoplayPlugin.play();
+        } else {
+          autoplayPlugin.stop();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [autoplayPlugin]);
+
   return (
     <section className="py-8 md:py-12 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -43,41 +63,6 @@ const ContentSection = memo(() => {
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
                 decoding="async" />
-              
-
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
             </div>
           </div>
         </div>
@@ -93,14 +78,13 @@ const ContentSection = memo(() => {
           className="w-full h-full object-cover"
           loading="lazy"
           decoding="async" />
-        
       </div>
 
-      <div className="container mx-auto px-4">
+      <div ref={carouselRef} className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Carousel
             opts={{ loop: true }}
-            plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
+            plugins={[autoplayPlugin]}
             className="w-full">
             
             <CarouselContent>
@@ -112,7 +96,6 @@ const ContentSection = memo(() => {
                   className="w-full h-auto object-contain rounded-xl"
                   loading="lazy"
                   decoding="async" />
-                
                 </CarouselItem>
               )}
             </CarouselContent>
@@ -122,7 +105,6 @@ const ContentSection = memo(() => {
         </div>
       </div>
     </section>);
-
 });
 
 ContentSection.displayName = "ContentSection";
