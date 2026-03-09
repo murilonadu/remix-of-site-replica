@@ -1,5 +1,6 @@
 import { memo } from "react";
 import projetosGrid from "@/assets/projetos-grid.webp";
+import oQueVoceTera from "@/assets/o-que-voce-tera.png";
 import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
 import carrosselModulos2 from "@/assets/carrossel-modulos-2.png";
 import {
@@ -35,6 +36,14 @@ const ContentSection = memo(() => {
                 ​<br />
                 É um sistema completo de produção e lucro, que combina:
               </p>
+
+              <img
+                src={oQueVoceTera}
+                alt="Módulos: Medidas Exatas, Planos de Corte, Projetos Lucrativos, Prontos para Produção"
+                className="w-full h-auto rounded-lg"
+                loading="lazy"
+                decoding="async"
+              />
 
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
