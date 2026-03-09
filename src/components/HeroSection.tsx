@@ -99,11 +99,7 @@ const HeroSection = () => {
           {/* Social proof avatars */}
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="flex -space-x-3">
-              {[
-                "/src/assets/testimonial-andre.webp",
-                "/src/assets/testimonial-carlos.webp",
-                "/src/assets/testimonial-felipe.webp",
-              ].map((src, i) => (
+              {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) => (
                 <img
                   key={i}
                   src={src}
