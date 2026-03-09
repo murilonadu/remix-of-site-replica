@@ -5,11 +5,11 @@ import bonus3 from "@/assets/bonus-3.png";
 import bonus4 from "@/assets/bonus-4.png";
 
 const bonusImages = [
-  { image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
-  { image: bonus2, alt: "Contrato de Serviço AntiFraude" },
-  { image: bonus3, alt: "50 Dicas de Performance" },
-  { image: bonus4, alt: "Suporte VIP via WhatsApp" },
-];
+{ image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
+{ image: bonus2, alt: "Contrato de Serviço AntiFraude" },
+{ image: bonus3, alt: "50 Dicas de Performance" },
+{ image: bonus4, alt: "Suporte VIP via WhatsApp" }];
+
 
 const GuaranteeSection = () => {
   return (
@@ -28,8 +28,8 @@ const GuaranteeSection = () => {
                 });
               }
             }}
-            className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent"
-          >
+            className="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-expandix-yellow to-expandix-green font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/50 cursor-pointer text-slate-50 animate-bounce bg-transparent">
+            
             🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
           </button>
 
@@ -39,23 +39,23 @@ const GuaranteeSection = () => {
               Levando o <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">PREMIUM</span> HOJE você leva todos esses BÔNUS
             </h3>
             <div className="space-y-4">
-              {bonusImages.map((bonus, index) => (
-                <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+              {bonusImages.map((bonus, index) =>
+              <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
                   <img
-                    src={bonus.image}
-                    alt={bonus.alt}
-                    className="w-full h-auto object-cover rounded-xl"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  src={bonus.image}
+                  alt={bonus.alt}
+                  className="w-full h-auto object-cover rounded-xl"
+                  loading="lazy"
+                  decoding="async" />
+                
                 </div>
-              ))}
+              )}
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">
-            Acesse os projetos por onde quiser
-          </h2>
+          
+
+          
         </div>
 
         <div className="flex justify-center">
@@ -79,8 +79,8 @@ const GuaranteeSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default GuaranteeSection;
