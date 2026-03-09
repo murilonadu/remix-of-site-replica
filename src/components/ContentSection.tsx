@@ -45,39 +45,39 @@ const ContentSection = memo(() => {
                 decoding="async" />
               
 
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
-                  <div>
-                    <span className="font-bold text-calm-green">Corte Perfeito™</span>
-                    
-                  </div>
-                </div>
+              
 
-                <div className="flex items-start gap-2">
-                  <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
-                  <div>
-                    <span className="font-bold text-calm-green">Blueprint de Lucro™</span>
-                    
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-2">
-                  <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
-                  <div>
-                    <span className="font-bold text-calm-green">Plug & Lucre™</span>
-                    
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-2">
-                  <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
-                  <div>
-                    <span className="font-bold text-calm-green">Biblioteca Inteligente™</span>
-                    
-                  </div>
-                </div>
-              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
             </div>
           </div>
         </div>
