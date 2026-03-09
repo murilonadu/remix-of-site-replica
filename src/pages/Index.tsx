@@ -1,6 +1,6 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
-import TopBanner from "@/components/TopBanner";
+
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 // Lazy load components below the fold
