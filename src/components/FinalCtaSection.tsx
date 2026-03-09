@@ -317,7 +317,7 @@ const FinalCtaSection = () => {
                 <div className="flex items-center justify-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border border-orange-500/40 mb-4">
                   {/* Orange Pill */}
                   <div className="w-8 h-4 rounded-full bg-gradient-to-r from-orange-500 to-yellow-500 shadow-lg shadow-orange-500/50 flex-shrink-0"></div>
-                  <p className="text-sm md:text-base font-bold text-orange-400">R$17: Facilidade pra quem quer parar de sofrer.</p>
+                  <p className="text-sm md:text-base font-bold text-orange-400">R$10: Facilidade pra quem quer parar de sofrer.</p>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white font-poppins mb-6">
                   Escolha seu <span className="bg-gradient-to-r from-expandix-yellow via-expandix-green to-expandix-yellow bg-clip-text text-transparent animate-pulse">Acesso</span>
