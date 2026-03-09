@@ -46,6 +46,8 @@ const HeroSection = () => {
   return <section className="relative min-h-screen bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark overflow-hidden">
       {/* Static background - no animations for better performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/20 via-expandix-green/10 to-transparent"></div>
+      {/* Grid background */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
       {/* Trust indicators - solid bg on mobile, backdrop-blur only on lg+ */}
       <div className="absolute top-20 left-8 bg-expandix-green/95 lg:bg-expandix-green/20 lg:backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
