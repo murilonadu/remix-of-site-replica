@@ -8,8 +8,8 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious } from
+"@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Fixed dimensions to prevent CLS
@@ -17,9 +17,9 @@ const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
 const carrosselImages = [
-  { src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Materiais, Ferramentas, Planos de Montagem" },
-  { src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" },
-];
+{ src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Materiais, Ferramentas, Planos de Montagem" },
+{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" }];
+
 
 const ContentSection = memo(() => {
   return (
@@ -42,8 +42,8 @@ const ContentSection = memo(() => {
                 alt="Módulos: Medidas Exatas, Planos de Corte, Projetos Lucrativos, Prontos para Produção"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
-                decoding="async"
-              />
+                decoding="async" />
+              
 
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
@@ -58,7 +58,7 @@ const ContentSection = memo(() => {
                   <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
                   <div>
                     <span className="font-bold text-calm-green">Blueprint de Lucro™</span>
-                    <p className="text-foreground/80 text-sm">Projetos organizados por rentabilidade. Escolha o que dá mais lucro e execute em menos tempo.</p>
+                    
                   </div>
                 </div>
 
@@ -85,15 +85,15 @@ const ContentSection = memo(() => {
       
       {/* Imagem de exemplos de projetos - full width */}
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
-        <img 
-          src={projetosGrid} 
-          alt="Exemplos de projetos de marcenaria" 
+        <img
+          src={projetosGrid}
+          alt="Exemplos de projetos de marcenaria"
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
           className="w-full h-full object-cover"
           loading="lazy"
-          decoding="async"
-        />
+          decoding="async" />
+        
       </div>
 
       <div className="container mx-auto px-4">
@@ -101,28 +101,28 @@ const ContentSection = memo(() => {
           <Carousel
             opts={{ loop: true }}
             plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
-            className="w-full"
-          >
+            className="w-full">
+            
             <CarouselContent>
-              {carrosselImages.map((img, index) => (
-                <CarouselItem key={index}>
+              {carrosselImages.map((img, index) =>
+              <CarouselItem key={index}>
                   <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full h-auto object-contain rounded-xl"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-auto object-contain rounded-xl"
+                  loading="lazy"
+                  decoding="async" />
+                
                 </CarouselItem>
-              ))}
+              )}
             </CarouselContent>
             <CarouselPrevious className="left-2" />
             <CarouselNext className="right-2" />
           </Carousel>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 });
 
 ContentSection.displayName = "ContentSection";
