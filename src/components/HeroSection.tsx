@@ -84,20 +84,6 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-10 md:py-20 relative z-10">
         <div className="text-center space-y-8">
           {/* Top stats/metrics */}
-          <div className="flex justify-center gap-1.5 md:gap-2 mb-4 md:mb-6 flex-wrap">
-            <div className="bg-gradient-to-r from-expandix-green/30 to-expandix-green/20 backdrop-blur-md rounded-lg p-1.5 md:p-2 text-expandix-green border border-expandix-green/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-green/20">
-              <div className="text-sm md:text-base font-bold bg-gradient-to-r from-expandix-green to-expandix-yellow bg-clip-text text-transparent">+1.2k</div>
-              <div className="text-[10px] opacity-90 font-medium">Pessoas transformadas</div>
-            </div>
-            <div className="bg-gradient-to-r from-expandix-yellow/30 to-expandix-yellow/20 backdrop-blur-md rounded-lg p-1.5 md:p-2 text-expandix-dark border border-expandix-yellow/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/20">
-              <div className="text-sm md:text-base font-bold bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">97%</div>
-              <div className="text-[10px] opacity-90 font-medium">Satisfação</div>
-            </div>
-            <div className="bg-gradient-to-r from-expandix-green/30 to-expandix-green/20 backdrop-blur-md rounded-lg p-1.5 md:p-2 text-expandix-green border border-expandix-green/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-green/20">
-              <div className="text-sm md:text-base font-bold bg-gradient-to-r from-expandix-green to-expandix-yellow bg-clip-text text-transparent">24h</div>
-              <div className="text-[10px] opacity-90 font-medium">Suporte</div>
-            </div>
-          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 15 }}
