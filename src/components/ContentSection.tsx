@@ -74,7 +74,7 @@ const ContentSection = memo(() => {
                   <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
                   <div>
                     <span className="font-bold text-calm-green">Biblioteca Inteligente™</span>
-                    <p className="text-foreground/80 text-sm">Projetos modernos, atualizados e testados por profissionais reais.</p>
+                    
                   </div>
                 </div>
               </div>
