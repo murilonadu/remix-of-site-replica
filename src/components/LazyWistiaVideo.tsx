@@ -89,7 +89,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
                   background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${mediaId}/swatch');
                   display: block;
                   filter: blur(5px);
-                  padding-top: ${VIDEO_ASPECT_RATIO}%;
+                  padding-top: ${paddingTop}%;
                 }
               </style>
               <wistia-player media-id="${mediaId}" aspect="${aspect}"></wistia-player>
