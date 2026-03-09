@@ -1,11 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Award, Clock, Users } from "lucide-react";
+import { Shield, Award, Clock } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import { motion } from "framer-motion";
 import productMockup from "@/assets/MOCKUP_1.webp";
-import avatarAndre from "@/assets/testimonial-andre.webp";
-import avatarCarlos from "@/assets/testimonial-carlos.webp";
-import avatarFelipe from "@/assets/testimonial-felipe.webp";
 
 // LCP image dimensions for CLS prevention
 const HERO_IMAGE_WIDTH = 500;
@@ -46,8 +42,6 @@ const HeroSection = () => {
   return <section className="relative min-h-screen bg-gradient-to-br from-expandix-dark via-expandix-dark/95 to-expandix-dark overflow-hidden">
       {/* Static background - no animations for better performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/20 via-expandix-green/10 to-transparent"></div>
-      {/* Grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
       {/* Trust indicators - solid bg on mobile, backdrop-blur only on lg+ */}
       <div className="absolute top-20 left-8 bg-expandix-green/95 lg:bg-expandix-green/20 lg:backdrop-blur-md rounded-2xl p-4 border border-expandix-green/30 hidden lg:block">
@@ -90,7 +84,7 @@ const HeroSection = () => {
               <div className="text-[10px] opacity-90 font-medium">Pessoas transformadas</div>
             </div>
             <div className="bg-gradient-to-r from-expandix-yellow/30 to-expandix-yellow/20 backdrop-blur-md rounded-lg p-1.5 md:p-2 text-expandix-dark border border-expandix-yellow/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-yellow/20">
-              <div className="text-sm md:text-base font-bold bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">97%</div>
+              
               <div className="text-[10px] opacity-90 font-medium">Satisfação</div>
             </div>
             <div className="bg-gradient-to-r from-expandix-green/30 to-expandix-green/20 backdrop-blur-md rounded-lg p-1.5 md:p-2 text-expandix-green border border-expandix-green/30 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-expandix-green/20">
@@ -98,28 +92,6 @@ const HeroSection = () => {
               <div className="text-[10px] opacity-90 font-medium">Suporte</div>
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center justify-center gap-0 mt-8"
-          >
-            <div className="flex -space-x-3">
-              {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt="Aluno"
-                  className="w-10 h-10 rounded-full border-2 border-background object-cover"
-                />
-              ))}
-            </div>
-            <div className="flex items-center gap-1.5 ml-3 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
-              <Users className="w-3.5 h-3.5 text-primary" />
-              <span className="text-xs font-semibold text-primary">+645 Alunos</span>
-            </div>
-          </motion.div>
 
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
@@ -139,16 +111,16 @@ const HeroSection = () => {
 
           {/* Product Mockup - LCP Element - no animations */}
           <div className="mt-8 md:mt-12 flex justify-center">
-            <img 
-              src={productMockup} 
-              alt="Pack Marceneiro Rico" 
-              width={HERO_IMAGE_WIDTH}
-              height={HERO_IMAGE_HEIGHT}
-              className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl" 
-              loading="eager" 
-              fetchPriority="high"
-              decoding="sync"
-            />
+            <img
+            src={productMockup}
+            alt="Pack Marceneiro Rico"
+            width={HERO_IMAGE_WIDTH}
+            height={HERO_IMAGE_HEIGHT}
+            className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync" />
+          
           </div>
 
           {/* Enhanced CTA Button - no bounce animation for performance */}
