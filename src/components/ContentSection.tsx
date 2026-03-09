@@ -37,6 +37,14 @@ const ContentSection = memo(() => {
                 É um sistema completo de produção e lucro, que combina:
               </p>
 
+              <img
+                src={oQueVoceTera}
+                alt="Módulos: Medidas Exatas, Planos de Corte, Projetos Lucrativos, Prontos para Produção"
+                className="w-full h-auto rounded-lg"
+                loading="lazy"
+                decoding="async"
+              />
+
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
                   <span className="text-calm-green text-lg flex-shrink-0">🔹</span>
