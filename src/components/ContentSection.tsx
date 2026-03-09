@@ -1,25 +1,24 @@
 import { memo } from "react";
 import projetosGrid from "@/assets/projetos-grid.webp";
+import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
+import carrosselModulos2 from "@/assets/carrossel-modulos-2.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 // Fixed dimensions to prevent CLS
 const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
-const ContentSection = memo(() => {
-  const features = [
-    { icon: "✅", text: "Lista Completa de Materiais" },
-    { icon: "✅", text: "Detalhamento das Ferramentas" },
-    { icon: "✅", text: "Planos de Montagem" },
-    { icon: "✅", text: "Projeto Para Móveis com Medidas" },
-    { icon: "✅", text: "Planos de Corte" },
-    { icon: "✅", text: "Projetos para Marcenaria" },
-    { icon: "✅", text: "Planilha de Controle de Custos" },
-    { icon: "✅", text: "Móveis para Áreas Externas" },
-    { icon: "✅", text: "Projetos de Grande Porte" },
-    { icon: "✅", text: "Pequenos Artesanatos" },
-    { icon: "✅", text: "Projetos para Escritórios" },
-    { icon: "✅", text: "Projetos Para CNS" },
-  ];
+const carrosselImages = [
+  { src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Materiais, Ferramentas, Planos de Montagem" },
+  { src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" },
+];
 
   return (
     <section className="py-8 md:py-12 bg-muted/30">
