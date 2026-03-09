@@ -1,6 +1,4 @@
 import { Zap } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import bonus1 from "@/assets/bonus-1.png";
 import bonus2 from "@/assets/bonus-2.png";
 import bonus3 from "@/assets/bonus-3.png";
