@@ -93,6 +93,29 @@ const HeroSection = () => {
             </div>
           </div>
 
+          {/* Social proof avatars */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="flex -space-x-3">
+              {[
+                "/src/assets/testimonial-andre.webp",
+                "/src/assets/testimonial-carlos.webp",
+                "/src/assets/testimonial-felipe.webp",
+              ].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Aluno"
+                  className="w-10 h-10 rounded-full border-2 border-expandix-yellow object-cover"
+                  loading="eager"
+                />
+              ))}
+            </div>
+            <div className="flex items-center gap-1.5 text-expandix-yellow font-semibold text-sm border border-expandix-yellow/40 rounded-full px-3 py-1">
+              <span>👥</span>
+              <span>+845 Alunos</span>
+            </div>
+          </div>
+
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
