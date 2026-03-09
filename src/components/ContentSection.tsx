@@ -1,26 +1,26 @@
 import { memo } from "react";
 import projetosGrid from "@/assets/projetos-grid.webp";
+import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
+import carrosselModulos2 from "@/assets/carrossel-modulos-2.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 // Fixed dimensions to prevent CLS
 const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
-const ContentSection = memo(() => {
-  const features = [
-    { icon: "✅", text: "Lista Completa de Materiais" },
-    { icon: "✅", text: "Detalhamento das Ferramentas" },
-    { icon: "✅", text: "Planos de Montagem" },
-    { icon: "✅", text: "Projeto Para Móveis com Medidas" },
-    { icon: "✅", text: "Planos de Corte" },
-    { icon: "✅", text: "Projetos para Marcenaria" },
-    { icon: "✅", text: "Planilha de Controle de Custos" },
-    { icon: "✅", text: "Móveis para Áreas Externas" },
-    { icon: "✅", text: "Projetos de Grande Porte" },
-    { icon: "✅", text: "Pequenos Artesanatos" },
-    { icon: "✅", text: "Projetos para Escritórios" },
-    { icon: "✅", text: "Projetos Para CNS" },
-  ];
+const carrosselImages = [
+  { src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Materiais, Ferramentas, Planos de Montagem" },
+  { src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" },
+];
 
+const ContentSection = memo(() => {
   return (
     <section className="py-8 md:py-12 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -71,7 +71,6 @@ const ContentSection = memo(() => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
       
@@ -90,24 +89,27 @@ const ContentSection = memo(() => {
 
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-2 gap-1.5">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-calm-green/10 border-calm-green/20 rounded-lg p-2 border transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:bg-calm-green/15 hover:border-calm-green/30 animate-slide-up group cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-calm-green to-calm-green-vibrant rounded flex items-center justify-center text-white font-bold text-[10px] shadow-md">
-                    {feature.icon}
-                  </div>
-                  <p className="text-foreground font-medium leading-tight text-xs group-hover:text-calm-green transition-colors duration-300">
-                    {feature.text}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel
+            opts={{ loop: true }}
+            plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {carrosselImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-auto object-contain rounded-xl"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </div>
     </section>
