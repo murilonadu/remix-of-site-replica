@@ -78,7 +78,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
     <div 
       ref={containerRef} 
       className="rounded-lg overflow-hidden mb-2"
-      style={{ aspectRatio: "16/9", minHeight: "180px" }}
+      style={{ aspectRatio: cssAspectRatio, minHeight: "180px" }}
     >
       {isVisible ? (
         <div
