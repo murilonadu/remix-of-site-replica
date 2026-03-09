@@ -35,9 +35,9 @@ const GuaranteeSection = () => {
 
           {/* Bonus section */}
           <div className="max-w-2xl mx-auto mb-10">
-            <h3 className="text-xl md:text-2xl font-bold mb-6 text-white">
-              Levando o <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">PREMIUM</span> HOJE você recebe todos esses BÔNUS
-            </h3>
+            
+
+            
             <div className="space-y-4">
               {bonusImages.map((bonus, index) =>
               <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
