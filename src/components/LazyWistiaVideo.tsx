@@ -5,10 +5,13 @@ interface LazyWistiaVideoProps {
   aspect?: string;
 }
 
-// Fixed video dimensions to prevent CLS
-const VIDEO_ASPECT_RATIO = 55.21; // percentage for padding-top
+// Default aspect ratio percentage for padding-top fallback
+const DEFAULT_ASPECT_PADDING = 55.21;
 
 const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
+  const aspectNum = parseFloat(aspect);
+  const paddingTop = aspectNum > 0 ? (1 / aspectNum) * 100 : DEFAULT_ASPECT_PADDING;
+  const cssAspectRatio = aspectNum > 0 ? `${aspectNum}` : "16/9";
   const [isVisible, setIsVisible] = useState(false);
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -75,7 +78,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
     <div 
       ref={containerRef} 
       className="rounded-lg overflow-hidden mb-2"
-      style={{ aspectRatio: "16/9", minHeight: "180px" }}
+      style={{ aspectRatio: cssAspectRatio, minHeight: "180px" }}
     >
       {isVisible ? (
         <div
@@ -86,7 +89,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
                   background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${mediaId}/swatch');
                   display: block;
                   filter: blur(5px);
-                  padding-top: ${VIDEO_ASPECT_RATIO}%;
+                  padding-top: ${paddingTop}%;
                 }
               </style>
               <wistia-player media-id="${mediaId}" aspect="${aspect}"></wistia-player>
@@ -96,7 +99,7 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
       ) : (
         <div 
           className="bg-muted animate-pulse w-full h-full" 
-          style={{ paddingTop: `${VIDEO_ASPECT_RATIO}%` }}
+          style={{ paddingTop: `${paddingTop}%` }}
         />
       )}
     </div>

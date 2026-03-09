@@ -139,7 +139,7 @@ const HeroSection = () => {
           </div>
 
           {/* VSL Video Section */}
-          <div className="mt-8 md:mt-12 max-w-3xl mx-auto">
+          <div className="mt-8 md:mt-12 max-w-sm md:max-w-md mx-auto">
             <div className="rounded-2xl overflow-hidden border-2 border-expandix-yellow/30 shadow-2xl">
               <LazyWistiaVideo mediaId="7yirr4n5xg" aspect="0.5625" />
             </div>
