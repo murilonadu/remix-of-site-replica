@@ -18,8 +18,8 @@ const accessMethods = [
 const guarantees = [
   {
     icon: Clock,
-    title: "Acesso Vitalício",
-    subtitle: "Para sempre em sua conta",
+    title: "Acesso Imediato",
+    subtitle: "Receba na hora após o pagamento",
   },
   {
     icon: Shield,
@@ -28,8 +28,8 @@ const guarantees = [
   },
   {
     icon: Zap,
-    title: "Acesso Imediato",
-    subtitle: "Receba na hora após o pagamento",
+    title: "Acesso Vitalício",
+    subtitle: "Para sempre em sua conta",
   },
 ];
 
