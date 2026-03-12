@@ -123,7 +123,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Dentro da biblioteca você encontra projetos completos para: ✔ Cozinhas planejadas ✔ Guarda-roupas e closets ✔ Painéis de TV para sala ✔ Gabinetes para banheiro ✔ Bancadas e móveis planejados ✔ Mesas e móveis para escritório ✔ Móveis para área externa ✔ Nichos e móveis decorativos</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Projetos para cozinha, para quarto, para  sala, para banheiro e muito mais                  </h2>
             </div>
           </div>
 
