@@ -38,7 +38,7 @@ const AccessInfo = () => {
     <section className="py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-          Acesse os projetos pelo Computador, celular ou você pode imprimir!
+          Acesse os projetos por onde quiser
         </h2>
 
         <div className="grid grid-cols-3 gap-4 md:gap-6 mb-12">
