@@ -38,19 +38,19 @@ const GuaranteeSection = () => {
             
 
             
-            <div className="space-y-4">
-              {bonusImages.map((bonus, index) =>
-              <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
-                  
+            
 
 
 
 
-                
-                
-                </div>
-              )}
-            </div>
+
+
+
+
+
+
+
+            
           </div>
 
           
