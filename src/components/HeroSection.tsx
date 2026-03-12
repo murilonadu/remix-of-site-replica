@@ -164,7 +164,8 @@ const HeroSection = () => {
               }
             }}>
                 <span className="flex items-center gap-3">
-                  🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
+                  <span className="hidden md:inline">📖 ACESSAR PROJETOS</span>
+                  <span className="md:hidden">OBTER ACESSO VITALÍCIO</span>
                 </span>
               </Button>
             </div>
