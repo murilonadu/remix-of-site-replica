@@ -35,14 +35,17 @@ const GuaranteeSection = () => {
 
           {/* Acesso info */}
           <div className="mb-8">
-            <p className="text-lg md:text-xl text-slate-50 font-semibold mb-3">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent">
               Acesse os projetos por onde quiser
-            </p>
-            <div className="flex items-center justify-center gap-2 text-slate-50">
-              <Zap className="w-5 h-5 text-expandix-yellow" />
-              <span className="font-bold">Acesso Imediato</span>
-              <span className="text-slate-400">|</span>
-              <span className="text-slate-300">Receba na hora após o pagamento</span>
+            </h2>
+            <div className="relative group rounded-2xl p-4 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/10 to-expandix-yellow/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative flex items-center justify-center gap-2 text-slate-50">
+                <Zap className="w-5 h-5 text-expandix-yellow" />
+                <span className="font-bold">Acesso Imediato</span>
+                <span className="text-slate-400">|</span>
+                <span className="text-slate-300">Receba na hora após o pagamento</span>
+              </div>
             </div>
           </div>
 
