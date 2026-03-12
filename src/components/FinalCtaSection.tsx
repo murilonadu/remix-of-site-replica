@@ -354,7 +354,9 @@ Quando finalizar a próxima atualização, o preço sobe.</p>
         </div>
       </div>
 
-      <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
+      <Suspense fallback={null}>
+        <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
+      </Suspense>
     </section>;
 };
 export default FinalCtaSection;

@@ -112,12 +112,14 @@ const Pricing = () => {
         </div>
       </div>
 
-      <UpsellModal 
-        isOpen={isUpsellModalOpen} 
-        onClose={() => setIsUpsellModalOpen(false)} 
-        onAccept={() => {}} 
-        onDecline={() => {}} 
-      />
+      <Suspense fallback={null}>
+        <UpsellModal 
+          isOpen={isUpsellModalOpen} 
+          onClose={() => setIsUpsellModalOpen(false)} 
+          onAccept={() => {}} 
+          onDecline={() => {}} 
+        />
+      </Suspense>
     </section>
   );
 };
