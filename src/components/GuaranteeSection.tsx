@@ -33,6 +33,19 @@ const GuaranteeSection = () => {
             🎁 RESGATAR BÔNUS EXCLUSIVOS! 🎁
           </button>
 
+          {/* Acesso info */}
+          <div className="mb-8">
+            <p className="text-lg md:text-xl text-slate-50 font-semibold mb-3">
+              Acesse os projetos por onde quiser
+            </p>
+            <div className="flex items-center justify-center gap-2 text-slate-50">
+              <Zap className="w-5 h-5 text-expandix-yellow" />
+              <span className="font-bold">Acesso Imediato</span>
+              <span className="text-slate-400">|</span>
+              <span className="text-slate-300">Receba na hora após o pagamento</span>
+            </div>
+          </div>
+
           {/* Bonus section */}
           <div className="max-w-lg mx-auto mb-10">
             
