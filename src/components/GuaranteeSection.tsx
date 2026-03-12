@@ -42,7 +42,7 @@ const GuaranteeSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-expandix-green/10 to-expandix-yellow/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative flex items-center justify-center gap-2 text-slate-50">
                 <Zap className="w-5 h-5 text-expandix-yellow" />
-                <span className="font-bold">Acesso Imediato</span>
+                
                 <span className="text-slate-400">|</span>
                 <span className="text-slate-300">Receba na hora após o pagamento</span>
               </div>
