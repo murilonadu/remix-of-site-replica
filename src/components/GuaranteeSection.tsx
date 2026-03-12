@@ -1,14 +1,4 @@
 import { Zap } from "lucide-react";
-import bonus1 from "@/assets/bonus-1.webp";
-import bonus2 from "@/assets/bonus-2.webp";
-import bonus3 from "@/assets/bonus-3.webp";
-import bonus4 from "@/assets/bonus-4.webp";
-
-const bonusImages = [
-{ image: bonus1, alt: "Os 100 Móveis Mais Vendidos e Lucrativos" },
-{ image: bonus2, alt: "Contrato de Serviço AntiFraude" },
-{ image: bonus3, alt: "50 Dicas de Performance" },
-{ image: bonus4, alt: "Suporte VIP via WhatsApp" }];
 
 
 const GuaranteeSection = () => {
