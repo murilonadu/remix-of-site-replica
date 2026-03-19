@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Acesso Vitalício ( Para Sempre )</span>
+                          <span className="font-medium text-primary">Acesso Vitalício </span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -200,7 +200,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
+                          <span className="font-medium">2.000 Projetos Passo a Passo ( mil a mais ) </span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
@@ -208,7 +208,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Acesso Vitalício ( Para Sempre )</span>
+                          <span className="font-medium">Acesso Vitalício    </span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
