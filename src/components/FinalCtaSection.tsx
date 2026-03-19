@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Acesso Vitalício ( P{     </span>
+                          <span className="font-medium text-primary">Acesso Vitalício ( Para Sempre )</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
