@@ -45,7 +45,7 @@ const Index = () => {
       {isReadyForExtras && (
         <Suspense fallback={null}>
           
-          <TimedOfferPopup />
+          <ExitIntentPopup />
           <PurchaseNotifications />
         </Suspense>
       )}
