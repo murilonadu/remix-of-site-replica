@@ -50,8 +50,8 @@ const ExitIntentPopup = () => {
     };
   }, [hasShown]);
   const handleAccept = () => {
-    // Back redirect - R$ 14,90
-    redirectWithParams("https://pagamento-seguro.omanual.site/checkout/v5/6fDFPOhbYLW4DSKo8skP");
+    // Premium pelo preço do básico - R$ 10
+    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1ldT1NuAXSix71HG43We");
   };
   const handleDecline = () => {
     setIsOpen(false);
@@ -79,7 +79,7 @@ const ExitIntentPopup = () => {
                 <p className="text-xs text-muted-foreground mb-1">Pacote PREMIUM </p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-lg line-through text-muted-foreground/60">R$ 29,90</span>
-                  <span className="text-3xl font-bold bg-gradient-to-r from-primary via-calm-green-glow to-calm-green-vibrant bg-clip-text text-transparent">R$ 14,90</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-primary via-calm-green-glow to-calm-green-vibrant bg-clip-text text-transparent">R$ 10</span>
                 </div>
                 <div className="mt-1 inline-block bg-primary/20 text-primary-foreground px-3 py-0.5 rounded-full">
                   <p className="font-bold text-xs"> 👀  4 Pessoas vendo esta oferta agora!</p>
