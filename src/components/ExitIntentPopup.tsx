@@ -88,18 +88,6 @@ const ExitIntentPopup = () => {
             </div>
 
             {/* What's included */}
-            <div className="bg-card/80 backdrop-blur-sm rounded-xl p-3 border border-border/50 space-y-2">
-              <div className="flex justify-center mb-2">
-                
-              </div>
-              <p className="font-bold text-foreground text-center text-xs">O que você vai receber:</p>
-              <div className="grid grid-cols-1 gap-1.5 text-xs">
-                {["2000 Projetos Prontos", "Bônus: 100 Móveis Mais Vendidos", "Bônus: Contrato AntiFraude", "Bônus: Suporte VIP WhatsApp"].map((item, index) => <div key={index} className="flex items-center gap-2 bg-secondary/50 rounded-lg px-2 py-1.5">
-                    <span className="flex-shrink-0 w-4 h-4 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-[10px] font-bold">✓</span>
-                    <span className="text-foreground">{item}</span>
-                  </div>)}
-              </div>
-            </div>
 
             {/* Urgency */}
             <div className="text-center bg-destructive/10 rounded-lg p-2 border border-destructive/30">
