@@ -258,6 +258,22 @@ const FinalCtaSection = () => {
                           </div>
                         </div>
 
+                        {/* Bonus - Moveis Rusticos */}
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
+                            <div className="flex items-center gap-2.5">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
+                                <span className="text-base">🎁</span>
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
+                                  Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         {/* Bonus 3 - EXTRA */}
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
