@@ -50,8 +50,8 @@ const ExitIntentPopup = () => {
     };
   }, [hasShown]);
   const handleAccept = () => {
-    // Back redirect - R$ 14,90
-    redirectWithParams("https://pagamento-seguro.omanual.site/checkout/v5/6fDFPOhbYLW4DSKo8skP");
+    // Premium pelo preço do básico - R$ 10
+    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1ldT1NuAXSix71HG43We");
   };
   const handleDecline = () => {
     setIsOpen(false);
