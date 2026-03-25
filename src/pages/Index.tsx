@@ -15,7 +15,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 
 // Lazy load extras (popups and notifications) - deferred loading
 
-const TimedOfferPopup = lazy(() => import("@/components/TimedOfferPopup"));
+const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
 const PurchaseNotifications = lazy(() => import("@/components/PurchaseNotifications"));
 
 // Simple loading fallback
