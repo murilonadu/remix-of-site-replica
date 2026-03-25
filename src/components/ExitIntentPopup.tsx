@@ -51,7 +51,7 @@ const ExitIntentPopup = () => {
   }, [hasShown]);
   const handleAccept = () => {
     // Premium pelo preço do básico - R$ 10
-    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1ldT1NuAXSix71HG43We");
+    redirectWithParams("https://ggcheckout.app/checkout/v5/l79Mhe5eW3Ep6GFk76PG");
   };
   const handleDecline = () => {
     setIsOpen(false);
