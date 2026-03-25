@@ -97,7 +97,6 @@ const FinalCtaSection = () => {
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
                           <span className="font-medium text-left text-primary">Planilha Automática de Lucro</span>
-                          <span className="ml-1.5 px-1.5 py-0.5 text-[9px] font-bold uppercase rounded bg-gradient-to-r from-yellow-500 to-orange-500 text-black leading-none">🎁 Brinde</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
