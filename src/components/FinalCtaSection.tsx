@@ -242,8 +242,8 @@ const FinalCtaSection = () => {
                         {/* Bonus 2 */}
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
+                            <div className="flex items-center gap-2.5 text-[#e4ff94]">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-[#ffc95c]/[0.71] bg-[#ffc95c]/[0.69]">
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
