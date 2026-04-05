@@ -231,7 +231,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
+                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
                                   Os 100 Móveis Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 67,00</span>
                                 </p>
                               </div>
