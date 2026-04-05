@@ -218,7 +218,7 @@ const FinalCtaSection = () => {
 
                       {/* Bonuses Title */}
                       <div className="text-center mb-3">
-                        <p className="text-xs font-bold uppercase tracking-wider text-yellow-300">TODOS OS BÔNUS + EXTRAS</p>
+                        <p className="text-xs font-bold uppercase tracking-wider text-[#ffe500]">MAIS TODOS ESSES 5 BÔNUS:</p>
                       </div>
 
                       {/* Exclusive Bonuses Section */}
