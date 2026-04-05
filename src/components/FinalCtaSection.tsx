@@ -295,7 +295,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-slate-50">
+                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
                                   Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
