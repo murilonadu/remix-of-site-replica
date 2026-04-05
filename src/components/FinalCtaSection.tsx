@@ -186,29 +186,22 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl lg:rounded-2xl blur-sm opacity-40"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-500/60">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text bg-slate-50 text-[#4dff64]">R$ 29,90</div>
-                          <p className="text-xs lg:text-sm mt-1 text-gray-300">ou 3x de R$ 11,17 no cartão</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="space-y-3 text-xs lg:text-sm flex-grow">
-                      {/* Base features - Same as basic */}
-                      <div className="space-y-2.5">
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text bg-slate-50 text-[#ffdd1f]">R$ 29,90</div>
+// ... keep existing code
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#08e753]">✓</span>
+                          <span className="text-[#fce683]">✓</span>
                           <span className="font-medium text-slate-50">2.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#08e753]">✓</span>
+                          <span className="text-[#fce683]">✓</span>
                           <span className="font-medium text-left text-slate-50">Acesso digital imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#08e753]">✓</span>
+                          <span className="text-[#fce683]">✓</span>
                           <span className="font-medium text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#08e753]">✓</span>
+                          <span className="text-[#fce683]">✓</span>
                           <span className="font-medium text-slate-50">Garantia de 7 dias</span>
                         </div>
                       </div>
