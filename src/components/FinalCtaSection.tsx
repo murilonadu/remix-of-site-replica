@@ -259,7 +259,7 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/65 border-[#ffc95c]">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
