@@ -204,7 +204,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left">Acesso digital imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
