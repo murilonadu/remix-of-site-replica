@@ -247,7 +247,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
+                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
                                   Contrato de Serviço AntiFraude <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
