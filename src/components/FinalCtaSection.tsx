@@ -91,20 +91,20 @@ const FinalCtaSection = () => {
                       {/* Base features */}
                       <div className="space-y-2.5 text-transparent">
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">1.000 Projetos Passo a Passo</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">1.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-left text-primary text-slate-50">Acesso Digital Imediato </span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Atualizações semanais</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Garantia de 7 dias</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">Garantia de 7 dias</span>
                         </div>
                       </div>
 
