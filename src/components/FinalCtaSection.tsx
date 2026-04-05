@@ -161,6 +161,9 @@ const FinalCtaSection = () => {
 
                   <div className="space-y-4 lg:space-y-6 relative z-10 flex flex-col h-full">
                     <div className="text-center pt-2">
+                      <div className="inline-flex items-center gap-2 bg-green-500 rounded-full px-4 py-1.5 mb-2">
+                        <span className="text-white font-bold text-xs lg:text-sm">⭐ MELHOR ESCOLHA</span>
+                      </div>
                       <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500/25 to-orange-500/25 rounded-full px-3 lg:px-4 py-2 border border-yellow-500/40 mb-3 lg:mb-4">
                         <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
                         <span className="text-yellow-400 font-bold text-xs lg:text-sm">PACOTE PREMIUM  </span>
