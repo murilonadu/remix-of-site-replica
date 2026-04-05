@@ -81,7 +81,7 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl lg:rounded-2xl blur-sm opacity-20"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-gray-500/40">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary">R$ 10,00</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary text-[#2cf264]">R$ 10,00</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-400">ou 3x de R$ 6,37 no cartão</p>
                         </div>
                       </div>
@@ -91,20 +91,20 @@ const FinalCtaSection = () => {
                       {/* Base features */}
                       <div className="space-y-2.5 text-transparent">
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">1.000 Projetos Passo a Passo</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">1.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-left text-primary text-slate-50">Acesso Digital Imediato </span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Atualizações semanais</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Garantia de 7 dias</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-primary text-slate-50">Garantia de 7 dias</span>
                         </div>
                       </div>
 
@@ -186,7 +186,7 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl lg:rounded-2xl blur-sm opacity-40"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-500/60">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">R$ 29,90</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text bg-slate-50 text-[#4dff64]">R$ 29,90</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-300">ou 3x de R$ 11,17 no cartão</p>
                         </div>
                       </div>
@@ -196,20 +196,20 @@ const FinalCtaSection = () => {
                       {/* Base features - Same as basic */}
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">2.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso digital imediato</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-left text-slate-50">Acesso digital imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Atualizações semanais</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Garantia de 7 dias</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">Garantia de 7 dias</span>
                         </div>
                       </div>
 
@@ -218,7 +218,7 @@ const FinalCtaSection = () => {
 
                       {/* Bonuses Title */}
                       <div className="text-center mb-3">
-                        <p className="text-xs font-bold uppercase tracking-wider text-yellow-300">TODOS OS BÔNUS + EXTRAS</p>
+                        <p className="text-xs font-bold uppercase tracking-wider text-[#ffe500]">MAIS TODOS ESSES 5 BÔNUS:</p>
                       </div>
 
                       {/* Exclusive Bonuses Section */}
@@ -227,11 +227,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/[0.64] border-[#ffc95c]">
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
+                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
                                   Os 100 Móveis Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 67,00</span>
                                 </p>
                               </div>
@@ -242,12 +242,12 @@ const FinalCtaSection = () => {
                         {/* Bonus 2 */}
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
+                            <div className="flex items-center gap-2.5 text-[#e4ff94]">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-[#ffc95c]/[0.71] bg-[#ffc95c]/[0.69]">
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
+                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
                                   Contrato de Serviço AntiFraude <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
@@ -259,11 +259,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/65 border-[#ffc95c]">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground">
+                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground text-[#fce683]">
                                   50 Dicas de Performance <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
@@ -275,11 +275,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-[#ffc95c] bg-[#ffc95c]/[0.69]">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-yellow-300">
+                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
                                   Suporte VIP via WhatsApp <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
@@ -291,11 +291,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/[0.67] border-[#ffc95c]">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-slate-50">
+                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
                                   Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
