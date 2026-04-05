@@ -181,9 +181,6 @@ const FinalCtaSection = () => {
                     <div className="space-y-3 lg:space-y-4 text-center">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
                         <span className="line-through text-base lg:text-lg font-medium text-red-500">de R$ 87,00 por:</span>
-                        <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 lg:px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
-                          -81% DESCONTO
-                        </div>
                       </div>
 
                       <div className="relative">
