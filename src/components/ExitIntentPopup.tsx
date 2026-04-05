@@ -50,8 +50,8 @@ const ExitIntentPopup = () => {
     };
   }, [hasShown]);
   const handleAccept = () => {
-    // Premium pelo preço do básico - R$ 10
-    redirectWithParams("https://ggcheckout.app/checkout/v5/l79Mhe5eW3Ep6GFk76PG");
+    // Back redirect - R$ 14,90
+    redirectWithParams("https://pagamento-seguro.omanual.site/checkout/v5/6fDFPOhbYLW4DSKo8skP");
   };
   const handleDecline = () => {
     setIsOpen(false);
@@ -79,12 +79,27 @@ const ExitIntentPopup = () => {
                 <p className="text-xs text-muted-foreground mb-1">Pacote PREMIUM </p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-lg line-through text-muted-foreground/60">R$ 29,90</span>
-                  <span className="text-3xl font-bold bg-gradient-to-r from-primary via-calm-green-glow to-calm-green-vibrant bg-clip-text text-transparent">R$ 10</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-primary via-calm-green-glow to-calm-green-vibrant bg-clip-text text-transparent">R$ 14,90</span>
+                </div>
+                <div className="mt-1 inline-block bg-primary/20 text-primary-foreground px-3 py-0.5 rounded-full">
+                  <p className="font-bold text-xs"> 👀  4 Pessoas vendo esta oferta agora!</p>
                 </div>
               </div>
             </div>
 
             {/* What's included */}
+            <div className="bg-card/80 backdrop-blur-sm rounded-xl p-3 border border-border/50 space-y-2">
+              <div className="flex justify-center mb-2">
+                
+              </div>
+              <p className="font-bold text-foreground text-center text-xs">O que você vai receber:</p>
+              <div className="grid grid-cols-1 gap-1.5 text-xs">
+                {["2000 Projetos Prontos", "Bônus: 100 Móveis Mais Vendidos", "Bônus: Contrato AntiFraude", "Bônus: Suporte VIP WhatsApp"].map((item, index) => <div key={index} className="flex items-center gap-2 bg-secondary/50 rounded-lg px-2 py-1.5">
+                    <span className="flex-shrink-0 w-4 h-4 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-[10px] font-bold">✓</span>
+                    <span className="text-foreground">{item}</span>
+                  </div>)}
+              </div>
+            </div>
 
             {/* Urgency */}
             <div className="text-center bg-destructive/10 rounded-lg p-2 border border-destructive/30">

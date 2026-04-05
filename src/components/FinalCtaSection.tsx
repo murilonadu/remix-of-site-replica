@@ -96,12 +96,11 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Planilha Automática de Lucro</span>
-                          <span className="ml-1.5 px-1.5 py-0.5 text-[9px] font-bold uppercase rounded bg-gradient-to-r from-yellow-500 to-orange-500 text-black leading-none">​</span>
+                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Acesso Vitalício </span>
+                          <span className="font-medium text-primary">Atualizações semanais</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -201,15 +200,15 @@ const FinalCtaSection = () => {
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">2.000 Projetos Passo a Passo ( mil a mais ) </span>
+                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Planilha Automática de Lucro</span>
+                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Acesso Vitalício    </span>
+                          <span className="font-medium">Atualizações semanais</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
@@ -253,22 +252,6 @@ const FinalCtaSection = () => {
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold leading-tight text-yellow-100">
                                   Contrato de Serviço AntiFraude <span className="line-through ml-1 text-red-400">R$ 37,00</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* Bonus - Moveis Rusticos */}
-                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
-                          <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
-                                <span className="text-base">🎁</span>
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
-                                  Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
                             </div>

@@ -152,7 +152,7 @@ const HeroSection = () => {
           <div className="mt-8 md:mt-12">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px] animate-bounce" onClick={() => {
+              <Button size="lg" className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-lg md:text-xl py-6 md:py-8 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-105 border-2 border-green-400/50 px-4 md:px-[25px]" onClick={() => {
               const targetSection = document.getElementById('para-quem');
               if (targetSection) {
                 const offset = 80;
