@@ -180,7 +180,7 @@ const FinalCtaSection = () => {
 
                     <div className="space-y-3 lg:space-y-4 text-center">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
-                        <span className="line-through text-base lg:text-lg font-medium text-red-500">R$ 137,00</span>
+                        <span className="line-through text-base lg:text-lg font-medium text-red-500">de R$ 87,00 por:</span>
                         <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 lg:px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
                           -81% DESCONTO
                         </div>
@@ -204,7 +204,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left">Acesso digital imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
@@ -298,7 +298,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-yellow-300">
+                                <p className="text-[11px] font-bold leading-tight text-slate-50">
                                   Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
