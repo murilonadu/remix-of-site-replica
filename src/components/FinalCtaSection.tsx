@@ -186,7 +186,7 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl lg:rounded-2xl blur-sm opacity-40"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-500/60">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">R$ 29,90</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text bg-slate-50 text-[#4dff64]">R$ 29,90</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-300">ou 3x de R$ 11,17 no cartão</p>
                         </div>
                       </div>
