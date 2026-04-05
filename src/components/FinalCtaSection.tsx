@@ -196,20 +196,20 @@ const FinalCtaSection = () => {
                       {/* Base features - Same as basic */}
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">2.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso digital imediato</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-left text-slate-50">Acesso digital imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Atualizações semanais</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Garantia de 7 dias</span>
+                          <span className="text-[#08e753]">✓</span>
+                          <span className="font-medium text-slate-50">Garantia de 7 dias</span>
                         </div>
                       </div>
 
