@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
@@ -141,7 +141,7 @@ const FinalCtaSection = () => {
                 {/* MELHOR ESCOLHA Badge on card border */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
                   <div className="rounded-full px-5 py-1.5 shadow-lg bg-[#ff5900]">
-                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ 5 BONUS EXCLUSIVOS</span>
+                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">👇 5 BÔNUS EXCLUSIVOS 👇</span>
                   </div>
                 </div>
 
@@ -265,7 +265,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground text-[#fce683]">
+                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
                                   50 Dicas de Performance <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
