@@ -141,6 +141,17 @@ const UpsellModal = ({
                 SIM, QUERO O PREMIUM
               </Button>
 
+              {/* Vagas restantes */}
+              <div className="bg-red-50 border border-red-200 rounded-xl p-2.5 text-center space-y-1.5">
+                <p className="text-xs font-bold text-red-600">
+                  🔥 Restam apenas <span className="text-red-700 text-sm">4 vagas</span> por esse valor!
+                </p>
+                <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                  <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all" style={{ width: '60%' }} />
+                </div>
+                <p className="text-[10px] text-gray-500">6 de 10 vagas já preenchidas</p>
+              </div>
+
               <Button onClick={handleDeclineClick} size="sm" variant="ghost" className="w-full text-gray-500 hover:text-gray-700 py-3 rounded-xl text-xs">
                 Não, quero continuar com pacote básico
               </Button>
