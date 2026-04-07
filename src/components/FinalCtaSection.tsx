@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
