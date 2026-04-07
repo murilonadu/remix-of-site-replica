@@ -140,12 +140,12 @@ const UpsellModal = ({
             {/* Vagas restantes */}
             <div className="bg-red-50 border border-red-200 rounded-xl p-2.5 text-center space-y-1.5">
               <p className="text-xs font-bold text-red-600">
-                🔥 Restam apenas <span className="text-red-700 text-sm">4 vagas</span> por esse valor!
+                🔥 Restam apenas <span className="text-red-700 text-sm transition-all duration-500">{remaining} vaga{remaining !== 1 ? 's' : ''}</span> por esse valor!
               </p>
               <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all" style={{ width: '60%' }} />
+                <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all duration-700 ease-out" style={{ width: `${percent}%` }} />
               </div>
-              <p className="text-[10px] text-gray-500">6 de 10 vagas já preenchidas</p>
+              <p className="text-[10px] text-gray-500 transition-all duration-500">{filled} de 10 vagas já preenchidas</p>
             </div>
 
             {/* Buttons */}
