@@ -140,8 +140,8 @@ const FinalCtaSection = () => {
               <div className="relative group animate-scale-in animation-delay-700 w-full max-w-xl">
                 {/* MELHOR ESCOLHA Badge on card border */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-green-500 rounded-full px-5 py-1.5 shadow-lg">
-                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ MELHOR ESCOLHA</span>
+                  <div className="rounded-full px-5 py-1.5 shadow-lg bg-[#ff5900]">
+                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ 5 BONUS EXCLUSIVOS</span>
                   </div>
                 </div>
 
