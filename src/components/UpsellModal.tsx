@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { useVacancy } from "@/hooks/use-vacancy";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import marcenieiroUpsell from "@/assets/marceneiro-upsell.png";

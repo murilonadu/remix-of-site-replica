@@ -1,4 +1,5 @@
 import { useState, memo, lazy, Suspense } from "react";
+import { useVacancy } from "@/hooks/use-vacancy";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import packMockupPremium from "@/assets/MOCKUP_1.webp";
