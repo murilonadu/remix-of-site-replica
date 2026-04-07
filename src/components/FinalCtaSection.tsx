@@ -18,6 +18,7 @@ const redirectWithParams = (baseUrl: string) => {
 };
 const FinalCtaSection = () => {
   const [isUpsellModalOpen, setIsUpsellModalOpen] = useState(false);
+  const { remaining, filled, percent } = useVacancy();
   const [selectedPlan, setSelectedPlan] = useState<'basic' | 'premium'>('basic');
   const handleBuyNowClick = (plan: 'basic' | 'premium') => {
     setSelectedPlan(plan);
