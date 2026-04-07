@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { CheckCircle } from "lucide-react";
+import { vacancyStore } from "@/lib/vacancyStore";
 
 const PurchaseNotifications = () => {
   const [notifications, setNotifications] = useState<Array<{id: number, name: string, city: string}>>([]);
+  const [stopped, setStopped] = useState(false);
 
   const names = [
     "João Silva", "Maria Santos", "Pedro Costa", "Ana Oliveira", "Carlos Souza",
@@ -17,10 +19,20 @@ const PurchaseNotifications = () => {
   ];
 
   useEffect(() => {
+    if (stopped) return;
+
     const showNotification = () => {
+      if (!vacancyStore.canNotify()) {
+        setStopped(true);
+        return;
+      }
+
       const randomName = names[Math.floor(Math.random() * names.length)];
       const randomCity = cities[Math.floor(Math.random() * cities.length)];
       const id = Date.now();
+
+      // Decrement vacancy
+      vacancyStore.decrement();
 
       setNotifications(prev => [...prev, { id, name: randomName, city: randomCity }]);
 
@@ -29,11 +41,13 @@ const PurchaseNotifications = () => {
       }, 4000);
     };
 
-    // Primeira notificação após 3 segundos
     const initialTimeout = setTimeout(showNotification, 3000);
 
-    // Depois a cada 15-25 segundos
     const interval = setInterval(() => {
+      if (!vacancyStore.canNotify()) {
+        setStopped(true);
+        return;
+      }
       showNotification();
     }, Math.random() * 10000 + 15000);
 
@@ -41,7 +55,7 @@ const PurchaseNotifications = () => {
       clearTimeout(initialTimeout);
       clearInterval(interval);
     };
-  }, []);
+  }, [stopped]);
 
   return (
     <div className="fixed bottom-4 left-4 z-40 space-y-2">

@@ -1,4 +1,5 @@
 import { useState, memo, lazy, Suspense } from "react";
+import { useVacancy } from "@/hooks/use-vacancy";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import packMockupPremium from "@/assets/MOCKUP_1.webp";
@@ -17,6 +18,7 @@ const redirectWithParams = (baseUrl: string) => {
 };
 const FinalCtaSection = () => {
   const [isUpsellModalOpen, setIsUpsellModalOpen] = useState(false);
+  const { remaining, filled, percent } = useVacancy();
   const [selectedPlan, setSelectedPlan] = useState<'basic' | 'premium'>('basic');
   const handleBuyNowClick = (plan: 'basic' | 'premium') => {
     setSelectedPlan(plan);
@@ -302,12 +304,12 @@ const FinalCtaSection = () => {
                       {/* Vagas restantes */}
                       <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-2.5 text-center space-y-1.5 mt-3">
                         <p className="text-xs font-bold text-red-400">
-                          🔥 Restam apenas <span className="text-red-300 text-sm">4 vagas</span> por esse valor!
+                          🔥 Restam apenas <span className="text-red-300 text-sm transition-all duration-500">{remaining} vaga{remaining !== 1 ? 's' : ''}</span> por esse valor!
                         </p>
                         <div className="w-full bg-gray-700 rounded-full h-2.5 overflow-hidden">
-                          <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all" style={{ width: '60%' }} />
+                          <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all duration-700 ease-out" style={{ width: `${percent}%` }} />
                         </div>
-                        <p className="text-[10px] text-gray-400">6 de 10 vagas já preenchidas</p>
+                        <p className="text-[10px] text-gray-400 transition-all duration-500">{filled} de 10 vagas já preenchidas</p>
                       </div>
                       <div className="flex items-center justify-center gap-2 mt-3">
                         <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" />
