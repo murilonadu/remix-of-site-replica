@@ -24,6 +24,7 @@ const UpsellModal = ({
   onDecline,
   selectedPlan = 'basic'
 }: UpsellModalProps) => {
+  const { remaining, filled, percent } = useVacancy();
   const handleAcceptClick = () => {
     if (selectedPlan === 'premium') {
       redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo");
