@@ -34,8 +34,8 @@ const TimedOfferPopup = () => {
   }, [hasShown]);
 
   const handleAccept = () => {
-    // Premium - R$ 10
-    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1ldT1NuAXSix71HG43We");
+    // Premium - R$ 17
+    redirectWithParams("https://www.ggcheckout.com/checkout/v5/1lJ4nNuBWRfx71HG43We");
   };
 
   const handleDecline = () => {
