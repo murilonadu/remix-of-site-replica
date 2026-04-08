@@ -138,9 +138,11 @@ const FinalCtaSection = () => {
 
               {/* Option 2 - R$ 29,90 - MAIS ESCOLHIDO */}
               <div className="relative group animate-scale-in animation-delay-700 w-full max-w-xl">
-                {/* MAIS ESCOLHIDO Badge */}
+                {/* MELHOR ESCOLHA Badge on card border */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  
+                  <div className="bg-green-500 rounded-full px-5 py-1.5 shadow-lg">
+                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ MELHOR ESCOLHA</span>
+                  </div>
                 </div>
 
                 {/* Glowing background effect - More prominent */}
