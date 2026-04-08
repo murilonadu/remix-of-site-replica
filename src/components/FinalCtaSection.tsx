@@ -1,5 +1,4 @@
 import { useState, memo, lazy, Suspense } from "react";
-import { useVacancy } from "@/hooks/use-vacancy";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
 import packMockupPremium from "@/assets/MOCKUP_1.webp";
@@ -18,7 +17,6 @@ const redirectWithParams = (baseUrl: string) => {
 };
 const FinalCtaSection = () => {
   const [isUpsellModalOpen, setIsUpsellModalOpen] = useState(false);
-  const { remaining, filled, percent } = useVacancy();
   const [selectedPlan, setSelectedPlan] = useState<'basic' | 'premium'>('basic');
   const handleBuyNowClick = (plan: 'basic' | 'premium') => {
     setSelectedPlan(plan);
@@ -102,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro</span>
+                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-[#08e753]">✓</span>
@@ -140,11 +138,9 @@ const FinalCtaSection = () => {
 
               {/* Option 2 - R$ 29,90 - MAIS ESCOLHIDO */}
               <div className="relative group animate-scale-in animation-delay-700 w-full max-w-xl">
-                {/* MELHOR ESCOLHA Badge on card border */}
+                {/* MAIS ESCOLHIDO Badge */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="rounded-full px-5 py-1.5 shadow-lg bg-[#ff5900]">
-                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">👇 LEVE 5 BÔNUS DE GRAÇA👇</span>
-                  </div>
+                  
                 </div>
 
                 {/* Glowing background effect - More prominent */}
@@ -184,7 +180,7 @@ const FinalCtaSection = () => {
 
                     <div className="space-y-3 lg:space-y-4 text-center">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
-                        <span className="line-through text-base lg:text-lg font-medium text-[#ff4d4d]">de R$ 137,00 por:</span>
+                        <span className="line-through text-base lg:text-lg font-medium text-[#ff4d4d]">de R$ 87,00 por:</span>
                       </div>
 
                       <div className="relative">
@@ -267,7 +263,7 @@ const FinalCtaSection = () => {
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
+                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground text-[#fce683]">
                                   50 Dicas de Performance <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
@@ -291,6 +287,21 @@ const FinalCtaSection = () => {
                           </div>
                         </div>
 
+                        {/* Bonus 5 - EXTRA */}
+                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
+                          <div className="p-2.5 backdrop-blur-sm">
+                            <div className="flex items-center gap-2.5">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/[0.67] border-[#ffc95c]">
+                                <span className="text-base">⭐</span>
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
+                                  Móveis Rústicos com Paletes, lucro de 80% na venda <span className="line-through ml-1 text-red-400">R$ 47,00</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -300,16 +311,6 @@ const FinalCtaSection = () => {
                         <Button size="lg" className="relative w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-bold text-base lg:text-lg py-3 lg:py-4 rounded-xl lg:rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 animate-bounce" onClick={() => redirectWithParams("https://www.ggcheckout.com/checkout/v5/1TMlLGIlBL86oXifTspo")}>
                           QUERO O PREMIUM
                         </Button>
-                      </div>
-                      {/* Vagas restantes */}
-                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-2.5 text-center space-y-1.5 mt-3">
-                        <p className="text-xs font-bold text-red-400">
-                          🔥 Restam apenas <span className="text-red-300 text-sm transition-all duration-500">{remaining} vaga{remaining !== 1 ? 's' : ''}</span> por esse valor!
-                        </p>
-                        <div className="w-full bg-gray-700 rounded-full h-2.5 overflow-hidden">
-                          <div className="bg-gradient-to-r from-red-500 to-orange-400 h-full rounded-full transition-all duration-700 ease-out" style={{ width: `${percent}%` }} />
-                        </div>
-                        <p className="text-[10px] text-gray-400 transition-all duration-500">{filled} de 10 vagas já preenchidas</p>
                       </div>
                       <div className="flex items-center justify-center gap-2 mt-3">
                         <img src={hotmartSecure} alt="Compra Segura" className="h-7 w-auto" loading="lazy" />

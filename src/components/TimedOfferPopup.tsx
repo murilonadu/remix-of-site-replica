@@ -21,14 +21,14 @@ const TimedOfferPopup = () => {
       return;
     }
 
-    // Show popup after 3 minutes (180000ms)
+    // Show popup after 2 minutes (120000ms)
     const timer = setTimeout(() => {
       if (!hasShown) {
         setIsOpen(true);
         setHasShown(true);
         sessionStorage.setItem('timedOfferShown', 'true');
       }
-    }, 180000);
+    }, 120000);
 
     return () => clearTimeout(timer);
   }, [hasShown]);
