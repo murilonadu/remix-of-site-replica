@@ -141,7 +141,7 @@ const FinalCtaSection = () => {
                 {/* MELHOR ESCOLHA Badge on card border */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
                   <div className="bg-green-500 rounded-full px-5 py-1.5 shadow-lg">
-                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ MELHOR ESCOLHA</span>
+                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ MAIS VENDIDO</span>
                   </div>
                 </div>
 
