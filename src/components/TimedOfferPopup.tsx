@@ -61,7 +61,7 @@ const TimedOfferPopup = () => {
                 <span className="text-base line-through text-muted-foreground/60">R$ 29,90</span>
                 <span className="text-3xl font-bold text-primary">R$ 17</span>
               </div>
-              <p className="text-xs text-calm-green-vibrant font-semibold mt-1">Mesmo preço do básico!</p>
+              
             </div>
 
             {/* Urgency */}
