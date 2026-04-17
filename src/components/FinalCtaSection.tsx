@@ -1,9 +1,9 @@
-import { useState, memo } from "react";
+import { useState, memo, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
-import matrixHands from "@/assets/matrix-hands.png";
 import packMockupPremium from "@/assets/MOCKUP_1.webp";
-import UpsellModal from "@/components/UpsellModal";
+
+const UpsellModal = lazy(() => import("@/components/UpsellModal"));
 
 // Fixed dimensions to prevent CLS
 const HOTMART_BADGE_HEIGHT = 28;
@@ -354,7 +354,9 @@ Quando finalizar a próxima atualização, o preço sobe.</p>
         </div>
       </div>
 
-      <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
+      <Suspense fallback={null}>
+        <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
+      </Suspense>
     </section>;
 };
 export default FinalCtaSection;
