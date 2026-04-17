@@ -1,9 +1,8 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import { Check, Gift, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import compraSegura from "@/assets/compra-segura.png";
-
-const UpsellModal = lazy(() => import("@/components/UpsellModal"));
+import UpsellModal from "@/components/UpsellModal";
 
 const Pricing = () => {
   const [isUpsellModalOpen, setIsUpsellModalOpen] = useState(false);
@@ -112,14 +111,12 @@ const Pricing = () => {
         </div>
       </div>
 
-      <Suspense fallback={null}>
-        <UpsellModal 
-          isOpen={isUpsellModalOpen} 
-          onClose={() => setIsUpsellModalOpen(false)} 
-          onAccept={() => {}} 
-          onDecline={() => {}} 
-        />
-      </Suspense>
+      <UpsellModal 
+        isOpen={isUpsellModalOpen} 
+        onClose={() => setIsUpsellModalOpen(false)} 
+        onAccept={() => {}} 
+        onDecline={() => {}} 
+      />
     </section>
   );
 };

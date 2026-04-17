@@ -1,9 +1,9 @@
-import { useState, memo, lazy, Suspense } from "react";
+import { useState, memo } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
+import matrixHands from "@/assets/matrix-hands.png";
 import packMockupPremium from "@/assets/MOCKUP_1.webp";
-
-const UpsellModal = lazy(() => import("@/components/UpsellModal"));
+import UpsellModal from "@/components/UpsellModal";
 
 // Fixed dimensions to prevent CLS
 const HOTMART_BADGE_HEIGHT = 28;
@@ -81,7 +81,7 @@ const FinalCtaSection = () => {
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl lg:rounded-2xl blur-sm opacity-20"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-gray-500/40">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary text-[#12d965]">R$ 10,00</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary">R$ 10,00</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-400">ou 3x de R$ 6,37 no cartão</p>
                         </div>
                       </div>
@@ -91,20 +91,20 @@ const FinalCtaSection = () => {
                       {/* Base features */}
                       <div className="space-y-2.5 text-transparent">
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">1.000 Projetos Prontos em MDF</span>
+                          <span className="text-gray-400">✓</span>
+                          <span className="font-medium text-primary">1.000 Projetos Passo a Passo</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-left text-primary text-slate-50">Acesso Digital Imediato </span>
+                          <span className="text-gray-400">✓</span>
+                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="text-gray-400">✓</span>
+                          <span className="font-medium text-primary">Atualizações semanais</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-[#08e753]">✓</span>
-                          <span className="font-medium text-primary text-slate-50">Garantia de 7 dias</span>
+                          <span className="text-gray-400">✓</span>
+                          <span className="font-medium text-primary">Garantia de 7 dias</span>
                         </div>
                       </div>
 
@@ -138,11 +138,9 @@ const FinalCtaSection = () => {
 
               {/* Option 2 - R$ 29,90 - MAIS ESCOLHIDO */}
               <div className="relative group animate-scale-in animation-delay-700 w-full max-w-xl">
-                {/* MELHOR ESCOLHA Badge on card border */}
+                {/* MAIS ESCOLHIDO Badge */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-green-500 rounded-full px-5 py-1.5 shadow-lg">
-                    <span className="text-white font-bold text-xs lg:text-sm whitespace-nowrap">⭐ MAIS VENDIDO</span>
-                  </div>
+                  
                 </div>
 
                 {/* Glowing background effect - More prominent */}
@@ -182,13 +180,16 @@ const FinalCtaSection = () => {
 
                     <div className="space-y-3 lg:space-y-4 text-center">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
-                        <span className="line-through text-base lg:text-lg font-medium text-[#ff4d4d]">de R$ 137,00 por:</span>
+                        <span className="line-through text-base lg:text-lg font-medium text-red-500">R$ 137,00</span>
+                        <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-2 lg:px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-bounce">
+                          -81% DESCONTO
+                        </div>
                       </div>
 
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl lg:rounded-2xl blur-sm opacity-40"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-500/60">
-                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text bg-slate-50 text-[#ffdd1f]">R$ 29,90</div>
+                          <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">R$ 29,90</div>
                           <p className="text-xs lg:text-sm mt-1 text-gray-300">ou 3x de R$ 11,17 no cartão</p>
                         </div>
                       </div>
@@ -198,20 +199,20 @@ const FinalCtaSection = () => {
                       {/* Base features - Same as basic */}
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#fce683]">✓</span>
-                          <span className="font-medium text-slate-50">2.000 Projetos Prontos em MDF</span>
+                          <span className="text-yellow-500">✓</span>
+                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#fce683]">✓</span>
-                          <span className="font-medium text-left text-slate-50">Acesso digital imediato</span>
+                          <span className="text-yellow-500">✓</span>
+                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#fce683]">✓</span>
-                          <span className="font-medium text-slate-50">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="text-yellow-500">✓</span>
+                          <span className="font-medium">Atualizações semanais</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-[#fce683]">✓</span>
-                          <span className="font-medium text-slate-50">Garantia de 7 dias</span>
+                          <span className="text-yellow-500">✓</span>
+                          <span className="font-medium">Garantia de 7 dias</span>
                         </div>
                       </div>
 
@@ -220,7 +221,7 @@ const FinalCtaSection = () => {
 
                       {/* Bonuses Title */}
                       <div className="text-center mb-3">
-                        <p className="text-xs font-bold uppercase tracking-wider text-[#ffe500]">MAIS TODOS ESSES  BÔNUS:</p>
+                        <p className="text-xs font-bold uppercase tracking-wider text-yellow-300">TODOS OS BÔNUS + EXTRAS</p>
                       </div>
 
                       {/* Exclusive Bonuses Section */}
@@ -229,11 +230,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/[0.64] border-[#ffc95c]">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
+                                <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
                                   Os 100 Móveis Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 67,00</span>
                                 </p>
                               </div>
@@ -244,12 +245,12 @@ const FinalCtaSection = () => {
                         {/* Bonus 2 */}
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5 text-[#e4ff94]">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-[#ffc95c]/[0.71] bg-[#ffc95c]/[0.69]">
+                            <div className="flex items-center gap-2.5">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
                                 <span className="text-base">🎁</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-[#fce683]">
+                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
                                   Contrato de Serviço AntiFraude <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
@@ -261,11 +262,11 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border bg-[#ffc95c]/65 border-[#ffc95c]">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
+                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground">
                                   50 Dicas de Performance <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
@@ -277,18 +278,17 @@ const FinalCtaSection = () => {
                         <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
                           <div className="p-2.5 backdrop-blur-sm">
                             <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-[#ffc95c] bg-[#ffc95c]/[0.69]">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
                                 <span className="text-base">⭐</span>
                               </div>
                               <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-[#fce683]">
+                                <p className="text-[11px] font-bold leading-tight text-yellow-300">
                                   Suporte VIP via WhatsApp <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
 
@@ -354,9 +354,7 @@ Quando finalizar a próxima atualização, o preço sobe.</p>
         </div>
       </div>
 
-      <Suspense fallback={null}>
-        <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
-      </Suspense>
+      <UpsellModal isOpen={isUpsellModalOpen} onClose={() => setIsUpsellModalOpen(false)} onAccept={() => {}} onDecline={() => {}} selectedPlan={selectedPlan} />
     </section>;
 };
 export default FinalCtaSection;
