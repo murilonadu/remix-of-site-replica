@@ -89,22 +89,22 @@ const FinalCtaSection = () => {
 
                     <div className="space-y-3 text-xs lg:text-sm flex-grow">
                       {/* Base features */}
-                      <div className="space-y-2.5 text-transparent">
-                        <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">1.000 Projetos Prontos em MDF</span>
+                      <div className="space-y-1 text-white">
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">1.000 Projetos Prontos em MDF</span>
                         </div>
-                        <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Acesso Digital Imediato</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">Acesso Digital Imediato</span>
                         </div>
-                        <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
-                        <div className="flex items-center gap-2 text-gray-300">
-                          <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Garantia de 7 dias</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">Garantia de 7 dias</span>
                         </div>
                       </div>
 
@@ -197,21 +197,21 @@ const FinalCtaSection = () => {
 
                     <div className="space-y-3 text-xs lg:text-sm flex-grow">
                       {/* Base features - Same as basic */}
-                      <div className="space-y-2.5">
-                        <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
+                      <div className="space-y-1 text-white">
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
                           <span className="font-medium">2.000 Projetos Prontos em MDF</span>
                         </div>
-                        <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso Digital Imediato</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">Acesso Digital Imediato</span>
                         </div>
-                        <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
                           <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
-                        <div className="flex items-center gap-2 text-yellow-300">
-                          <span className="text-yellow-500">✓</span>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
                           <span className="font-medium">Garantia de 7 dias</span>
                         </div>
                       </div>
