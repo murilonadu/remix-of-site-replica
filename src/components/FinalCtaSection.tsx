@@ -92,15 +92,15 @@ const FinalCtaSection = () => {
                       <div className="space-y-2.5 text-transparent">
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">1.000 Projetos Passo a Passo</span>
+                          <span className="font-medium text-primary">1.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-left text-primary">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left text-primary">Acesso Digital Imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
-                          <span className="font-medium text-primary">Atualizações semanais</span>
+                          <span className="font-medium text-primary">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-300">
                           <span className="text-gray-400">✓</span>
@@ -200,15 +200,15 @@ const FinalCtaSection = () => {
                       <div className="space-y-2.5">
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">2.000 Projetos Passo a Passo</span>
+                          <span className="font-medium">2.000 Projetos Prontos em MDF</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium text-left">Acesso imediato em PDF pelo seu  WhatsApp</span>
+                          <span className="font-medium text-left">Acesso Digital Imediato</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
-                          <span className="font-medium">Atualizações semanais</span>
+                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2 text-yellow-300">
                           <span className="text-yellow-500">✓</span>
