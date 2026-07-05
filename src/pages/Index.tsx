@@ -42,8 +42,6 @@ const Index = () => {
       {/* Deferred extras - only load after 2.5s to prioritize critical rendering */}
       {isReadyForExtras && (
         <Suspense fallback={null}>
-          
-          <TimedOfferPopup />
           <PurchaseNotifications />
         </Suspense>
       )}
