@@ -14,8 +14,6 @@ const FaqSection = lazy(() => import("@/components/FaqSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 // Lazy load extras (popups and notifications) - deferred loading
-
-const TimedOfferPopup = lazy(() => import("@/components/TimedOfferPopup"));
 const PurchaseNotifications = lazy(() => import("@/components/PurchaseNotifications"));
 
 // Simple loading fallback
@@ -44,8 +42,6 @@ const Index = () => {
       {/* Deferred extras - only load after 2.5s to prioritize critical rendering */}
       {isReadyForExtras && (
         <Suspense fallback={null}>
-          
-          <TimedOfferPopup />
           <PurchaseNotifications />
         </Suspense>
       )}
