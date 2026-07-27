@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>+1.000 Projetos Modernos de Marcenaria</title>
-    <meta name="description" content="Enquanto você perde horas criando do zero, seu concorrente já entregou o projeto, fechou a venda e tá enchendo o bolso." />
-    <meta name="author" content="Projetos Marcenaria" />
-    
-    <!-- Resource hints for checkout speed -->
-    <link rel="dns-prefetch" href="https://www.ggcheckout.com">
-    <link rel="preconnect" href="https://www.ggcheckout.com" crossorigin>
-    
-    <!-- Resource hints for tracking pixel -->
-    <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
-    <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
-    
-    <!-- Preload LCP image -->
-    <link rel="preload" as="image" href="/src/assets/MOCKUP_1.webp" fetchpriority="high">
-    
-    <!-- System font stack for instant rendering - no external font blocking -->
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      }
-    </style>
+<head>
+  <!-- ...metatags e fontes... -->
 
-    <meta property="og:title" content="marcenaria-lucrativa" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1228619149002901');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Facebook Pixel Code -->
+</head>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<body>
+  <!-- Facebook Pixel Noscript -->
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1228619149002901&ev=PageView&noscript=1"
+  /></noscript>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Defer third-party tracking scripts - load after page is interactive -->
-    <script>
-      window.addEventListener('load', function() {
-        // UTMify pixel - loads immediately after page load
-        window.pixelId = "689e47fd4cbca188db86ba30";
-        var pixel = document.createElement("script");
-        pixel.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-        pixel.async = true;
-        document.body.appendChild(pixel);
-        
-        // UTMify UTMs script
-        var utms = document.createElement("script");
-        utms.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-        utms.setAttribute("data-utmify-prevent-xcod-sck", "");
-        utms.setAttribute("data-utmify-prevent-subids", "");
-        utms.async = true;
-        document.body.appendChild(utms);
-      });
-    </script>
-  </body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
