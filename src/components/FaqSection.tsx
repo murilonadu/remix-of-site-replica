@@ -4,12 +4,12 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const FaqSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const faqs = [
-    { question: "Os móveis saem mesmo de uma única chapa?", answer: "Sim. Cada um dos 25 projetos foi planejado para que todas as peças caibam em uma chapa padrão de MDF 15 mm (2,75 x 1,85 m). O plano de corte de cada móvel está no material." },
-    { question: "Eu preciso saber usar algum programa?", answer: "Não. É tudo em PDF: lista de peças com medidas, plano de corte e montagem passo a passo com imagens. Dá para abrir no celular ou imprimir." },
-    { question: "Serve para quem está começando?", answer: "Sim. A montagem é mostrada etapa por etapa, com as peças da vez destacadas em cada imagem." },
-    { question: "Posso fabricar e vender esses móveis?", answer: "Sim! Você pode usar os projetos para fabricar e vender para seus clientes. No Pacote Premium vem o bônus Quanto Cobrar, com o preço sugerido de cada móvel." },
-    { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você recebe por e-mail o link para download." },
-    { question: "E se eu não gostar?", answer: "Você tem garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro." }
+    { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Sim! São 25 móveis para quarto, sala, cozinha, banheiro, lavanderia, quarto infantil e escritório, e cada um sai inteiro de uma única chapa de MDF." },
+    { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Todos os projetos vêm em PDF, com lista de peças, plano de corte e montagem passo a passo. Dá para abrir no celular ou imprimir." },
+    { question: "Os projetos são atualizados e modernos?", answer: "Sim! São móveis com medidas padrão de mercado e acabamento atual: corpo branco com frentes amadeiradas." },
+    { question: "Posso usar esses projetos para vender para meus clientes?", answer: "Sim! Você tem total liberdade para usar os projetos comercialmente." },
+    { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você receberá por email o link para download." },
+    { question: "E se eu não gostar do projeto?", answer: "Oferecemos garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro." }
   ];
   const toggleItem = (index: number) => setOpenItems(prev => prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]);
 
