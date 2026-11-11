@@ -3,9 +3,6 @@ import projetosGrid from "@/assets/chapa/projetos-grid.webp";
 import oQueVoceTera from "@/assets/chapa/o-que-voce-tera.webp";
 import carrosselModulos1 from "@/assets/chapa/carrossel-modulos-1.webp";
 import carrosselModulos2 from "@/assets/chapa/carrossel-modulos-2.webp";
-import passoAPasso01 from "@/assets/chapa/passo-a-passo-01.webp";
-import passoAPasso04 from "@/assets/chapa/passo-a-passo-04.webp";
-import passoAPasso07 from "@/assets/chapa/passo-a-passo-07.webp";
 import {
   Carousel,
   CarouselContent,
@@ -20,11 +17,8 @@ const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
 const carrosselImages = [
-{ src: passoAPasso01, alt: "Projeto 01 - Montagem passo a passo do par de criados-mudos" },
 { src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Peças, Plano de Corte, Montagem" },
-{ src: passoAPasso04, alt: "Projeto 04 - Montagem passo a passo da escrivaninha" },
-{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Ferragens, Acabamento, 7 Ambientes" },
-{ src: passoAPasso07, alt: "Projeto 07 - Montagem passo a passo do rack 1,80 m" }];
+{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Ferragens, Acabamento, 7 Ambientes" }];
 
 
 const ContentSection = memo(() => {
@@ -95,11 +89,11 @@ const ContentSection = memo(() => {
             
             <CarouselContent>
               {carrosselImages.map((img, index) =>
-              <CarouselItem key={index} className="flex items-center justify-center">
+              <CarouselItem key={index}>
                   <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-auto max-h-[600px] object-contain rounded-xl"
+                  className="w-full h-auto object-contain rounded-xl"
                   loading="lazy"
                   decoding="async" />
                 </CarouselItem>
