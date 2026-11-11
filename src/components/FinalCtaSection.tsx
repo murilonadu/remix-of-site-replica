@@ -1,7 +1,7 @@
 import { useState, memo, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
-import packMockupPremium from "@/assets/MOCKUP_1.webp";
+import packMockupPremium from "@/assets/chapa/mockup.webp";
 
 const UpsellModal = lazy(() => import("@/components/UpsellModal"));
 
@@ -92,7 +92,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-1 text-white">
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">1.000 Projetos Prontos em MDF</span>
+                          <span className="font-medium">25 Projetos de Móveis de 1 Chapa de MDF</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium">Lista de peças, plano de corte e montagem passo a passo</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -200,7 +200,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-1 text-white">
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">2.000 Projetos Prontos em MDF</span>
+                          <span className="font-medium">25 Projetos de Móveis de 1 Chapa de MDF</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -208,7 +208,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium">Lista de peças, plano de corte e montagem passo a passo</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -235,7 +235,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
-                                  Os 100 Móveis Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 67,00</span>
+                                  Quanto Cobrar por Cada Móvel <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
                             </div>
@@ -251,7 +251,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold leading-tight text-yellow-100">
-                                  Contrato de Serviço AntiFraude <span className="line-through ml-1 text-red-400">R$ 37,00</span>
+                                  O Que Fazer com as Sobras da Chapa <span className="line-through ml-1 text-red-400">R$ 29,00</span>
                                 </p>
                               </div>
                             </div>
@@ -267,7 +267,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-bold leading-tight text-destructive-foreground">
-                                  50 Dicas de Performance <span className="line-through ml-1 text-red-400">R$ 37,00</span>
+                                  Guia de Ferragens <span className="line-through ml-1 text-red-400">R$ 27,00</span>
                                 </p>
                               </div>
                             </div>
@@ -283,7 +283,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-bold leading-tight text-yellow-300">
-                                  Suporte VIP via WhatsApp <span className="line-through ml-1 text-red-400">R$ 47,00</span>
+                                  Mapa de Medidas Padrão <span className="line-through ml-1 text-red-400">R$ 27,00</span>
                                 </p>
                               </div>
                             </div>

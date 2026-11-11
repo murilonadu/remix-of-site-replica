@@ -1,11 +1,14 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import project1 from "@/assets/projeto-guarda-roupa.webp";
-import project2 from "@/assets/projeto-sala-estar.webp";
-import project3 from "@/assets/projeto-bancadas.webp";
-import project4 from "@/assets/projeto-cuba-esculpida.webp";
-import project5 from "@/assets/projeto-cozinha.webp";
+import m02 from "@/assets/chapa/movel-02.webp";
+import m13 from "@/assets/chapa/movel-13.webp";
+import m07 from "@/assets/chapa/movel-07.webp";
+import m21 from "@/assets/chapa/movel-21.webp";
+import m09 from "@/assets/chapa/movel-09.webp";
+import m18 from "@/assets/chapa/movel-18.webp";
+import m23 from "@/assets/chapa/movel-23.webp";
+import m10 from "@/assets/chapa/movel-10.webp";
 
 const PROJECT_IMAGE_WIDTH = 400;
 const PROJECT_IMAGE_HEIGHT = 256;
@@ -35,11 +38,14 @@ const BonusSection = memo(() => {
   }, [autoplayPlugin]);
 
   const projects = [
-    { image: project1, alt: "Detalhamento de Guarda Roupa" },
-    { image: project2, alt: "Projeto Sala de Estar" },
-    { image: project3, alt: "Projetos de Bancadas e Móveis" },
-    { image: project4, alt: "Cuba Esculpida - Detalhamento" },
-    { image: project5, alt: "Projeto de Cozinha Completo" },
+    { image: m02, alt: "Cômoda 3 gavetas" },
+    { image: m13, alt: "Balcão de pia 1,20 m" },
+    { image: m07, alt: "Rack 1,80 m com 2 portas e nicho" },
+    { image: m21, alt: "Guarda-roupa infantil 2 portas" },
+    { image: m09, alt: "Estante de nichos" },
+    { image: m18, alt: "Kit banheiro: gabinete + espelheira + torre" },
+    { image: m23, alt: "Cama montessoriana casinha" },
+    { image: m10, alt: "Aparador com 2 gavetas" },
   ];
 
   return (
@@ -48,7 +54,7 @@ const BonusSection = memo(() => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-poppins bg-gradient-title-glow bg-clip-text text-transparent animate-fade-in hover:scale-105 transition-all duration-500 cursor-default">
-              Um pouco dos nossos projetos na prática 👇🏻
+              Alguns dos 25 móveis que saem de uma única chapa 👇🏻
             </h2>
           </div>
 
@@ -69,7 +75,7 @@ const BonusSection = memo(() => {
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-64 object-cover"
+                            className="w-full h-64 object-cover bg-[#F4F1EC]"
                             loading="lazy"
                             decoding="async"
                           />

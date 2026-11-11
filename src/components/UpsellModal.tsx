@@ -86,7 +86,7 @@ const UpsellModal = ({
                 <div className="space-y-1.5 text-xs">
                   <div className="flex items-center gap-2 bg-white/80 rounded-md px-2 py-1.5 border border-orange-200">
                     <span>📐</span>
-                    <span className="text-gray-700 flex-1 font-medium">2.000 Projetos Prontos</span>
+                    <span className="text-gray-700 flex-1 font-medium">25 Projetos + Planos de Corte</span>
                   </div>
                   
                   <div className="text-center">
@@ -98,23 +98,23 @@ const UpsellModal = ({
                   <div className="bg-green-50 rounded-lg p-1.5 space-y-1 border border-green-200/50">
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
                       <span>🎁</span>
-                      <span className="text-gray-700 flex-1">Os 100 Móveis Mais Vendidos</span>
-                      <span className="text-green-500 line-through text-[10px]">R$ 67</span>
+                      <span className="text-gray-700 flex-1">Quanto Cobrar por Cada Móvel</span>
+                      <span className="text-green-500 line-through text-[10px]">R$ 37</span>
                     </div>
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
                       <span>🎁</span>
-                      <span className="text-gray-700 flex-1">Contrato AntiFraude</span>
-                      <span className="text-green-500 line-through text-[10px]">R$ 37</span>
+                      <span className="text-gray-700 flex-1">O Que Fazer com as Sobras</span>
+                      <span className="text-green-500 line-through text-[10px]">R$ 29</span>
                     </div>
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
                       <span>⭐</span>
-                      <span className="text-gray-700 flex-1">50 Dicas de Performance</span>
-                      <span className="text-green-500 line-through text-[10px]">R$ 37</span>
+                      <span className="text-gray-700 flex-1">Guia de Ferragens</span>
+                      <span className="text-green-500 line-through text-[10px]">R$ 27</span>
                     </div>
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
-                      <span>💬</span>
-                      <span className="text-gray-700 flex-1">Suporte VIP WhatsApp</span>
-                      <span className="text-green-500 line-through text-[10px]">R$ 47</span>
+                      <span>📏</span>
+                      <span className="text-gray-700 flex-1">Mapa de Medidas Padrão</span>
+                      <span className="text-green-500 line-through text-[10px]">R$ 27</span>
                     </div>
                   </div>
                 </div>
