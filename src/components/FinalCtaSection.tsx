@@ -283,7 +283,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-bold leading-tight text-yellow-300">
-                                  Mapa de Medidas Padrão <span className="line-through ml-1 text-red-400">R$ 27,00</span>
+                                  Suporte VIP via WhatsApp <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
                             </div>

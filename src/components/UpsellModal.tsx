@@ -113,7 +113,7 @@ const UpsellModal = ({
                     </div>
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
                       <span>📏</span>
-                      <span className="text-gray-700 flex-1">Mapa de Medidas Padrão</span>
+                      <span className="text-gray-700 flex-1">Suporte VIP WhatsApp</span>
                       <span className="text-green-500 line-through text-[10px]">R$ 27</span>
                     </div>
                   </div>
