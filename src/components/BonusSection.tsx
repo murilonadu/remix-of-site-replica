@@ -9,6 +9,9 @@ import project5 from "@/assets/chapa/movel-09.webp";
 import project6 from "@/assets/chapa/movel-18.webp";
 import project7 from "@/assets/chapa/movel-23.webp";
 import project8 from "@/assets/chapa/movel-10.webp";
+import passo01 from "@/assets/chapa/passo-a-passo-01.webp";
+import passo04 from "@/assets/chapa/passo-a-passo-04.webp";
+import passo07 from "@/assets/chapa/passo-a-passo-07.webp";
 
 const PROJECT_IMAGE_WIDTH = 400;
 const PROJECT_IMAGE_HEIGHT = 256;
@@ -39,11 +42,14 @@ const BonusSection = memo(() => {
 
   const projects = [
     { image: project1, alt: "Cômoda 3 gavetas" },
+    { image: passo01, alt: "Montagem passo a passo - par de criados-mudos" },
     { image: project2, alt: "Balcão de pia 1,20 m" },
     { image: project3, alt: "Rack 1,80 m com 2 portas e nicho" },
+    { image: passo07, alt: "Montagem passo a passo - rack 1,80 m" },
     { image: project4, alt: "Guarda-roupa infantil 2 portas" },
     { image: project5, alt: "Estante de nichos" },
     { image: project6, alt: "Kit banheiro: gabinete + espelheira + torre" },
+    { image: passo04, alt: "Montagem passo a passo - escrivaninha" },
     { image: project7, alt: "Cama montessoriana casinha" },
     { image: project8, alt: "Aparador com 2 gavetas" },
   ];
