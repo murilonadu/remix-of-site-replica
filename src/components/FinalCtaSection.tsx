@@ -200,7 +200,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-1 text-white">
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">50 Projetos de Móveis de 1 Chapa de MDF + 4 Bônus Gratuitos</span>
+                          <span className="font-medium">50 Projetos de Móveis + Bônus Gratuitos</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
