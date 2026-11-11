@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import LazyWistiaVideo from "@/components/LazyWistiaVideo";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import { motion } from "framer-motion";
 import productMockup from "@/assets/chapa/mockup.webp";
 import avatarAndre from "@/assets/testimonial-andre.webp";
 import avatarCarlos from "@/assets/testimonial-carlos.webp";
@@ -86,11 +85,7 @@ const HeroSection = () => {
         <div className="text-center space-y-8">
           {/* Top stats/metrics */}
 
-          <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-center justify-center gap-0 mt-8">
+          <div className="flex items-center justify-center gap-0 mt-8 hero-fade-up">
           
             <div className="flex -space-x-3">
               {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) =>
@@ -109,7 +104,7 @@ const HeroSection = () => {
               <Users className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-semibold text-primary">+645 Alunos</span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
