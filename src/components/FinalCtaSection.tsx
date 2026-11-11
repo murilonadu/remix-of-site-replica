@@ -208,7 +208,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Lista de peças, plano de corte e montagem passo a passo</span>
+                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -222,6 +222,7 @@ const FinalCtaSection = () => {
                       {/* Bonuses Title */}
                       <div className="text-center mb-3">
                         <p className="text-xs font-bold uppercase tracking-wider text-yellow-300">TODOS OS BÔNUS + EXTRAS</p>
+                        <p className="text-sm font-extrabold uppercase tracking-wider text-white mt-1">LEVE TUDO DE GRAÇA</p>
                       </div>
 
                       {/* Exclusive Bonuses Section */}

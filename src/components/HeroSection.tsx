@@ -118,7 +118,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Com plano de corte e montagem passo a passo</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Projetos para cozinha, para quarto, para sala, para banheiro e muito mais</h2>
             </div>
           </div>
 
@@ -139,7 +139,7 @@ const HeroSection = () => {
           {/* VSL Video Section */}
           <div className="mt-8 md:mt-12 max-w-xs md:max-w-sm mx-auto">
             <div className="rounded-2xl overflow-hidden border-2 border-expandix-yellow/30 shadow-2xl">
-              <LazyWistiaVideo mediaId="7yirr4n5xg" aspect="0.5625" />
+              <LazyWistiaVideo mediaId="7yirr4n5xg" aspect="0.5625" cta="CLIQUE PARA ASSISTIR" ctaSub="Veja em 2 minutos antes de garantir o seu" />
             </div>
           </div>
 

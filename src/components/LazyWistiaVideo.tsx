@@ -3,6 +3,8 @@ import { useEffect, useRef, useState, memo } from "react";
 interface LazyWistiaVideoProps {
   mediaId: string;
   aspect?: string;
+  cta?: string;
+  ctaSub?: string;
 }
 
 // Default aspect ratio percentage for padding-top fallback
@@ -12,7 +14,7 @@ const DEFAULT_ASPECT_PADDING = 55.21;
  * Vídeo leve: mostra a capa do vídeo com botão de play e só baixa o player
  * da Wistia (≈1 MB) quando a pessoa toca. Assim a página abre bem mais rápido.
  */
-const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWistiaVideoProps) => {
+const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812", cta = "TOQUE PARA ASSISTIR", ctaSub }: LazyWistiaVideoProps) => {
   const aspectNum = parseFloat(aspect);
   const paddingTop = aspectNum > 0 ? (1 / aspectNum) * 100 : DEFAULT_ASPECT_PADDING;
   const cssAspectRatio = aspectNum > 0 ? `${aspectNum}` : "16/9";
@@ -121,12 +123,20 @@ const LazyWistiaVideo = memo(({ mediaId, aspect = "1.8113207547169812" }: LazyWi
               className="absolute inset-0 w-full h-full object-cover"
             />
           )}
-          <span className="absolute inset-0 flex items-center justify-center">
-            <span className="flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/90 shadow-2xl transition-transform duration-300 group-hover:scale-110">
-              <svg viewBox="0 0 24 24" className="w-9 h-9 fill-white ml-1" aria-hidden="true">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+          <span className="absolute inset-0 bg-black/25" />
+          <span className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4">
+            <span className="relative flex items-center justify-center">
+              <span className="absolute inline-flex w-20 h-20 rounded-2xl bg-primary/60 animate-ping" />
+              <span className="relative flex items-center justify-center w-20 h-20 rounded-2xl bg-primary shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                <svg viewBox="0 0 24 24" className="w-9 h-9 fill-white ml-1" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
             </span>
+            <span className="rounded-full bg-black/70 px-5 py-2 text-white text-base md:text-lg font-extrabold tracking-wide shadow-lg">
+              ▶ {cta}
+            </span>
+            {ctaSub && <span className="text-white text-sm font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,.8)]">{ctaSub}</span>}
           </span>
         </button>
       )}
