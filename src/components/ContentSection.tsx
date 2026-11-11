@@ -1,8 +1,8 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
-import projetosGrid from "@/assets/projetos-grid.webp";
-import oQueVoceTera from "@/assets/o-que-voce-tera.webp";
-import carrosselModulos1 from "@/assets/carrossel-modulos-1.png";
-import carrosselModulos2 from "@/assets/carrossel-modulos-2.png";
+import projetosGrid from "@/assets/chapa/projetos-grid.webp";
+import oQueVoceTera from "@/assets/chapa/o-que-voce-tera.webp";
+import carrosselModulos1 from "@/assets/chapa/carrossel-modulos-1.webp";
+import carrosselModulos2 from "@/assets/chapa/carrossel-modulos-2.webp";
 import {
   Carousel,
   CarouselContent,
@@ -17,8 +17,8 @@ const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
 const carrosselImages = [
-{ src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Materiais, Ferramentas, Planos de Montagem" },
-{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Técnicas de Corte, Juntas e Fixação, Acabamento Final" }];
+{ src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Peças, Plano de Corte, Montagem" },
+{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Ferragens, Acabamento, 7 Ambientes" }];
 
 
 const ContentSection = memo(() => {
@@ -59,7 +59,7 @@ const ContentSection = memo(() => {
 
               <img
                 src={oQueVoceTera}
-                alt="Módulos: Medidas Exatas, Planos de Corte, Projetos Lucrativos, Prontos para Produção"
+                alt="Módulos: Lista de Peças, Plano de Corte, Montagem, Prontos para Produção"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
                 decoding="async" />
@@ -72,7 +72,7 @@ const ContentSection = memo(() => {
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
         <img
           src={projetosGrid}
-          alt="Exemplos de projetos de marcenaria"
+          alt="Exemplos dos móveis de uma única chapa"
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
           className="w-full h-full object-cover"

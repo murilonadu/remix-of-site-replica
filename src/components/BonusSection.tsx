@@ -1,11 +1,14 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import project1 from "@/assets/projeto-guarda-roupa.webp";
-import project2 from "@/assets/projeto-sala-estar.webp";
-import project3 from "@/assets/projeto-bancadas.webp";
-import project4 from "@/assets/projeto-cuba-esculpida.webp";
-import project5 from "@/assets/projeto-cozinha.webp";
+import project1 from "@/assets/chapa/movel-02.webp";
+import project2 from "@/assets/chapa/movel-13.webp";
+import project3 from "@/assets/chapa/movel-07.webp";
+import project4 from "@/assets/chapa/movel-21.webp";
+import project5 from "@/assets/chapa/movel-09.webp";
+import project6 from "@/assets/chapa/movel-18.webp";
+import project7 from "@/assets/chapa/movel-23.webp";
+import project8 from "@/assets/chapa/movel-10.webp";
 
 const PROJECT_IMAGE_WIDTH = 400;
 const PROJECT_IMAGE_HEIGHT = 256;
@@ -35,11 +38,14 @@ const BonusSection = memo(() => {
   }, [autoplayPlugin]);
 
   const projects = [
-    { image: project1, alt: "Detalhamento de Guarda Roupa" },
-    { image: project2, alt: "Projeto Sala de Estar" },
-    { image: project3, alt: "Projetos de Bancadas e Móveis" },
-    { image: project4, alt: "Cuba Esculpida - Detalhamento" },
-    { image: project5, alt: "Projeto de Cozinha Completo" },
+    { image: project1, alt: "Cômoda 3 gavetas" },
+    { image: project2, alt: "Balcão de pia 1,20 m" },
+    { image: project3, alt: "Rack 1,80 m com 2 portas e nicho" },
+    { image: project4, alt: "Guarda-roupa infantil 2 portas" },
+    { image: project5, alt: "Estante de nichos" },
+    { image: project6, alt: "Kit banheiro: gabinete + espelheira + torre" },
+    { image: project7, alt: "Cama montessoriana casinha" },
+    { image: project8, alt: "Aparador com 2 gavetas" },
   ];
 
   return (
@@ -69,7 +75,7 @@ const BonusSection = memo(() => {
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-64 object-cover"
+                            className="w-full h-64 object-contain bg-[#E9E2D6]"
                             loading="lazy"
                             decoding="async"
                           />

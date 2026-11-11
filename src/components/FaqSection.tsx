@@ -4,9 +4,9 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const FaqSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const faqs = [
-    { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Sim! Os projetos incluem desde móveis residenciais até projetos comerciais e industriais. São mais de 1.000 projetos que abrangem todos os segmentos da marcenaria." },
-    { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Todos os projetos vêm em formatos universais (PDF, DWG) que podem ser abertos em qualquer programa de design ou até mesmo impressos diretamente." },
-    { question: "Os projetos são atualizados e modernos?", answer: "Absolutamente! Nossa equipe atualiza constantemente a biblioteca com tendências atuais do mercado." },
+    { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Sim! São 25 móveis para quarto, sala, cozinha, banheiro, lavanderia, quarto infantil e escritório, e cada um sai inteiro de uma única chapa de MDF." },
+    { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Todos os projetos vêm em PDF, com lista de peças, plano de corte e montagem passo a passo. Dá para abrir no celular ou imprimir." },
+    { question: "Os projetos são atualizados e modernos?", answer: "Sim! São móveis com medidas padrão de mercado e acabamento atual: corpo branco com frentes amadeiradas." },
     { question: "Posso usar esses projetos para vender para meus clientes?", answer: "Sim! Você tem total liberdade para usar os projetos comercialmente." },
     { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você receberá por email o link para download." },
     { question: "E se eu não gostar do projeto?", answer: "Oferecemos garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro." }

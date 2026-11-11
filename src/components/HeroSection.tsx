@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 import LazyWistiaVideo from "@/components/LazyWistiaVideo";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import { motion } from "framer-motion";
-import productMockup from "@/assets/MOCKUP_1.webp";
+import productMockup from "@/assets/chapa/mockup.webp";
 import avatarAndre from "@/assets/testimonial-andre.webp";
 import avatarCarlos from "@/assets/testimonial-carlos.webp";
 import avatarFelipe from "@/assets/testimonial-felipe.webp";
@@ -86,11 +85,7 @@ const HeroSection = () => {
         <div className="text-center space-y-8">
           {/* Top stats/metrics */}
 
-          <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-center justify-center gap-0 mt-8">
+          <div className="flex items-center justify-center gap-0 mt-8 hero-fade-up">
           
             <div className="flex -space-x-3">
               {[avatarAndre, avatarCarlos, avatarFelipe].map((src, i) =>
@@ -109,12 +104,12 @@ const HeroSection = () => {
               <Users className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-semibold text-primary">+645 Alunos</span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
-              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">1.000 Projetos Prontos de Móveis Planejados para Evitar Erro e Desperdício de MDF</span>{" "}
+              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">25 Móveis que Saem de Uma Única Chapa de MDF para Fabricar Sem Erro e Sem Desperdício</span>{" "}
               <span className="text-expandix-yellow drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">​ </span>
             </h1>
             <div className="w-40 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green mx-auto mt-4 rounded-full animate-slide-in-right"></div>
@@ -123,7 +118,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Projetos para cozinha, para quarto, para  sala, para banheiro e muito mais                  </h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Com plano de corte e montagem passo a passo</h2>
             </div>
           </div>
 
