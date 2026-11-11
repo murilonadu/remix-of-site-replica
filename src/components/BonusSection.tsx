@@ -75,7 +75,7 @@ const BonusSection = memo(() => {
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-64 object-cover bg-[#F4F1EC]"
+                            className="w-full h-64 object-contain bg-[#E9E2D6]"
                             loading="lazy"
                             decoding="async"
                           />
