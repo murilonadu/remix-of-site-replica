@@ -1,20 +1,13 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import project1 from "@/assets/chapa/movel-02.webp";
-import project2 from "@/assets/chapa/movel-13.webp";
-import project3 from "@/assets/chapa/movel-07.webp";
-import project4 from "@/assets/chapa/movel-21.webp";
-import project5 from "@/assets/chapa/movel-09.webp";
-import project6 from "@/assets/chapa/movel-18.webp";
-import project7 from "@/assets/chapa/movel-23.webp";
-import project8 from "@/assets/chapa/movel-10.webp";
-import passo01 from "@/assets/chapa/passo-a-passo-01.webp";
-import passo04 from "@/assets/chapa/passo-a-passo-04.webp";
-import passo07 from "@/assets/chapa/passo-a-passo-07.webp";
+import info1 from "@/assets/chapa/info-02-comoda-3-gavetas.webp";
+import info2 from "@/assets/chapa/info-07-rack-1-80.webp";
+import info3 from "@/assets/chapa/info-09-estante-de-nichos.webp";
+import info4 from "@/assets/chapa/info-13-balcao-de-pia.webp";
 
-const PROJECT_IMAGE_WIDTH = 400;
-const PROJECT_IMAGE_HEIGHT = 256;
+const PROJECT_IMAGE_WIDTH = 1080;
+const PROJECT_IMAGE_HEIGHT = 1440;
 
 const BonusSection = memo(() => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -41,17 +34,10 @@ const BonusSection = memo(() => {
   }, [autoplayPlugin]);
 
   const projects = [
-    { image: project1, alt: "Cômoda 3 gavetas" },
-    { image: passo01, alt: "Montagem passo a passo - par de criados-mudos" },
-    { image: project2, alt: "Balcão de pia 1,20 m" },
-    { image: project3, alt: "Rack 1,80 m com 2 portas e nicho" },
-    { image: passo07, alt: "Montagem passo a passo - rack 1,80 m" },
-    { image: project4, alt: "Guarda-roupa infantil 2 portas" },
-    { image: project5, alt: "Estante de nichos" },
-    { image: project6, alt: "Kit banheiro: gabinete + espelheira + torre" },
-    { image: passo04, alt: "Montagem passo a passo - escrivaninha" },
-    { image: project7, alt: "Cama montessoriana casinha" },
-    { image: project8, alt: "Aparador com 2 gavetas" },
+    { image: info1, alt: "Cômoda 3 gavetas - projeto completo feito com uma chapa de MDF" },
+    { image: info2, alt: "Rack 1,80 m - projeto completo feito com uma chapa de MDF" },
+    { image: info3, alt: "Estante de nichos - projeto completo feito com uma chapa de MDF" },
+    { image: info4, alt: "Balcão de pia 1,20 m - projeto completo feito com uma chapa de MDF" },
   ];
 
   return (
@@ -81,7 +67,7 @@ const BonusSection = memo(() => {
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-64 object-contain bg-[#E9E2D6]"
+                            className="w-full h-auto aspect-[3/4] object-cover bg-[#FBF7F1]"
                             loading="lazy"
                             decoding="async"
                           />
