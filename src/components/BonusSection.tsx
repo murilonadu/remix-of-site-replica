@@ -61,7 +61,7 @@ const BonusSection = memo(() => {
                   {projects.map((project, index) => (
                     <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
-                        <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                        <div className="rounded-xl overflow-hidden border-[3px] border-[#C08A57] bg-[#C08A57] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
                           <img
                             src={project.image}
                             alt={project.alt}
