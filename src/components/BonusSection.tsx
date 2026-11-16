@@ -34,10 +34,10 @@ const BonusSection = memo(() => {
   }, [autoplayPlugin]);
 
   const projects = [
-    { image: info1, alt: "Cômoda 3 gavetas - projeto completo feito com uma chapa de MDF" },
-    { image: info2, alt: "Rack 1,80 m - projeto completo feito com uma chapa de MDF" },
-    { image: info3, alt: "Estante de nichos - projeto completo feito com uma chapa de MDF" },
-    { image: info4, alt: "Balcão de pia 1,20 m - projeto completo feito com uma chapa de MDF" },
+    { image: info1, alt: "Pergolado de madeira com lista de material pronta" },
+    { image: info2, alt: "Pergolado de madeira para área gourmet" },
+    { image: info3, alt: "Pergolado de madeira para garagem" },
+    { image: info4, alt: "Pergolado de madeira para varanda" },
   ];
 
   return (

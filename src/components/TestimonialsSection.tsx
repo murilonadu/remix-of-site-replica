@@ -13,29 +13,30 @@ const HERO_IMAGE_HEIGHT = 180;
 const LazyWistiaVideo = lazy(() => import("@/components/LazyWistiaVideo"));
 
 const TestimonialsSection = () => {
+  // Depoimentos: trocar pelos depoimentos REAIS de clientes deste produto antes de publicar
   const testimonials = [
     {
-      name: "Carlos Santos",
+      name: "[Nome do cliente 1]",
       image: testimonialCarlos,
-      text: "Os projetos são precisos e profissionais. Zero erro de medida. Só quem é do ramo entende o valor disso",
+      text: "[Depoimento real de cliente sobre os pergolados]",
       rating: 5,
-      highlight: "Zero erro de medida"
+      highlight: "Depoimento real"
     },
     {
-      name: "André Galdino",
+      name: "[Nome do cliente 2]",
       image: testimonialAndre,
-      text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
+      text: "[Depoimento real de cliente sobre os pergolados]",
       rating: 5,
-      highlight: "bem rápido de produzir já tendo as medidas",
-      hasVideo: true,
-      wistiaId: "oskx27z7e0"
+      highlight: "Depoimento real",
+      hasVideo: false,
+      wistiaId: ""
     },
     {
-      name: "Felipe Leal",
+      name: "[Nome do cliente 3]",
       image: testimonialFelipe,
-      text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
+      text: "[Depoimento real de cliente sobre os pergolados]",
       rating: 5,
-      highlight: "escolher o projeto, produzir e faturar"
+      highlight: "Depoimento real"
     }
   ];
 
@@ -47,7 +48,7 @@ const TestimonialsSection = () => {
           <div className="text-center mb-8">
             <img 
               src={marceNeiroHero} 
-              alt="Marceneiro com Pack Marceneiro Rico" 
+              alt="Carpinteiro com Pack do Carpinteiro Rico" 
               width={HERO_IMAGE_WIDTH}
               height={HERO_IMAGE_HEIGHT}
               className="mx-auto max-w-[150px] md:max-w-[180px] mb-4"
@@ -140,7 +141,7 @@ const TestimonialsSection = () => {
             <div className="inline-flex items-center gap-4 bg-calm-green/10 rounded-full px-8 py-4 border border-calm-green/20">
               <span className="text-2xl">🌟</span>
               <div className="text-left">
-                <p className="font-semibold text-foreground">Mais de 500 marceneiros já pararam de perder tempo criando do zero</p>
+                <p className="font-semibold text-foreground">[Frase com o número real de clientes deste produto]</p>
               </div>
             </div>
 

@@ -102,14 +102,14 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-1.5 ml-3 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
               <Users className="w-3.5 h-3.5 text-primary" />
-              <span className="text-xs font-semibold text-primary">+645 Alunos</span>
+              <span className="text-xs font-semibold text-primary">Para quem faz pergolado</span>
             </div>
           </div>
 
           {/* Brand Name with animation */}
           <div className="mb-6 md:mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-scale-in text-center">
-              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">25 Móveis que Saem de Uma Única Chapa de MDF para Fabricar Sem Erro e Sem Desperdício</span>{" "}
+              <span className="bg-gradient-to-r from-expandix-yellow to-expandix-green bg-clip-text text-transparent text-justify">+300 Pergolados de Madeira com Lista de Material Pronta para Não Tomar Prejuízo</span>{" "}
               <span className="text-expandix-yellow drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]">​ </span>
             </h1>
             <div className="w-40 h-1 bg-gradient-to-r from-expandix-yellow to-expandix-green mx-auto mt-4 rounded-full animate-slide-in-right"></div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
           {/* Main headline - no animations */}
           <div className="max-w-5xl mx-auto space-y-6 md:space-y-8">
             <div className="bg-expandix-dark/20 backdrop-blur-md rounded-2xl md:rounded-3xl p-4 md:p-8 border border-expandix-yellow/30 shadow-2xl">
-              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Projetos para cozinha, para quarto, para sala, para banheiro e muito mais</h2>
+              <h2 className="text-base md:text-lg lg:text-xl leading-relaxed text-slate-50">Modelos para área gourmet, garagem, varanda, piscina, corredor e muito mais</h2>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ const HeroSection = () => {
           <div className="mt-8 md:mt-12 flex justify-center">
             <img
             src={productMockup}
-            alt="Pack Marceneiro Rico"
+            alt="Pack do Carpinteiro Rico"
             width={HERO_IMAGE_WIDTH}
             height={HERO_IMAGE_HEIGHT}
             className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl"

@@ -4,11 +4,11 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const FaqSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const faqs = [
-    { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Sim! São 25 móveis para quarto, sala, cozinha, banheiro, lavanderia, quarto infantil e escritório, e cada um sai inteiro de uma única chapa de MDF." },
-    { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Todos os projetos vêm em PDF, com lista de peças, plano de corte e montagem passo a passo. Dá para abrir no celular ou imprimir." },
-    { question: "Os projetos são atualizados e modernos?", answer: "Sim! São móveis com medidas padrão de mercado e acabamento atual: corpo branco com frentes amadeiradas." },
-    { question: "Posso usar esses projetos para vender para meus clientes?", answer: "Sim! Você tem total liberdade para usar os projetos comercialmente." },
-    { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você receberá por email o link para download." },
+    { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Serve para quem faz pergolado de madeira: são modelos em madeira serrada e eucalipto, encostados na parede ou independentes, de 3x3 a 6x5." },
+    { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Tudo vem em PDF, com a lista de material de cada pergolado. Dá para abrir no celular na obra ou imprimir." },
+    { question: "Os projetos são atualizados e modernos?", answer: "Sim! São modelos atuais para área gourmet, garagem, varanda e piscina, do rústico ao moderno." },
+    { question: "Posso usar esses projetos para vender para meus clientes?", answer: "Sim! Você pode mostrar os modelos aos seus clientes e executar os serviços à vontade." },
+    { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você recebe por e-mail e WhatsApp." },
     { question: "E se eu não gostar do projeto?", answer: "Oferecemos garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro." }
   ];
   const toggleItem = (index: number) => setOpenItems(prev => prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]);

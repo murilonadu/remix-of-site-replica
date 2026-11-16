@@ -15,7 +15,7 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="space-y-3 animate-fade-in">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins bg-gradient-title-primary bg-clip-text text-transparent">
-               Pack do Marceneiro Rico é para você se:
+               Pack do Carpinteiro Rico é para você se:
             </h2>
           </div>
 
@@ -24,7 +24,7 @@ const AboutSection = () => {
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">🧠</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de criar projeto do zero
+              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de cobrar no chute
 
 
             </p>
@@ -39,13 +39,13 @@ const AboutSection = () => {
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">⚡</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer evitar erro de medida e desperdício</p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de voltar na obra para consertar sem receber</p>
             </div>
             <div className="flex items-start gap-2.5 p-2.5 rounded-lg bg-gradient-to-r from-expandix-green/10 to-expandix-yellow/5 border border-expandix-green/20 hover:scale-[1.02] transition-all duration-300">
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">🌱</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer ganhar mais sem trabalhar mais</p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de esquecer material e pagar do próprio bolso</p>
             </div>
           </div>
 

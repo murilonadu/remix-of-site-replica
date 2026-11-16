@@ -40,7 +40,8 @@ const Index = () => {
   return (
     <div className="min-h-screen font-inter">
       {/* Deferred extras - only load after 2.5s to prioritize critical rendering */}
-      {isReadyForExtras && (
+      {/* Notificações de compra desligadas nesta oferta: usam nomes inventados */}
+      {false && isReadyForExtras && (
         <Suspense fallback={null}>
           <PurchaseNotifications />
         </Suspense>

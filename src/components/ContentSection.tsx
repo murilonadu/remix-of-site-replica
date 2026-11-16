@@ -17,8 +17,8 @@ const PROJETOS_IMAGE_WIDTH = 1200;
 const PROJETOS_IMAGE_HEIGHT = 600;
 
 const carrosselImages = [
-{ src: carrosselModulos1, alt: "Módulos 1 a 3 - Lista de Peças, Plano de Corte, Montagem" },
-{ src: carrosselModulos2, alt: "Módulos 4 a 6 - Ferragens, Acabamento, 7 Ambientes" }];
+{ src: carrosselModulos1, alt: "Categorias de pergolados por tamanho e tipo" },
+{ src: carrosselModulos2, alt: "Categorias de pergolados por madeira e ambiente" }];
 
 
 const ContentSection = memo(() => {
@@ -59,7 +59,7 @@ const ContentSection = memo(() => {
 
               <img
                 src={oQueVoceTera}
-                alt="Módulos: Lista de Peças, Plano de Corte, Montagem, Prontos para Produção"
+                alt="Modelos prontos, lista de material, vão máximo, fixação e organização por tamanho, tipo e madeira"
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
                 decoding="async" />
@@ -72,7 +72,7 @@ const ContentSection = memo(() => {
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
         <img
           src={projetosGrid}
-          alt="Exemplos dos móveis de uma única chapa"
+          alt="Exemplos de pergolados de madeira"
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
           className="w-full h-full object-cover"

@@ -92,7 +92,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-1 text-white">
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">25 Projetos de Móveis de 1 Chapa de MDF</span>
+                          <span className="font-medium">100 Pergolados com Lista de Material</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -100,7 +100,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium">Gourmet, Garagem, Varanda, Piscina.....</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -168,7 +168,7 @@ const FinalCtaSection = () => {
                       <div className="flex justify-center">
                         <img
                         src={packMockupPremium}
-                        alt="Pack Marceneiro Rico Premium"
+                        alt="Pack do Carpinteiro Rico Premium"
                         width={PACK_MOCKUP_WIDTH}
                         height={PACK_MOCKUP_HEIGHT}
                         className="max-w-[280px] md:max-w-[350px] mb-4"
@@ -200,7 +200,7 @@ const FinalCtaSection = () => {
                       <div className="space-y-1 text-white">
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">50 Projetos de Móveis + Bônus Gratuitos</span>
+                          <span className="font-medium">300 Pergolados + Bônus Gratuitos</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -208,7 +208,7 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Cozinha, Quarto, Sala, Banheiro, Varanda.....</span>
+                          <span className="font-medium">Gourmet, Garagem, Varanda, Piscina.....</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
@@ -235,7 +235,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
-                                  Quanto Cobrar por Cada Móvel <span className="line-through ml-1 text-red-400">R$ 37,00</span>
+                                  Os 100 Mais Lucrativos <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
                             </div>
@@ -251,7 +251,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold leading-tight text-yellow-100">
-                                  O Que Fazer com as Sobras da Chapa <span className="line-through ml-1 text-red-400">R$ 29,00</span>
+                                  Guia Anti-Retrabalho <span className="line-through ml-1 text-red-400">R$ 29,00</span>
                                 </p>
                               </div>
                             </div>
@@ -317,7 +317,7 @@ const FinalCtaSection = () => {
                 <div className="flex items-center justify-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border border-orange-500/40 mb-4">
                   {/* Orange Pill */}
                   <div className="w-8 h-4 rounded-full bg-gradient-to-r from-orange-500 to-yellow-500 shadow-lg shadow-orange-500/50 flex-shrink-0"></div>
-                  <p className="text-sm md:text-base font-bold text-orange-400">R$10: Facilidade pra quem quer parar de sofrer.</p>
+                  <p className="text-sm md:text-base font-bold text-orange-400">R$10: Facilidade pra quem quer parar de cobrar no chute.</p>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white font-poppins mb-6">
                   Escolha seu <span className="bg-gradient-to-r from-expandix-yellow via-expandix-green to-expandix-yellow bg-clip-text text-transparent animate-pulse">Acesso</span>
