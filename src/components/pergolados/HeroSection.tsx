@@ -102,7 +102,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-1.5 ml-3 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
               <Users className="w-3.5 h-3.5 text-primary" />
-              <span className="text-xs font-semibold text-primary">Para quem faz pergolado</span>
+              <span className="text-xs font-semibold text-primary">+645 Alunos</span>
             </div>
           </div>
 
