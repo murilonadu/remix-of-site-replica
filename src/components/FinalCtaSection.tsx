@@ -235,7 +235,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
-                                  Os 100 Mais Lucrativos <span className="line-through ml-1 text-red-400">R$ 37,00</span>
+                                  100 Pergolados Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 37,00</span>
                                 </p>
                               </div>
                             </div>
@@ -251,7 +251,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-semibold leading-tight text-yellow-100">
-                                  Guia Anti-Retrabalho <span className="line-through ml-1 text-red-400">R$ 29,00</span>
+                                  Como Evitar Goteira, Madeira Empenada e Podre <span className="line-through ml-1 text-red-400">R$ 29,00</span>
                                 </p>
                               </div>
                             </div>
@@ -267,7 +267,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-bold leading-tight text-destructive-foreground">
-                                  Contrato Antifraude <span className="line-through ml-1 text-red-400">R$ 27,00</span>
+                                  Contrato Antifraude para Evitar Calote de Cliente <span className="line-through ml-1 text-red-400">R$ 27,00</span>
                                 </p>
                               </div>
                             </div>
@@ -283,7 +283,7 @@ const FinalCtaSection = () => {
                               </div>
                               <div className="flex-1">
                                 <p className="text-[11px] font-bold leading-tight text-yellow-300">
-                                  Suporte VIP via WhatsApp <span className="line-through ml-1 text-red-400">R$ 47,00</span>
+                                  Suporte VIP via WhatsApp para Tirar Suas Dúvidas <span className="line-through ml-1 text-red-400">R$ 47,00</span>
                                 </p>
                               </div>
                             </div>
