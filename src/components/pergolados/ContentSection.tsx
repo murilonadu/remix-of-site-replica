@@ -1,6 +1,7 @@
 import { memo } from "react";
 import projetosGrid from "@/assets/pergolados/pergolados-grade.webp";
 import oQueVoceRecebera from "@/assets/pergolados/o-que-voce-recebera.webp";
+import bonusTablets from "@/assets/pergolados/bonus-tablets.webp";
 
 // Fixed dimensions to prevent CLS
 const PROJETOS_IMAGE_WIDTH = 1080;
@@ -31,6 +32,15 @@ const ContentSection = memo(() => {
                 loading="lazy"
                 decoding="async" />
             </div>
+
+            <img
+              src={bonusTablets}
+              alt="+4 bônus grátis levando hoje"
+              width={1300}
+              height={578}
+              className="w-full h-auto mt-6"
+              loading="lazy"
+              decoding="async" />
           </div>
         </div>
       </div>

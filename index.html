@@ -12,6 +12,8 @@
   <!-- Resource hints for tracking pixel -->
   <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
   <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
+  <link rel="preconnect" href="https://fast.wistia.com">
+  <link rel="preconnect" href="https://embed-ssl.wistia.com">
 
   <!-- Meta Pixel Code (codigo oficial do Meta) -->
   <!-- O PageView e os outros eventos sao enviados pela Utmify (mais abaixo), por isso aqui fica so o init: assim nao duplica. -->
@@ -22,7 +24,8 @@
   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
   n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  var go=function(){s.parentNode.insertBefore(t,s)};
+  if(document.readyState==='complete')go();else window.addEventListener('load',go)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2607495066400192');
   </script>

@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import WistiaEmbed from "@/components/WistiaEmbed";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import productMockup from "@/assets/pergolados/mockup-carpinteiro.webp";
+import productMockup from "@/assets/pergolados/mockup-carpinteiro-1000.webp";
+import productMockupSm from "@/assets/pergolados/mockup-carpinteiro-640.webp";
 import avatarAndre from "@/assets/testimonial-andre.webp";
 import avatarCarlos from "@/assets/testimonial-carlos.webp";
 import avatarFelipe from "@/assets/testimonial-felipe.webp";
@@ -126,13 +127,15 @@ const HeroSection = () => {
           <div className="mt-8 md:mt-12 flex justify-center">
             <img
             src={productMockup}
+            srcSet={`${productMockupSm} 640w, ${productMockup} 1000w`}
+            sizes="(min-width: 1024px) 500px, (min-width: 768px) 420px, 320px"
             alt="Pack do Carpinteiro Rico"
             width={HERO_IMAGE_WIDTH}
             height={HERO_IMAGE_HEIGHT}
             className="w-80 md:w-[420px] lg:w-[500px] h-auto drop-shadow-2xl"
             loading="eager"
             fetchPriority="high"
-            decoding="sync" />
+            decoding="async" />
           
           </div>
 

@@ -1,7 +1,7 @@
 import { useState, memo, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
-import packMockupPremium from "@/assets/pergolados/mockup-carpinteiro.webp";
+import packMockupPremium from "@/assets/pergolados/mockup-carpinteiro-640.webp";
 
 const UpsellModal = lazy(() => import("@/components/pergolados/UpsellModal"));
 
