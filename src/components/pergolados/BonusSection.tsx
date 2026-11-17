@@ -1,19 +1,27 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import info1 from "@/assets/chapa/info-02-comoda-3-gavetas.webp";
-import info2 from "@/assets/chapa/info-07-rack-1-80.webp";
-import info3 from "@/assets/chapa/info-09-estante-de-nichos.webp";
-import info4 from "@/assets/chapa/info-13-balcao-de-pia.webp";
+import f1 from "@/assets/pergolados/ficha-01-frente.webp";
+import v1 from "@/assets/pergolados/ficha-01-verso.webp";
+import f2 from "@/assets/pergolados/ficha-02-frente.webp";
+import v2 from "@/assets/pergolados/ficha-02-verso.webp";
+import f3 from "@/assets/pergolados/ficha-03-frente.webp";
+import v3 from "@/assets/pergolados/ficha-03-verso.webp";
+import f4 from "@/assets/pergolados/ficha-04-frente.webp";
+import v4 from "@/assets/pergolados/ficha-04-verso.webp";
+import f5 from "@/assets/pergolados/ficha-05-frente.webp";
+import v5 from "@/assets/pergolados/ficha-05-verso.webp";
+import f6 from "@/assets/pergolados/ficha-06-frente.webp";
+import v6 from "@/assets/pergolados/ficha-06-verso.webp";
 
-const PROJECT_IMAGE_WIDTH = 1080;
-const PROJECT_IMAGE_HEIGHT = 1440;
+const PROJECT_IMAGE_WIDTH = 1000;
+const PROJECT_IMAGE_HEIGHT = 1414;
 
 const BonusSection = memo(() => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const autoplayPlugin = useMemo(() => Autoplay({ delay: 3000 }), []);
+  const autoplayPlugin = useMemo(() => Autoplay({ delay: 1400, stopOnInteraction: false }), []);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -34,10 +42,18 @@ const BonusSection = memo(() => {
   }, [autoplayPlugin]);
 
   const projects = [
-    { image: info1, alt: "Pergolado de madeira com lista de material pronta" },
-    { image: info2, alt: "Pergolado de madeira para área gourmet" },
-    { image: info3, alt: "Pergolado de madeira para garagem" },
-    { image: info4, alt: "Pergolado de madeira para varanda" },
+    { image: f1, alt: "Projeto 01: pergolado encostado com policarbonato, frente" },
+    { image: v1, alt: "Projeto 01: prancha técnica com planta, cotas e detalhes" },
+    { image: f2, alt: "Projeto 02: pergolado independente vazado, frente" },
+    { image: v2, alt: "Projeto 02: prancha técnica com planta, cotas e detalhes" },
+    { image: f3, alt: "Projeto 03: pergolado com telha termoacústica para área gourmet" },
+    { image: v3, alt: "Projeto 03: prancha técnica com planta, cotas e detalhes" },
+    { image: f4, alt: "Projeto 04: cobertura de garagem com policarbonato" },
+    { image: v4, alt: "Projeto 04: prancha técnica com planta, cotas e detalhes" },
+    { image: f5, alt: "Projeto 05: pergolado vazado para beira de piscina" },
+    { image: v5, alt: "Projeto 05: prancha técnica com planta, cotas e detalhes" },
+    { image: f6, alt: "Projeto 06: pergolado encostado com policarbonato para quintal" },
+    { image: v6, alt: "Projeto 06: prancha técnica com planta, cotas e detalhes" },
   ];
 
   return (
@@ -67,7 +83,7 @@ const BonusSection = memo(() => {
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
-                            className="w-full h-auto aspect-[3/4] object-cover bg-[#FBF7F1]"
+                            className="w-full h-auto aspect-[1000/1414] object-contain bg-[#FFF9F0]"
                             loading="lazy"
                             decoding="async"
                           />
