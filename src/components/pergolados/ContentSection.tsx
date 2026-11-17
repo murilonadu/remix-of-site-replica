@@ -1,5 +1,5 @@
 import { memo, useRef, useEffect, useState, useMemo } from "react";
-import projetosGrid from "@/assets/chapa/projetos-grid.webp";
+import projetosGrid from "@/assets/pergolados/pergolados-grade.webp";
 import oQueVoceTera from "@/assets/chapa/o-que-voce-tera.webp";
 import carrosselModulos1 from "@/assets/chapa/carrossel-modulos-1.webp";
 import carrosselModulos2 from "@/assets/chapa/carrossel-modulos-2.webp";
@@ -13,8 +13,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 // Fixed dimensions to prevent CLS
-const PROJETOS_IMAGE_WIDTH = 1200;
-const PROJETOS_IMAGE_HEIGHT = 600;
+const PROJETOS_IMAGE_WIDTH = 1080;
+const PROJETOS_IMAGE_HEIGHT = 846;
 
 const carrosselImages = [
 { src: carrosselModulos1, alt: "Categorias de pergolados por tamanho e tipo" },
@@ -72,7 +72,7 @@ const ContentSection = memo(() => {
       <div className="my-8" style={{ aspectRatio: `${PROJETOS_IMAGE_WIDTH}/${PROJETOS_IMAGE_HEIGHT}` }}>
         <img
           src={projetosGrid}
-          alt="Exemplos de pergolados de madeira"
+          alt="Pergolados de madeira prontos: varanda, área gourmet, deck, rústico, cobertura e garagem"
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
           className="w-full h-full object-cover"
