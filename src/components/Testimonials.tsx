@@ -78,7 +78,7 @@ const Testimonials = () => {
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full px-8 py-4 border border-primary/30">
             <span className="text-3xl">🌟</span>
             <p className="text-lg font-semibold text-foreground">
-              Mais de 500 marceneiros já pararam de perder tempo criando do zero
+              Mais de 500 clientes já pararam de perder tempo criando do zero
             </p>
           </div>
           

@@ -140,7 +140,7 @@ const TestimonialsSection = () => {
             <div className="inline-flex items-center gap-4 bg-calm-green/10 rounded-full px-8 py-4 border border-calm-green/20">
               <span className="text-2xl">🌟</span>
               <div className="text-left">
-                <p className="font-semibold text-foreground">Mais de 500 marceneiros já pararam de perder tempo criando do zero</p>
+                <p className="font-semibold text-foreground">Mais de 500 clientes já pararam de perder tempo criando do zero</p>
               </div>
             </div>
 

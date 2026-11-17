@@ -24,28 +24,25 @@ const AboutSection = () => {
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">🧠</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de cobrar no chute
-
-
-            </p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Cansou de <strong>cobrar no chute</strong> e descobrir no fim da obra que trabalhou de graça</p>
             </div>
             <div className="flex items-start gap-2.5 p-2.5 rounded-lg bg-gradient-to-r from-expandix-green/10 to-expandix-yellow/5 border border-expandix-green/20 hover:scale-[1.02] transition-all duration-300">
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">💭</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer mostrar, orçar e fechar mais rápido</p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Perde serviço porque o cliente <strong>não consegue imaginar o pergolado</strong> e some com o famoso "vou pensar"</p>
             </div>
             <div className="flex items-start gap-2.5 p-2.5 rounded-lg bg-gradient-to-r from-expandix-green/10 to-expandix-yellow/5 border border-expandix-green/20 hover:scale-[1.02] transition-all duration-300">
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">⚡</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de voltar na obra para consertar sem receber</p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Não aguenta mais <strong>voltar na obra pra consertar goteira</strong> sem receber um centavo a mais</p>
             </div>
             <div className="flex items-start gap-2.5 p-2.5 rounded-lg bg-gradient-to-r from-expandix-green/10 to-expandix-yellow/5 border border-expandix-green/20 hover:scale-[1.02] transition-all duration-300">
               <div className="w-7 h-7 bg-gradient-to-r from-expandix-green to-expandix-yellow rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-expandix-dark text-xs font-bold">🌱</span>
               </div>
-              <p className="text-sm text-foreground leading-relaxed font-medium">Quer parar de esquecer material e pagar do próprio bolso</p>
+              <p className="text-sm text-foreground leading-relaxed font-medium">Já pagou <strong>do próprio bolso</strong> a viga que sobrou, o caibro que faltou e o parafuso que ficou na loja</p>
             </div>
           </div>
 
