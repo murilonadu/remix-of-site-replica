@@ -1,14 +1,14 @@
 import { useState, memo, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import hotmartSecure from "@/assets/hotmart-compra-segura.png";
-import packMockupPremium from "@/assets/chapa/mockup.webp";
+import packMockupPremium from "@/assets/pergolados/mockup-carpinteiro.webp";
 
 const UpsellModal = lazy(() => import("@/components/pergolados/UpsellModal"));
 
 // Fixed dimensions to prevent CLS
 const HOTMART_BADGE_HEIGHT = 28;
-const PACK_MOCKUP_WIDTH = 350;
-const PACK_MOCKUP_HEIGHT = 280;
+const PACK_MOCKUP_WIDTH = 500;
+const PACK_MOCKUP_HEIGHT = 365;
 const redirectWithParams = (baseUrl: string) => {
   const currentParams = window.location.search;
   const separator = baseUrl.includes('?') ? '&' : '?';
