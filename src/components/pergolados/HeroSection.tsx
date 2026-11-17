@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import WistiaEmbed from "@/components/WistiaEmbed";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
-import productMockup from "@/assets/chapa/mockup.webp";
+import productMockup from "@/assets/pergolados/mockup-carpinteiro.webp";
 import avatarAndre from "@/assets/testimonial-andre.webp";
 import avatarCarlos from "@/assets/testimonial-carlos.webp";
 import avatarFelipe from "@/assets/testimonial-felipe.webp";
 
 // LCP image dimensions for CLS prevention
 const HERO_IMAGE_WIDTH = 500;
-const HERO_IMAGE_HEIGHT = 400;
+const HERO_IMAGE_HEIGHT = 365;
 const HeroSection = () => {
   const [peopleCount, setPeopleCount] = useState(1247);
   const targetCount = 1247;
