@@ -33,14 +33,6 @@ const ContentSection = memo(() => {
                 decoding="async" />
             </div>
 
-            <img
-              src={bonusTablets}
-              alt="+4 bônus grátis levando hoje"
-              width={1300}
-              height={578}
-              className="w-full h-auto mt-6"
-              loading="lazy"
-              decoding="async" />
           </div>
         </div>
       </div>
@@ -55,6 +47,19 @@ const ContentSection = memo(() => {
           className="w-full h-full object-cover"
           loading="lazy"
           decoding="async" />
+      </div>
+
+      <div className="container mx-auto px-4 mt-8">
+        <div className="max-w-xl mx-auto">
+          <img
+            src={bonusTablets}
+            alt="+4 bônus grátis levando hoje"
+            width={900}
+            height={1362}
+            className="w-full h-auto"
+            loading="lazy"
+            decoding="async" />
+        </div>
       </div>
     </section>);
 });
