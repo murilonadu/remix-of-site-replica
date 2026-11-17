@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
     {
       name: "Felipe Leal",
       image: testimonialFelipe,
-      text: "Cara, que material F@&#! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com marcenaria precisa ter isso aqui AGORA!",
+      text: "Cara, que material bom! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com isso vai gostar bastante!",
       rating: 5,
       highlight: "escolher o projeto, produzir e faturar"
     }

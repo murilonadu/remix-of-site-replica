@@ -18,7 +18,10 @@ const ContentSection = memo(() => {
               📘 O que você receberá:
             </h2>
 
-            <div className="mt-6 bg-gradient-to-br from-calm-green/5 to-calm-green-vibrant/5 rounded-xl p-4 md:p-6 border border-calm-green/20">
+            <div className="mt-6 space-y-4 text-left bg-gradient-to-br from-calm-green/5 to-calm-green-vibrant/5 rounded-xl p-4 md:p-6 border border-calm-green/20">
+              <p className="text-foreground/90 text-sm md:text-base font-medium leading-relaxed">
+                É um sistema completo de produção e lucro, que combina:
+              </p>
               <img
                 src={oQueVoceRecebera}
                 alt="Facilidade, profissionalismo, tempo de volta e autoridade"
