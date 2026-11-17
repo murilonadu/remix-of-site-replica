@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import LazyWistiaVideo from "@/components/LazyWistiaVideo";
+import WistiaEmbed from "@/components/WistiaEmbed";
 import { Shield, Award, Clock, Users } from "lucide-react";
 import { useState, useEffect, memo } from "react";
 import productMockup from "@/assets/chapa/mockup.webp";
@@ -139,7 +139,7 @@ const HeroSection = () => {
           {/* VSL Video Section */}
           <div className="mt-8 md:mt-12 max-w-xs md:max-w-sm mx-auto">
             <div className="rounded-2xl overflow-hidden border-2 border-expandix-yellow/30 shadow-2xl">
-              <LazyWistiaVideo mediaId="ebtp6yg9ck" aspect="0.5625" cta="CLIQUE PARA ASSISTIR" />
+              <WistiaEmbed mediaId="ebtp6yg9ck" aspect="0.5625" />
             </div>
           </div>
 
