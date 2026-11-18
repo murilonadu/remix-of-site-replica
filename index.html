@@ -23,9 +23,9 @@
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
   n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  var go=function(){s.parentNode.insertBefore(t,s)};
-  if(document.readyState==='complete')go();else window.addEventListener('load',go)}(window, document,'script',
+  t.src=v;t.onload=function(){f.__fbReady=1;f.dispatchEvent(new Event('fbready'))};
+  t.onerror=t.onload;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2607495066400192');
   </script>
@@ -39,7 +39,12 @@
 
   <!-- Pixel do Meta via Utmify + script de UTMs. Não adicionar outro pixel nesta página. -->
   <script>
-    window.addEventListener('load', function() {
+    // A Utmify so dispara depois que o script do Meta carregou e criou os cookies _fbp/_fbc
+    // (antes ela disparava o PageView sem esses cookies e o Meta nao reconhecia o visitante).
+    (function(){
+    var started = false;
+    function start() {
+      if (started) return; started = true;
       // UTMify pixel
       window.pixelId = "6af6968f95fe1fd8820fd7eb";
       var pixel = document.createElement("script");
@@ -54,7 +59,11 @@
       utms.setAttribute("data-utmify-prevent-subids", "");
       utms.async = true;
       document.body.appendChild(utms);
-    });
+    }
+    if (window.__fbReady) setTimeout(start, 50);
+    else window.addEventListener('fbready', function(){ setTimeout(start, 50); });
+    setTimeout(start, 2500); // segurança: se o Meta demorar, a Utmify sobe mesmo assim
+    })();
   </script>
 </body>
 </html>
