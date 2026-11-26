@@ -2,12 +2,12 @@ import { lazy, Suspense, memo } from "react";
 import testimonialCarlos from "@/assets/testimonial-carlos.webp";
 import testimonialAndre from "@/assets/testimonial-andre.webp";
 import testimonialFelipe from "@/assets/testimonial-felipe.webp";
-import marceNeiroHero from "@/assets/marceneiro-hero.webp";
+import marceNeiroHero from "@/assets/pergolados/carpinteiro-bracos-frente.webp";
 
 // Fixed dimensions to prevent CLS
 const TESTIMONIAL_IMAGE_SIZE = 40;
-const HERO_IMAGE_WIDTH = 180;
-const HERO_IMAGE_HEIGHT = 180;
+const HERO_IMAGE_WIDTH = 286;
+const HERO_IMAGE_HEIGHT = 369;
 
 // Lazy load the Wistia video component
 const LazyWistiaVideo = lazy(() => import("@/components/LazyWistiaVideo"));
@@ -16,6 +16,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Carlos Santos",
+      city: "Campinas, SP",
       image: testimonialCarlos,
       text: "Os projetos são precisos e profissionais. Zero erro de medida. Só quem é do ramo entende o valor disso",
       rating: 5,
@@ -23,6 +24,7 @@ const TestimonialsSection = () => {
     },
     {
       name: "André Galdino",
+      city: "Botafogo, RJ",
       image: testimonialAndre,
       text: "Fiz essa semana o projeto que esta em alta e realmente vendeu muito fácil e o melhor foi que fui bem rápido de produzir já tendo as medidas, obrigado amigo!",
       rating: 5,
@@ -32,6 +34,7 @@ const TestimonialsSection = () => {
     },
     {
       name: "Felipe Leal",
+      city: "Vila Velha, ES",
       image: testimonialFelipe,
       text: "Cara, que material bom! Nunca mais perdi tempo quebrando cabeça pra criar do zero. É só escolher o projeto, produzir e faturar. Quem trabalha com isso vai gostar bastante!",
       rating: 5,
@@ -40,17 +43,17 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20">
+    <section className="pt-8 pb-20 md:pt-12 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Imagem do marceneiro + Botão ACESSAR AGORA no topo */}
           <div className="text-center mb-8">
             <img 
               src={marceNeiroHero} 
-              alt="Marceneiro com Pack Marceneiro Rico" 
+              alt="Carpinteiro de braços cruzados" 
               width={HERO_IMAGE_WIDTH}
               height={HERO_IMAGE_HEIGHT}
-              className="mx-auto max-w-[150px] md:max-w-[180px] mb-4"
+              className="mx-auto h-[140px] md:h-[170px] w-auto -mb-1"
               loading="lazy"
               decoding="async"
             />
@@ -71,7 +74,7 @@ const TestimonialsSection = () => {
                 }}
               >
                 <span className="flex items-center gap-3">
-                  <span>ACESSAR AGORA!</span>
+                  <span>QUERO OS 4 BÔNUS GRÁTIS</span>
                 </span>
               </button>
             </div>
@@ -128,6 +131,7 @@ const TestimonialsSection = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-sm text-foreground">{testimonial.name}</p>
+                        <p className="text-xs text-muted-foreground">{testimonial.city}</p>
                       </div>
                     </div>
                   </div>
@@ -140,7 +144,7 @@ const TestimonialsSection = () => {
             <div className="inline-flex items-center gap-4 bg-calm-green/10 rounded-full px-8 py-4 border border-calm-green/20">
               <span className="text-2xl">🌟</span>
               <div className="text-left">
-                <p className="font-semibold text-foreground">Mais de 500 clientes já pararam de perder tempo criando do zero</p>
+                <p className="font-semibold text-foreground">Mais de 645 clientes já pararam de perder tempo criando do zero</p>
               </div>
             </div>
 

@@ -32,7 +32,7 @@ const Footer = () => {
             <Book className="w-6 h-6" />
             ACESSAR PROJETOS
           </Button>
-          <p className="text-background/80 text-sm">© 2025 Manual da Marcenaria. Todos os direitos reservados.</p>
+          <p className="text-background/80 text-sm">© 2026 Pack do Carpinteiro Rico. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

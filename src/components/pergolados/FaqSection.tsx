@@ -4,8 +4,10 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const FaqSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const faqs = [
+    { question: "É pagamento único ou tem mensalidade?", answer: "Pagamento único. Você paga uma vez e o acesso é seu para sempre. Não tem mensalidade nem cobrança escondida." },
     { question: "Esse pacote serve pra qualquer tipo de marcenaria?", answer: "Serve para quem faz pergolado de madeira: são modelos em madeira serrada e eucalipto, encostados na parede ou independentes, de 3x3 a 6x5." },
     { question: "Eu preciso saber usar algum programa específico?", answer: "Não! Tudo vem em PDF, com a lista de material de cada pergolado. Dá para abrir no celular na obra ou imprimir." },
+    { question: "E se o cliente quiser uma medida diferente?", answer: "Você pega o projeto de medida mais próxima e ajusta. O espaçamento dos caibros e das ripas vem indicado em cada projeto, então fica fácil recalcular a quantidade de peças." },
     { question: "Os projetos são atualizados e modernos?", answer: "Sim! São modelos atuais para área gourmet, garagem, varanda e piscina, do rústico ao moderno." },
     { question: "Posso usar esses projetos para vender para meus clientes?", answer: "Sim! Você pode mostrar os modelos aos seus clientes e executar os serviços à vontade." },
     { question: "Recebo na hora?", answer: "Sim! O acesso é 100% digital e imediato. Assim que o pagamento for confirmado, você recebe por e-mail e WhatsApp." },

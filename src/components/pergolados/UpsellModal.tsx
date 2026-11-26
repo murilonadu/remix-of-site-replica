@@ -98,7 +98,7 @@ const UpsellModal = ({
                   <div className="bg-green-50 rounded-lg p-1.5 space-y-1 border border-green-200/50">
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">
                       <span>🎁</span>
-                      <span className="text-gray-700 flex-1">100 Mais Vendidos e Lucrativos</span>
+                      <span className="text-gray-700 flex-1">50 Acabamentos de Alto Padrão</span>
                       <span className="text-green-500 line-through text-[10px]">R$ 37</span>
                     </div>
                     <div className="flex items-center gap-2 bg-white/90 rounded-md px-2 py-1">

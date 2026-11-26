@@ -46,14 +46,14 @@ const FinalCtaSection = () => {
             </div>
 
             {/* Enhanced Pricing highlight with animations - Two options */}
-            <div id="ofertas" className="flex flex-col items-center gap-8 max-w-6xl mx-auto px-4">
+            <div className="flex flex-col items-center gap-8 max-w-6xl mx-auto px-4">
               {/* Option 1 - R$ 17,00 - Less highlighted */}
               <div className="relative group animate-scale-in animation-delay-500 w-full max-w-xl">
                 {/* Subtle background effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-gray-600/20 rounded-3xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
 
                 {/* Main pricing card */}
-                <div className="relative bg-gradient-to-br from-expandix-dark/90 to-expandix-dark/95 rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl border border-gray-500/30 backdrop-blur-md overflow-hidden h-full" style={{
+                <div className="relative bg-gradient-to-br from-expandix-dark/90 to-expandix-dark/95 rounded-2xl lg:rounded-3xl p-5 lg:p-8 shadow-xl border border-gray-500/30 backdrop-blur-md overflow-hidden h-full" style={{
                 backgroundImage: `
                       radial-gradient(circle at 20% 50%, rgba(156, 163, 175, 0.08) 0%, transparent 50%),
                       radial-gradient(circle at 80% 20%, rgba(107, 114, 128, 0.08) 0%, transparent 50%),
@@ -64,15 +64,15 @@ const FinalCtaSection = () => {
                   <div className="absolute top-4 right-4 w-2 h-2 bg-gray-400 rounded-full animate-ping opacity-40"></div>
                   <div className="absolute bottom-6 left-6 w-1 h-1 bg-gray-500 rounded-full animate-pulse opacity-30 animation-delay-1000"></div>
 
-                  <div className="space-y-4 lg:space-y-6 relative z-10 flex flex-col h-full">
+                  <div className="space-y-3 lg:space-y-6 relative z-10 flex flex-col h-full">
                     <div className="text-center">
-                      <div className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-500/20 to-gray-600/20 rounded-full px-3 lg:px-4 py-2 border border-gray-500/30 mb-3 lg:mb-4">
+                      <div className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-500/20 to-gray-600/20 rounded-full px-3 lg:px-4 py-1.5 border border-gray-500/30">
                         <span className="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></span>
                         <span className="text-gray-300 font-semibold text-xs lg:text-sm">PACOTE BÁSICO </span>
                       </div>
                     </div>
 
-                    <div className="space-y-3 lg:space-y-4 text-center">
+                    <div id="ofertas" className="space-y-3 lg:space-y-4 text-center scroll-mt-4">
                       <div className="flex items-center justify-center gap-2 lg:gap-3">
                         
                         
@@ -82,7 +82,7 @@ const FinalCtaSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl lg:rounded-2xl blur-sm opacity-20"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-gray-500/40">
                           <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-primary">R$ 10,00</div>
-                          <p className="text-xs lg:text-sm mt-1 text-gray-400">ou 3x de R$ 6,37 no cartão</p>
+                          <p className="text-xs lg:text-sm mt-1 text-gray-300 font-semibold">Pagamento único</p>
                         </div>
                       </div>
                     </div>
@@ -96,28 +96,18 @@ const FinalCtaSection = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
-                          <span className="font-medium">Acesso Digital Imediato</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span>✓</span>
-                          <span className="font-medium">Gourmet, Garagem, Varanda, Piscina.....</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span>✓</span>
                           <span className="font-medium">Garantia de 7 dias</span>
                         </div>
+                        <div className="flex items-center gap-2 text-gray-500">
+                          <span className="text-red-400">✗</span>
+                          <span className="line-through">+200 projetos do Premium</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-500">
+                          <span className="text-red-400">✗</span>
+                          <span className="line-through">4 bônus do Premium</span>
+                        </div>
                       </div>
 
-                      {/* Divider */}
-                      <div className="border-t border-gray-500/20 pt-3 mt-2"></div>
-
-                      {/* Bonuses Title */}
-                      <div className="text-center mb-3">
-                        
-                      </div>
-
-                      {/* Exclusive Bonuses Section */}
-                      
                     </div>
 
                     <div className="mt-auto pt-4">
@@ -140,7 +130,7 @@ const FinalCtaSection = () => {
               <div className="relative group animate-scale-in animation-delay-700 w-full max-w-xl">
                 {/* MAIS ESCOLHIDO Badge */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  
+
                 </div>
 
                 {/* Glowing background effect - More prominent */}
@@ -171,7 +161,7 @@ const FinalCtaSection = () => {
                         alt="Pack do Carpinteiro Rico Premium"
                         width={PACK_MOCKUP_WIDTH}
                         height={PACK_MOCKUP_HEIGHT}
-                        className="max-w-[280px] md:max-w-[350px] mb-4"
+                        className="max-w-[230px] md:max-w-[350px] mb-2"
                         loading="lazy"
                         decoding="async" />
 
@@ -190,7 +180,7 @@ const FinalCtaSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl lg:rounded-2xl blur-sm opacity-40"></div>
                         <div className="relative bg-expandix-dark/80 rounded-xl lg:rounded-2xl p-3 lg:p-4 border border-yellow-500/60">
                           <div className="text-3xl lg:text-4xl font-bold hover-scale bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">R$ 29,90</div>
-                          <p className="text-xs lg:text-sm mt-1 text-gray-300">ou 3x de R$ 11,17 no cartão</p>
+                          <p className="text-xs lg:text-sm mt-1 text-gray-200 font-semibold">Pagamento único</p>
                         </div>
                       </div>
                     </div>
@@ -198,21 +188,17 @@ const FinalCtaSection = () => {
                     <div className="space-y-3 text-xs lg:text-sm flex-grow">
                       {/* Base features - Same as basic */}
                       <div className="space-y-1 text-white">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-start gap-2 text-left">
                           <span>✓</span>
-                          <span className="font-medium">300 Pergolados + Bônus Gratuitos</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span>✓</span>
-                          <span className="font-medium">Acesso Digital Imediato</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span>✓</span>
-                          <span className="font-medium">Gourmet, Garagem, Varanda, Piscina.....</span>
+                          <span className="font-medium">Os 100 projetos do Básico <b className="text-yellow-300">+ 200 projetos a mais</b> (300 no total)</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>✓</span>
                           <span className="font-medium">Garantia de 7 dias</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✓</span>
+                          <span className="font-medium">Acesso vitalício</span>
                         </div>
                       </div>
 
@@ -226,69 +212,23 @@ const FinalCtaSection = () => {
 
                       {/* Exclusive Bonuses Section */}
                       <div className="space-y-2">
-                        {/* Bonus 1 */}
-                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
-                          <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
+                        {[
+                          ["50 Acabamentos de Alto Padrão", "R$ 37,00"],
+                          ["Como Evitar Goteira, Madeira Empenada e Podre", "R$ 29,00"],
+                          ["Contrato Antifraude para Evitar Calote de Cliente", "R$ 27,00"],
+                          ["Suporte VIP via WhatsApp para Tirar Suas Dúvidas", "R$ 47,00"],
+                        ].map(([nome, valor]) => (
+                          <div key={nome} className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
+                            <div className="p-2.5 flex items-center gap-2.5">
                               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
                                 <span className="text-base">🎁</span>
                               </div>
-                              <div className="flex-1">
-                                <p className="text-[11px] font-semibold text-yellow-100 leading-tight">
-                                  100 Pergolados Mais Vendidos e Lucrativos <span className="line-through ml-1 text-red-400">R$ 37,00</span>
-                                </p>
-                              </div>
+                              <p className="flex-1 text-left text-xs font-semibold leading-tight text-yellow-100">
+                                {nome} <span className="whitespace-nowrap line-through ml-1 text-red-400">{valor}</span>
+                              </p>
                             </div>
                           </div>
-                        </div>
-
-                        {/* Bonus 2 */}
-                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/15 to-orange-500/15 border border-yellow-500/30 shadow-md">
-                          <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/40 to-orange-500/40 flex items-center justify-center flex-shrink-0 border border-yellow-500/30">
-                                <span className="text-base">🎁</span>
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-[11px] font-semibold leading-tight text-yellow-100">
-                                  Como Evitar Goteira, Madeira Empenada e Podre <span className="line-through ml-1 text-red-400">R$ 29,00</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* Bonus 3 - EXTRA */}
-                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
-                          <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
-                                <span className="text-base">⭐</span>
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-destructive-foreground">
-                                  Contrato Antifraude para Evitar Calote de Cliente <span className="line-through ml-1 text-red-400">R$ 27,00</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* Bonus 4 - EXTRA */}
-                        <div className="rounded-lg bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 shadow-md">
-                          <div className="p-2.5 backdrop-blur-sm">
-                            <div className="flex items-center gap-2.5">
-                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/50 to-orange-500/50 flex items-center justify-center flex-shrink-0 border border-yellow-500/40">
-                                <span className="text-base">⭐</span>
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-[11px] font-bold leading-tight text-yellow-300">
-                                  Suporte VIP via WhatsApp para Tirar Suas Dúvidas <span className="line-through ml-1 text-red-400">R$ 47,00</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        ))}
                       </div>
                     </div>
 
