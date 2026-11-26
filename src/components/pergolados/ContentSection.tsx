@@ -1,6 +1,8 @@
 import { memo } from "react";
 import AntesDepois from "@/components/pergolados/AntesDepois";
 import projetosGrid from "@/assets/pergolados/pergolados-grade.webp";
+import projetosGridSm from "@/assets/pergolados/pergolados-grade-800.webp";
+import bonusTabletsSm from "@/assets/pergolados/bonus-tablets-v3-600.webp";
 import bonusTablets from "@/assets/pergolados/bonus-tablets-v3.webp";
 
 const AMBIENTES = ["Lateral da casa", "Varanda", "Deck e piscina", "Jardim", "Quintal", "Garagem"];
@@ -66,6 +68,8 @@ const ContentSection = memo(() => {
         </div>
         <img
           src={projetosGrid}
+          srcSet={`${projetosGridSm} 800w, ${projetosGrid} 1080w`}
+          sizes="100vw"
           alt="Pergolados de madeira prontos: varanda, área gourmet, deck, rústico, cobertura e garagem"
           width={PROJETOS_IMAGE_WIDTH}
           height={PROJETOS_IMAGE_HEIGHT}
@@ -78,6 +82,8 @@ const ContentSection = memo(() => {
         <div className="w-[82%] max-w-md mx-auto">
           <img
             src={bonusTablets}
+            srcSet={`${bonusTabletsSm} 600w, ${bonusTablets} 900w`}
+            sizes="(min-width: 768px) 448px, 82vw"
             alt="+4 bônus grátis levando hoje"
             width={900}
             height={1350}

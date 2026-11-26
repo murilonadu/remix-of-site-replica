@@ -1,6 +1,9 @@
 import { useRef, useState, useCallback } from "react";
 import antes from "@/assets/pergolados/antes-pergolado.webp";
 import depois from "@/assets/pergolados/depois-pergolado.webp";
+import antesSm from "@/assets/pergolados/antes-pergolado-760.webp";
+import depoisSm from "@/assets/pergolados/depois-pergolado-760.webp";
+const SIZES = "(min-width: 768px) 672px, 92vw";
 
 const AntesDepois = () => {
   const [pos, setPos] = useState(50);
@@ -30,8 +33,8 @@ const AntesDepois = () => {
         onPointerUp={() => { dragging.current = false; }}
         onPointerCancel={() => { dragging.current = false; }}
       >
-        <img src={depois} alt="Depois: área com pergolado e o casal reunido à mesa" width={1200} height={675} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" draggable={false} />
-        <img src={antes} alt="Antes: quintal sem pergolado" width={1200} height={675} className="absolute inset-0 w-full h-full object-cover" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }} loading="lazy" decoding="async" draggable={false} />
+        <img src={depois} srcSet={`${depoisSm} 760w, ${depois} 1200w`} sizes={SIZES} alt="Depois: área com pergolado e o casal reunido à mesa" width={1200} height={675} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" draggable={false} />
+        <img src={antes} srcSet={`${antesSm} 760w, ${antes} 1200w`} sizes={SIZES} alt="Antes: quintal sem pergolado" width={1200} height={675} className="absolute inset-0 w-full h-full object-cover" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }} loading="lazy" decoding="async" draggable={false} />
         <span className="absolute top-2 left-2 bg-black/60 text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-md">ANTES</span>
         <span className="absolute top-2 right-2 bg-[#E07A1F] text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-md">DEPOIS</span>
         <div className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_6px_rgba(0,0,0,.4)] pointer-events-none" style={{ left: `calc(${pos}% - 2px)` }}>

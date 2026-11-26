@@ -1,4 +1,5 @@
 import carpinteiroLado from "@/assets/pergolados/carpinteiro-bracos-lado.webp";
+import carpinteiroLadoSm from "@/assets/pergolados/carpinteiro-bracos-lado-180.webp";
 
 const AboutSection = () => {
   const scrollToOffer = () => {
@@ -16,7 +17,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="flex items-end justify-center gap-2 animate-fade-in">
-            <img src={carpinteiroLado} alt="Carpinteiro de braços cruzados" width={363} height={491} className="flex-none w-[60px] md:w-[80px] h-auto" loading="lazy" decoding="async" />
+            <img src={carpinteiroLado} srcSet={`${carpinteiroLadoSm} 180w, ${carpinteiroLado} 363w`} sizes="(min-width: 768px) 80px, 60px" alt="Carpinteiro de braços cruzados" width={363} height={491} className="flex-none w-[60px] md:w-[80px] h-auto" loading="lazy" decoding="async" />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins bg-gradient-title-primary bg-clip-text text-transparent text-left pb-1">
                Pack do Carpinteiro Rico é para você se:
             </h2>
