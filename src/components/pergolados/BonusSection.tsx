@@ -20,6 +20,9 @@ const PROJECT_IMAGE_HEIGHT = 1414;
 const BonusSection = memo(() => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  // Só baixa as fichas 3 a 12 quando o carrossel estiver chegando na tela,
+  // para não disputar banda com a imagem principal e o vídeo no topo.
+  const [loadAll, setLoadAll] = useState(false);
 
   const autoplayPlugin = useMemo(() => Autoplay({ delay: 1400, stopOnInteraction: false }), []);
 
@@ -38,7 +41,20 @@ const BonusSection = memo(() => {
       { threshold: 0.1 }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+    const near = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadAll(true);
+          near.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" }
+    );
+    near.observe(el);
+    return () => {
+      observer.disconnect();
+      near.disconnect();
+    };
   }, [autoplayPlugin]);
 
   const projects = [
@@ -79,12 +95,12 @@ const BonusSection = memo(() => {
                       <div className="p-1">
                         <div className="rounded-xl overflow-hidden border-[3px] border-[#C08A57] bg-[#C08A57] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
                           <img
-                            src={project.image}
+                            src={loadAll || index < 2 ? project.image : undefined}
                             alt={project.alt}
                             width={PROJECT_IMAGE_WIDTH}
                             height={PROJECT_IMAGE_HEIGHT}
                             className="w-full h-auto aspect-[1000/1414] object-contain bg-[#FFF9F0]"
-                            loading="lazy"
+                            loading={loadAll ? "eager" : "lazy"}
                             decoding="async"
                           />
                         </div>
