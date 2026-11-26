@@ -1,7 +1,7 @@
 import { memo } from "react";
 import AntesDepois from "@/components/pergolados/AntesDepois";
 import projetosGrid from "@/assets/pergolados/pergolados-grade.webp";
-import bonusTablets from "@/assets/pergolados/bonus-tablets-v2.webp";
+import bonusTablets from "@/assets/pergolados/bonus-tablets-v3.webp";
 
 const AMBIENTES = ["Lateral da casa", "Varanda", "Deck e piscina", "Jardim", "Quintal", "Garagem"];
 
